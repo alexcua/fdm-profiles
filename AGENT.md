@@ -126,6 +126,23 @@ Profiles are organized by **machine model + nozzle**, not by physical location. 
 
 ---
 
+## Timestamp rules
+
+Every confirmed profile entry must have a date. Format: `MMM YYYY` (e.g. `Aug 2026`).
+
+### When migrating from a past chat session
+- Use the chat session date as the calibration date, not today's date.
+- If a value was written without a timestamp, add the session date when migrating.
+- If a newer confirmed value already exists in the repo for the same machine/filament/setting, do not overwrite it. Add a note referencing the older session date instead.
+- If the repo has a value marked ⚠ and the migrated session has a confirmed ✅ value for the same field, replace it and update the date.
+
+### Conflict resolution
+- **Newer confirmed value wins** over older confirmed value.
+- **Confirmed value wins** over pending (⚠) regardless of date.
+- **Never silently overwrite** — if replacing a value, note the previous value and date in a comment below the table row using the format: `> Previously: [value] ([date]) — replaced because [reason]`
+
+---
+
 ## Session log
 
 When migrating data from a past chat session, add an entry to the session log in `CALIBRATION_MASTER.md`:

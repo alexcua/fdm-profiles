@@ -390,7 +390,7 @@ These settings resolved overhang curl on curved geometry (confirmed August 2026)
 | Machine | Filament | Pending |
 |---|---|---|
 | Bambu H2D/H2C | 3D Fuel PCTG 0.6mm | Temp tower rerun with chamber heat-soaked |
-| Prusa MK3.5 (Alexactly) | 3D Fuel PCTG | PA, retraction |
+| Prusa MK3.5 0.6mm CHT | 3D Fuel PCTG | PA, retraction |
 | Prusa XL | 3D Fuel PCTG | Retraction speed, fan settings, print speeds |
 | MK3.5 Makerspace | California Matte PETG | PA confirmation, retraction |
 | Elegoo Giga | Atomic PLA | Full recalibration 190–230°C |
@@ -412,4 +412,4 @@ These settings resolved overhang curl on curved geometry (confirmed August 2026)
 | July 28, 2026 | Dental adapters (SLA) | DrySHIELD Tough 1500 production settings |
 | July 29, 2026 | Farmloop/fswap | G-code post-processing automation |
 | July 30, 2026 | Elegoo Giga | Full calibration, profile architecture |
-| August 2, 2026 | Multi-machine PCTG/PETG | P1S PCTG, H2 PCTG, MK3.5 PCTG, overhang tuning |
+| August 2, 2026 | Multi-machine PCTG/PETG | P1S 0.6mm PCTG temp/MVS confirmed (265°C/12mm³/s); H2 temp tower run (265°C — retest needed with chamber active); MK3.5 0.6mm CHT PCTG temp (260–265°C) and MVS (24mm³/s) confirmed; repo structure created with README, AGENT.md, filament and machine docs; overhang settings finalized for X1C/P1S |
