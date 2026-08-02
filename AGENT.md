@@ -47,8 +47,50 @@ Every confirmed profile entry must include:
 - **Filament** (brand + product name — be specific)
 - **Slicer** used for calibration
 - **Date** calibrated (approximate is fine)
+- **Source** — see provenance rules below
 - **Status** — ✅ Confirmed / ⚠ Pending / ❌ Invalid
 - **Key values:** Temperature (first layer / other layers), Bed temp, MVS, Flow ratio, Retraction (distance + speed), Pressure Advance, Fan settings
+
+---
+
+## Data provenance — critical
+
+Every entry must carry a source tag. There are exactly two types:
+
+| Tag | Meaning |
+|---|---|
+| `Session YYYY-MM-DD` | Confirmed in a live calibration session. Physical tests were run (temp tower, MVS tower, PA test, retraction test) and results were observed directly. **Date is the actual chat conversation date — not the date the repo was updated.** |
+| `Imported YYYY-MM-DD` | Added from memory summaries, past session notes, or AI recall without verifying against the original live conversation. Values have NOT been confirmed against actual test results. Treat as working hypothesis only. **Date is when the import was written — not when the original calibration happened.** |
+
+**An `Imported` entry must never be treated as production-ready without reconciliation.**
+
+### CRITICAL: How to determine the correct Session date
+
+The date in `Session YYYY-MM-DD` is the date the calibration chat took place — **not today's date, not the date you are writing to the repo.**
+
+**Right:** Prusa XL PCTG was calibrated in a conversation on 2026-07-18 → `Session 2026-07-18`  
+**Wrong:** Writing to repo today on 2026-08-02 → `Session 2026-08-02` (this is lying about when the tests happened)
+
+**How to find the correct date:**
+1. Claude can search past conversations using `conversation_search` with keywords from the calibration (e.g. "Prusa XL MVS PCTG").
+2. The `updated_at` timestamp on the returned chat is the conversation date.
+3. Use that date in the source tag.
+4. If no past conversation is found, the entry cannot be tagged `Session` — tag it `Imported` with today's date instead.
+
+**Never assume all entries in a repo update share the same date.** Each entry carries the date of its own calibration conversation, which will differ across machines and filaments. A single repo commit may correctly contain `Session 2026-06-17`, `Session 2026-07-19`, and `Session 2026-08-02` in different rows — that is correct behavior, not an error.
+
+### Reconciliation process
+
+To promote an `Imported` entry to `Session`:
+1. Search past chat history for the original calibration conversation (Claude has timestamp access via `conversation_search`).
+2. Verify each value against the live test results described in that conversation — not the summary, the actual tower/test discussion.
+3. Correct any discrepancies (mark old value ❌, add corrected value with explanation).
+4. Update the source tag to `Session YYYY-MM-DD` using the actual conversation date from `updated_at`.
+5. If the original conversation cannot be found or verified, the entry stays `Imported` until physically recalibrated.
+
+### Why this matters
+
+Memory-imported data carries the same risk as mid-session summaries: values may have been recorded before a calibration step was finalized, or may reflect a starting guess rather than a confirmed result. The Prusa XL MVS error (stored as 9mm³/s, actual 10mm³/s) is a documented example of this failure mode. The provenance tag makes that risk visible rather than hidden. Dating entries to the repo-commit date instead of the calibration date defeats the entire purpose — it makes everything look equally fresh when it is not.
 
 ---
 
@@ -151,4 +193,6 @@ When migrating data from a past chat session, add an entry to the session log in
 | Date | Session title | Key outcomes |
 ```
 
-Include the approximate date, what machine/filament was calibrated, and any important corrections or decisions made.
+Use the actual conversation timestamp as the date — Claude can retrieve this from chat history. Do not use estimated or approximate dates when the real date is retrievable. Include what machine/filament was calibrated and any important corrections or decisions made.
+
+Entries imported from memory without live chat verification should be noted as `Imported` in the session log row, not as confirmed calibration sessions.

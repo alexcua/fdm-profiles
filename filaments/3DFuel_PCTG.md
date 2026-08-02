@@ -7,17 +7,17 @@
 
 ## Confirmed Profiles
 
-| Machine | Nozzle | Temp (1st/Other) | Bed | MVS | Flow | Retraction | PA | Status | Date |
+| Machine | Nozzle | Temp (1st/Other) | Bed | MVS | Flow | Retraction | PA | Status | Source |
 |---|---|---|---|---|---|---|---|---|---|
-| Bambu X1C | 0.6mm HS | 265°C / 265°C | 70°C | 12mm³/s | 0.98 | 1.4mm @ 45mm/s | Firmware | ✅ | Aug 2026 |
-| Bambu P1S | 0.6mm HS | 265°C / 265°C | 70°C | 12mm³/s | 0.98 | 1.4mm @ 45mm/s | Firmware | ✅ | Aug 2026 |
-| Bambu P1S | 0.4mm HS | 265°C / 265°C | 70°C | 8mm³/s | 0.98 | 0.6mm | Firmware | ✅ | Jun 2026 |
-| Bambu X2D | 0.4mm main | 265°C | 70°C | 12mm³/s | 0.98 | ⚠ TBD | 0.06 (OrcaSlicer) | ✅ | Jul 2026 |
-| Bambu H2D | 0.6mm HF | 265°C (⚠ retest w/ chamber) | 70°C | 12mm³/s | 0.98 | ⚠ TBD | Firmware | ⚠ | Aug 2026 |
-| Bambu H2C | 0.6mm HF (left) | 265°C (⚠ retest w/ chamber) | 70°C | 12mm³/s | 0.98 | ⚠ TBD | Firmware | ⚠ | Aug 2026 |
-| Prusa XL | 0.4mm OBX HF | 265°C / 270°C | 80°C | 10mm³/s | 0.98 | 1.0mm | 0.062 | ✅ | Jul 2026 |
-| Prusa MK3.5 | 0.6mm CHT | 260–265°C | 80°C | 24mm³/s | 0.98 | ⚠ TBD | ⚠ TBD | ⚠ | Aug 2026 |
-| Elegoo Giga | 0.8mm brass | 265°C | 75°C | 32mm³/s (Normal) | 1.0 | 0.55mm @ 45mm/s | 0.058 | ✅ | Jul 2026 |
+| Bambu X1C | 0.6mm HS | 265°C / 265°C | 70°C | 12mm³/s | 0.98 | 1.4mm @ 45mm/s | Firmware | ✅ | Session 2026-08-02 |
+| Bambu P1S | 0.6mm HS | 265°C / 265°C | 70°C | 12mm³/s | 0.98 | 1.4mm @ 45mm/s | Firmware | ✅ | Session 2026-08-02 |
+| Bambu P1S | 0.4mm HS | 265°C / 265°C | 70°C | 8mm³/s | 0.98 | 0.6mm | Firmware | ✅ | Session 2026-06-17 |
+| Bambu X2D | 0.4mm main | 265°C | 70°C | 12mm³/s | 0.98 | ⚠ TBD | 0.06 (OrcaSlicer) | ✅ | Session 2026-07-19 |
+| Bambu H2D | 0.6mm HF | 265°C (⚠ retest w/ chamber) | 70°C | 12mm³/s | 0.98 | ⚠ TBD | Firmware | ⚠ | Session 2026-08-02 |
+| Bambu H2C | 0.6mm HF (left) | 265°C (⚠ retest w/ chamber) | 70°C | 12mm³/s | 0.98 | ⚠ TBD | Firmware | ⚠ | Session 2026-08-02 |
+| Prusa XL | 0.4mm OBX HF | 265°C / 270°C | 80°C | 10mm³/s | 0.98 | 1.0mm | 0.062 | ✅ | Session 2026-07-18 |
+| Prusa MK3.5 | 0.6mm CHT | 260–265°C | 80°C | 24mm³/s | 0.98 | ⚠ TBD | ⚠ TBD | ⚠ | Session 2026-08-02 |
+| Elegoo Giga | 0.8mm brass | 265°C | 75°C | 32mm³/s (Normal) | 1.0 | 0.55mm @ 45mm/s | 0.058 | ✅ | Session 2026-07-30 |
 
 ---
 
@@ -48,8 +48,12 @@
 
 ### Bambu X2D — 0.4mm main nozzle
 - Higher MVS than P1S 0.4mm due to PMSM servo extruder.
+- MVS test (Aug 2026): 4–14mm³/s in 1mm³/s steps. Strength held full range — failed only in last ~2mm at 14mm³/s.
+- Single-tier MVS profile — no Quality/Normal/Draft split. Range too flat to justify multiple profiles.
+- Temp tower (Aug 2026): 255–275°C. Sweet spot 265°C confirmed. 270–275°C showed duller surface sheen.
 - PA = 0.06 confirmed via manual pattern test (range 0–0.08, step 0.005).
 - PA field not exposed in Bambu Studio — apply only in OrcaSlicer.
+- Real print validation confirmed Aug 2026.
 - Retraction pending real-world print test.
 
 ### Bambu H2D / H2C — 0.6mm HF (left extruder)
