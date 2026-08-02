@@ -10,15 +10,15 @@
 
 | Filament | Temp | Bed | MVS (Normal) | Flow | Retraction | PA | Status | Source |
 |---|---|---|---|---|---|---|---|---|
-| 3D Fuel PCTG | 265°C | 75°C | 32mm³/s | 1.0 | 0.55mm @ 45mm/s | 0.058 | ✅ | Session 2026-08-02 |
-| Polylite PETG | 245°C | 75°C | 20mm³/s | 1.0 | 0.55mm @ 45mm/s | 0.05 | ✅ Functional part validated | Session 2026-08-02 |
-| Atomic PLA | ❌ 265°C INVALID | 60°C | ⚠ TBD | ⚠ TBD | ⚠ TBD | ⚠ TBD | ❌ Needs redo | Session 2026-08-02 |
+| 3D Fuel PCTG | 265°C | 75°C | 32mm³/s | 1.0 | 0.55mm @ 45mm/s | 0.058 | ✅ | Session 2026-07-30 |
+| Polylite PETG | 245°C | 75°C | 20mm³/s | 1.0 | 0.55mm @ 45mm/s | 0.05 | ✅ Functional part validated | Session 2026-07-30 |
+| Atomic PLA | ❌ 265°C INVALID | 60°C | ⚠ TBD | ⚠ TBD | ⚠ TBD | ⚠ TBD | ❌ Needs redo | Session 2026-07-30 |
 
 ---
 
 ## MVS Tiers
 
-### 3D Fuel PCTG — Session 2026-08-02
+### 3D Fuel PCTG — Session 2026-07-30
 | Tier | Layer Height | MVS | Speed |
 |---|---|---|---|
 | Quality | 0.30mm | 28mm³/s | 117mm/s |
@@ -27,7 +27,7 @@
 | MVS cliff | — | ~36mm³/s | — |
 
 
-### Polylite PETG — Session 2026-08-02
+### Polylite PETG — Session 2026-07-30
 | Tier | Layer Height | MVS | Speed |
 |---|---|---|---|
 | Quality | 0.30mm | 18mm³/s | 75mm/s |
@@ -37,7 +37,7 @@
 
 ---
 
-## Profile Architecture — Session 2026-08-02
+## Profile Architecture — Session 2026-07-30
 
 - One filament profile per brand/type: stores temp, MVS at Normal tier value, PA, retraction, fan.
 - Two shared process profiles (Normal 0.40mm, Draft 0.50mm) with all speeds at 200mm/s so MVS always governs.
@@ -46,7 +46,7 @@
 
 ---
 
-## Fan Settings — Session 2026-08-02
+## Fan Settings — Session 2026-07-30
 
 | Filament | Fan thresholds | Notes |
 |---|---|---|
@@ -55,7 +55,7 @@
 
 ---
 
-## Seam Settings — Session 2026-08-02
+## Seam Settings — Session 2026-07-30
 
 | Setting | Value |
 |---|---|
