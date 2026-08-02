@@ -10,7 +10,7 @@
 
 | Filament | Temp | Chamber | Bed | MVS | Flow | Retraction | PA | Status | Date |
 |---|---|---|---|---|---|---|---|---|---|
-| 3D Fuel PCTG | 265°C | 40°C | 70°C | 12mm³/s | 0.98 | ⚠ TBD | 0.06 | ✅ | Jul 2026 |
+| 3D Fuel PCTG | 265°C | 40°C | 70°C | 12mm³/s | 0.98 | ⚠ TBD | 0.06 | ✅ | Aug 2026 |
 | ASA | ⚠ TBD | ⚠ TBD | ⚠ TBD | ⚠ TBD | ⚠ TBD | ⚠ TBD | ⚠ TBD | ⚠ Deferred | — |
 
 ---
@@ -20,7 +20,10 @@
 - PA = 0.06 confirmed via manual pattern test, range 0–0.08 in 0.005 steps.
 - PA field not in Bambu Studio UI — apply when setting up OrcaSlicer profile only.
 - Higher MVS than P1S 0.4mm (12 vs 8mm³/s) attributed to PMSM servo extruder.
-- Retraction pending real-world print test.
+- MVS test (Aug 2026): range 4–14mm³/s in 1mm³/s steps. Structural strength held across full range — only failed in last ~2mm at 14mm³/s. Exceptional result vs P1S 0.4mm ceiling of 8mm³/s.
+- Single-tier MVS profile (no Quality/Normal/Draft split). Differences across range too small to justify profile sprawl. 12mm³/s used as single production value.
+- Real print validation confirmed Aug 2026 — profile quality described as "really good."
+- Retraction pending real-world print test (deferred after initial validation print).
 - ASA calibration deferred — needs full sequence (temp tower → MVS → PA → retraction) when needed.
 - PCTG and ASA can share machine with separate profiles (different chamber/bed temps).
 - AI defect detection may trigger false-positive stops during calibration — continue print.
