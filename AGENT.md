@@ -47,8 +47,35 @@ Every confirmed profile entry must include:
 - **Filament** (brand + product name — be specific)
 - **Slicer** used for calibration
 - **Date** calibrated (approximate is fine)
+- **Source** — see provenance rules below
 - **Status** — ✅ Confirmed / ⚠ Pending / ❌ Invalid
 - **Key values:** Temperature (first layer / other layers), Bed temp, MVS, Flow ratio, Retraction (distance + speed), Pressure Advance, Fan settings
+
+---
+
+## Data provenance — critical
+
+Every entry must carry a source tag. There are exactly two types:
+
+| Tag | Meaning |
+|---|---|
+| `Session YYYY-MM-DD` | Confirmed in a live calibration session. Physical tests were run (temp tower, MVS tower, PA test, retraction test) and results were observed directly. Date is the actual conversation date, retrievable from chat timestamps. |
+| `Imported YYYY-MM-DD` | Added from memory summaries, past session notes, or AI recall. Values have NOT been verified against live test results in the original conversation. Treat as working hypothesis only. |
+
+**An `Imported` entry must never be treated as production-ready without reconciliation.**
+
+### Reconciliation process
+
+To promote an `Imported` entry to `Session`:
+1. Search past chat history for the original calibration conversation (Claude has timestamp access).
+2. Verify each value in the entry against the live test results described in that conversation — not the summary notes, the actual tower/test discussion.
+3. Correct any discrepancies (mark old value ❌, add corrected value with explanation).
+4. Update the source tag to `Session YYYY-MM-DD` using the actual conversation date.
+5. If the original conversation cannot be found or verified, the entry stays `Imported` until physically recalibrated.
+
+### Why this matters
+
+Memory-imported data carries the same risk as mid-session summaries: values may have been recorded before a calibration step was finalized, or may reflect a starting guess rather than a confirmed result. The Prusa XL MVS error (stored as 9mm³/s, actual 10mm³/s) is a documented example of this failure mode. The provenance tag makes that risk visible rather than hidden.
 
 ---
 
@@ -134,4 +161,6 @@ When migrating data from a past chat session, add an entry to the session log in
 | Date | Session title | Key outcomes |
 ```
 
-Include the approximate date, what machine/filament was calibrated, and any important corrections or decisions made.
+Use the actual conversation timestamp as the date — Claude can retrieve this from chat history. Do not use estimated or approximate dates when the real date is retrievable. Include what machine/filament was calibrated and any important corrections or decisions made.
+
+Entries imported from memory without live chat verification should be noted as `Imported` in the session log row, not as confirmed calibration sessions.
