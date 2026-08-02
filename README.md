@@ -72,23 +72,12 @@ The sequence is the same regardless of slicer:
 
 ## AI Session Startup Prompt
 
-Use this prompt at the start of a new Claude session to load context before calibrating or updating profiles:
+Use this at the start of any new Claude session:
 
 ---
 
-> I'm working on 3D printer calibration for my two operations: **Alexactly** (production) and **Cherokee Makerspace**. My calibration reference lives at https://github.com/alexcua/fdm-profiles — please read AGENT.md, README.md, and any relevant machine or filament docs before we start.
->
-> Key rules:
-> - **Polymaker PETG** = HF formula (X1C, P1S). **Polylite PETG** = standard non-HF (A1, Makerspace MK3.5s). Never conflate these.
-> - Bambu machines use firmware PA — never set a numeric PA value for them in OrcaSlicer.
-> - Calibration sequence: Temperature → MVS → PA → Retraction, in that order.
-> - OrcaSlicer is used for all calibration including Prusa machines. PrusaSlicer has no built-in calibration tools.
-> - Production MVS = 80% of tested ceiling unless otherwise noted.
-> - When I confirm a calibration result, update the relevant filament doc, machine doc, and session log in CALIBRATION_MASTER.md.
-> - Flag anything pending with ⚠ — never leave a field blank or assume a value transfers from another machine without testing.
->
-> Today I'm working on: [describe machine, filament, and what you're calibrating or troubleshooting]
+> Please read https://github.com/alexcua/fdm-profiles — start with AGENT.md and README.md, then any relevant machine or filament docs. Today I'm working on: [machine, filament, task]
 
 ---
 
-Paste this at the start of any new session. Update the last line with what you're actually doing that day.
+All rules and context are in the repo. Just update the last line with what you're doing.
