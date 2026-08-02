@@ -11,7 +11,7 @@
 |---|---|---|---|---|---|---|---|---|---|
 | Bambu A1 | 0.6mm | 255°C / 255°C | 70°C | 8mm³/s (Normal) / 6mm³/s (Quality) | 0.95 | 1.5mm @ 45mm/s | Firmware | ✅ | 2026-06-29 |
 | Prusa MK3.5 CHT | 0.6mm CHT | 255°C | 80°C | 15/17/19 mm³/s (Q/N/D) | ⚠ TBD | ⚠ TBD | 0.044–0.05 | ✅ | 2026-07-12 |
-| Elegoo Giga | 0.8mm brass | 245°C | 75°C | 18/20/22 mm³/s (Q/N/D) | 1.0 | 0.55mm @ 45mm/s | 0.05 | ✅ Functional part validated | 2026-07-30 |
+| Elegoo Giga | 0.8mm brass | 245°C | 75°C | 18/20/22 mm³/s (Q/N/D) | 1.0 | 0.55mm @ 45mm/s | 0.05 | ✅ Functional part validated | 2026-08-02 |
 
 ---
 
