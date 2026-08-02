@@ -170,7 +170,7 @@ Profiles are organized by **machine model + nozzle**, not by physical location. 
 
 ## Timestamp rules
 
-Every confirmed profile entry must have a date. Format: `MMM YYYY` (e.g. `Aug 2026`).
+Every confirmed profile entry must have a date. Format: `YYYY-MM-DD` (e.g. `2026-08-02`). Use the actual chat session date, not today's date. If only month/year is known, use the first of the month as a placeholder and note it as approximate (e.g. `2026-08-01 (approx)`).
 
 ### When migrating from a past chat session
 - Use the chat session date as the calibration date, not today's date.

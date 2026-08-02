@@ -10,8 +10,8 @@
 
 | Filament | Temp (1st/Other) | Bed | MVS | Flow | Retraction | PA | Status | Date |
 |---|---|---|---|---|---|---|---|---|---|
-| Polymaker PETG HF | 250°C / 250°C | 70°C | 20mm³/s | 0.952 | 1.0mm | Firmware | ✅ | Jun 2026 |
-| 3D Fuel PCTG | 265°C / 265°C | 70°C | 12mm³/s | 0.98 | 1.4mm @ 45mm/s | Firmware | ✅ | Aug 2026 |
+| Polymaker PETG HF | 250°C / 250°C | 70°C | 20mm³/s | 0.952 | 1.0mm | Firmware | ✅ | 2026-06-10 |
+| 3D Fuel PCTG | 265°C / 265°C | 70°C | 12mm³/s | 0.98 | 1.4mm @ 45mm/s | Firmware | ✅ | 2026-08-02 |
 
 ---
 

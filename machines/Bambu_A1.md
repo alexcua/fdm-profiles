@@ -10,7 +10,7 @@
 
 | Filament | Temp (1st/Other) | Bed | MVS | Flow | Retraction | PA | Status | Date |
 |---|---|---|---|---|---|---|---|---|---|
-| Polylite PETG | 255°C / 255°C | 70°C | 8mm³/s (Normal) / 6mm³/s (Quality) | 0.95 | 1.5mm @ 45mm/s | Firmware | ✅ | Jun 2026 |
+| Polylite PETG | 255°C / 255°C | 70°C | 8mm³/s (Normal) / 6mm³/s (Quality) | 0.95 | 1.5mm @ 45mm/s | Firmware | ✅ | 2026-06-10 |
 
 ---
 

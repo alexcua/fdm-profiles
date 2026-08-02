@@ -9,7 +9,7 @@
 
 | Machine | Nozzle | Temp | Bed | MVS | Flow | Retraction | PA | Status | Date |
 |---|---|---|---|---|---|---|---|---|---|
-| Prusa MK3.5 CHT | 0.6mm CHT | 220°C | 80°C | 10–12mm³/s | ⚠ TBD | ⚠ TBD | ⚠ TBD | ⚠ Partial | Jul 2026 |
+| Prusa MK3.5 CHT | 0.6mm CHT | 220°C | 80°C | 10–12mm³/s | ⚠ TBD | ⚠ TBD | ⚠ TBD | ⚠ Partial | 2026-07-12 |
 
 ---
 
