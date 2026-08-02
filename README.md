@@ -81,3 +81,32 @@ Use this at the start of any new Claude session:
 ---
 
 All rules and context are in the repo. Just update the last line with what you're doing.
+
+## Updating this Repo with Desktop Commander
+
+Claude can write directly to this repo using Desktop Commander (no local clone needed). At the end of a calibration session, ask Claude to push updates.
+
+**How it works:**
+1. Claude clones the repo to `/tmp/fdm-profiles` using `git clone`
+2. Reads existing files to understand current state
+3. Updates relevant machine and filament docs
+4. Commits and pushes back to GitHub
+
+**What Claude needs to push:**
+- Your GitHub personal access token must be stored in your Mac keychain, OR
+- Run this once in Terminal to cache credentials:
+  ```
+  git config --global credential.helper osxkeychain
+  cd /tmp && git clone https://github.com/alexcua/fdm-profiles.git
+  ```
+  Enter your GitHub username and a Personal Access Token (PAT) when prompted. macOS will cache it going forward.
+
+**To generate a PAT:**
+1. GitHub → Settings → Developer Settings → Personal Access Tokens → Tokens (classic)
+2. Create token with `repo` scope
+3. Use as your password when git prompts
+
+**Session end prompt:**
+> Please update the fdm-profiles repo with everything we calibrated today. Push to GitHub.
+
+Claude will update machine docs, filament docs, CALIBRATION_MASTER session log, and pending items automatically.

@@ -413,3 +413,4 @@ These settings resolved overhang curl on curved geometry (confirmed August 2026)
 | July 29, 2026 | Farmloop/fswap | G-code post-processing automation |
 | July 30, 2026 | Elegoo Giga | Full calibration, profile architecture |
 | August 2, 2026 | Multi-machine PCTG/PETG | P1S PCTG, H2 PCTG, MK3.5 PCTG, overhang tuning |
+| August 2, 2026 | Elegoo Giga — Polylite PETG + profile architecture | Full Polylite PETG calibration (245°C/20mm³/s/PA0.05/ret0.55mm). Fan correction: 100% max caused stringing, corrected to 60% max. Seam blobbing resolved: scarf contour+hole, staggered inner seams, gap 5%. Functional part validated (400×300mm frame). Profile architecture finalized: 1 filament profile per material, 2 shared process profiles (Normal 0.40mm + Draft 0.50mm), 200mm/s speeds, MVS governs. Atomic PLA temp tower flagged as invalid (265°C suspect) — full recal needed at 190–230°C. |

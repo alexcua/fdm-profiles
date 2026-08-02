@@ -43,4 +43,6 @@
 - MVS cliff ~23mm³/s.
 - Tiers: Quality 0.30mm/18mm³/s/75mm/s | Normal 0.40mm/20mm³/s/63mm/s | Draft 0.50mm/22mm³/s/55mm/s.
 - Uses same process profiles as PCTG — filament profile differs only.
-- Functional part validation pending.
+- Fan: 40% @ 30s / 60% @ 12s max. 100% max caused stringing — confirmed during retraction calibration.
+- Functional part validation complete (400×300mm frame, Aug 2026).
+- Seam: scarf contour+hole, staggered inner seams, seam gap 5%, position back — resolves corner blobbing.
