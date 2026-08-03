@@ -19,7 +19,7 @@
 
 | Filament | Temp (1st/Other) | Bed | MVS | Flow | Retraction | PA | Status | Date |
 |---|---|---|---|---|---|---|---|---|---|
-| 3D Fuel PCTG | 265°C / 265°C | 70°C | 8mm³/s | 0.98 | 0.6mm | Firmware | ✅ | 2026-06-10 |
+| 3D Fuel PCTG | 265°C / 265°C | 80°C | 8mm³/s | 0.98 | 0.6mm @ 45mm/s | Firmware | ✅ | Session 2026-08-02 |
 
 ---
 
@@ -34,6 +34,20 @@
 | Fan prestart | 3s |
 | Close fan first layers | 2 |
 | Exhaust fan | 70% during + after print |
+
+---
+
+## Cooling Settings — 3D Fuel PCTG (0.4mm)
+
+| Setting | Value |
+|---|---|
+| Fan min | 10% @ 30s |
+| Fan max | 40% @ 12s |
+| Overhang fan | 90% |
+| Overhang threshold | 10% |
+| Force cooling overhangs | on |
+
+> Conservative fan settings are correct for PCTG on enclosed machines — do not apply PETG fan settings to PCTG.
 
 ---
 

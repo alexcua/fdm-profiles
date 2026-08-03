@@ -32,7 +32,9 @@
 - Production MVS 20mm³/s is conservative — actual ceiling likely higher.
 - PA firmware-handled. OrcaSlicer PA checkbox must remain unchecked.
 - Fan min 30% @ 20s, max 100% @ 5s, overhang 100% @ 10% threshold, prestart 3s.
-- MVS tiers for demanding curved geometry: Quality 10 / Normal 15 / Draft 20 mm³/s.
+- MVS tiers for demanding curved geometry: Quality 10 / Normal 15 (untested) / Draft 20 mm³/s. Quality 10 confirmed on reducing elbow. MVS 12 showed artifacts. Normal 15 pending test on simple geometry.
+- Production MVS 20mm³/s (Draft tier) confirmed causing artifacts on demanding geometry — use Quality 10 for curved/organic production parts.
+- Overhang speeds (corrected from Bambu Studio reference profile): 10% → 0mm/s, 25% → 50mm/s, 50% → 15mm/s, 75% → 10mm/s. Previous Orca defaults (60/40/12/9) were too fast at 25–50% range.
 - G-code sliced on P1S profile can run on X1C with flow cal disabled and purge line removed.
 
 ### Prusa XL — 0.4mm Obxidian HF

@@ -11,7 +11,7 @@
 |---|---|---|---|---|---|---|---|---|---|
 | Bambu X1C | 0.6mm HS | 265°C / 265°C | 70°C | 12mm³/s | 0.98 | 1.4mm @ 45mm/s | Firmware | ✅ | 2026-08-02 |
 | Bambu P1S | 0.6mm HS | 265°C / 265°C | 70°C | 12mm³/s | 0.98 | 1.4mm @ 45mm/s | Firmware | ✅ | 2026-08-02 |
-| Bambu P1S | 0.4mm HS | 265°C / 265°C | 70°C | 8mm³/s | 0.98 | 0.6mm | Firmware | ✅ | 2026-06-17 |
+| Bambu P1S | 0.4mm HS | 265°C / 265°C | 80°C | 8mm³/s | 0.98 | 0.6mm @ 45mm/s | Firmware | ✅ | Session 2026-08-02 |
 | Bambu X2D | 0.4mm main | 265°C | 70°C | 12mm³/s | 0.98 | ⚠ TBD | 0.06 (OrcaSlicer) | ✅ | 2026-07-19 |
 | Bambu H2D | 0.6mm HF | 265°C (⚠ retest w/ chamber) | 70°C | 12mm³/s | 0.98 | ⚠ TBD | Firmware | ⚠ | 2026-08-02 |
 | Bambu H2C | 0.6mm HF (left) | 265°C (⚠ retest w/ chamber) | 70°C | 12mm³/s | 0.98 | ⚠ TBD | Firmware | ⚠ | 2026-08-02 |

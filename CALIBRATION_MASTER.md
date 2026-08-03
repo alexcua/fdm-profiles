@@ -54,7 +54,10 @@
 - P1S: same hotend/extruder as X1C, settings transfer directly.
 - Black Polylite (not this filament) strings worse than white — increase retraction to 1.8–2.0mm for black.
 - G-code sliced on P1S profile can run on X1C with flow cal disabled and purge line removed.
-- MVS tiers for demanding curved geometry (e.g. reducing elbow): Quality 10mm³/s / Normal 15mm³/s / Draft 20mm³/s.
+- MVS tiers for demanding curved geometry (e.g. reducing elbow): Quality 10mm³/s / Normal 15mm³/s (untested) / Draft 20mm³/s.
+- Quality 10 confirmed on reducing elbow — MVS 12 showed artifacts, cliff is sharp between 10 and 12.
+- Production MVS of 20mm³/s (from stock profile) confirmed causing artifacts on organic curved geometry — use Quality 10 for such parts.
+- Overhang speeds corrected: 10%→0, 25%→50, 50%→15, 75%→10 mm/s (matched from Bambu Studio working profile — Orca defaults 60/40/12/9 were too fast at 25–50% range).
 
 
 ---
@@ -88,20 +91,32 @@
 
 ## 3D Fuel PCTG — Bambu P1S (0.4mm hardened steel)
 
-**Calibrated:** June 2026 | **Slicer:** OrcaSlicer
+**Calibrated:** August 2026 | **Slicer:** Bambu Studio
 
 ### Filament Profile
 | Setting | Value |
 |---|---|
 | Temperature | 265°C / 265°C |
+| Bed temperature | 80°C |
 | MVS | 8mm³/s |
 | Flow ratio | 0.98 |
 | Retraction distance | 0.6mm |
+| Retraction speed | 45mm/s |
+| Fan min | 10% @ 30s |
+| Fan max | 40% @ 12s |
+| Overhang fan | 90% |
+| Overhang threshold | 10% |
+| Force cooling overhangs | on |
 | Pressure advance | Firmware |
 
 ### Notes
-- Lower MVS ceiling than 0.6mm nozzle — 0.4mm bore is the limiting factor, not the hotend.
-- Retraction increased from stock 0.4mm to 0.6mm to address nozzle booger issue.
+- Temp tower range 240–280°C. 265°C and 270°C both clean — 265°C chosen as lower of the two clean temps.
+- MVS skinny line test: sheen dropped at 5mm height (start 4mm³/s, 1mm³/s increments) = ~9mm³/s ceiling. Production 8mm³/s. Stock profile value 12mm³/s — not adopted, actual calibrated ceiling lower.
+- Flow calibration: coarse patches -20 to +20. 0 patch (0.98) cleanest edge to center. Matches X1C flow ratio.
+- Retraction tower 0–2mm in 0.1mm increments. Blob at 0.4mm (stock value). Clean from 0.5mm up. Production 0.6mm. Booger fix validation pending on full production plate of siding clips.
+- Lower MVS ceiling than 0.6mm nozzle — 0.4mm bore + stainless/hardened steel nozzle is the limiting factor.
+- PA firmware-handled. Confirmed via P1S firmware behavior.
+- Conservative fan settings (40% max) are correct for PCTG on enclosed machine — do not apply PETG fan settings.
 
 
 ---
@@ -415,4 +430,6 @@ These settings resolved overhang curl on curved geometry (confirmed August 2026)
 | August 2, 2026 | Elegoo Giga — Full calibration PCTG + Polylite PETG + profile architecture | 3D Fuel PCTG full sequence: 265°C/MVS 36mm³/s cliff/PA 0.058/ret 0.55mm. Polylite PETG full sequence: 245°C/MVS 23mm³/s cliff/PA 0.05/ret 0.55mm. Fan correction: 100% max caused stringing, corrected to 60% max. Seam blobbing resolved: scarf contour+hole, staggered inner seams, gap 5%. Functional part validated (400×300mm frame). Profile architecture finalized: 1 filament profile per material, 2 shared process profiles (Normal 0.40mm + Draft 0.50mm), 200mm/s speeds, MVS governs. Atomic PLA temp tower flagged as invalid (265°C suspect) — full recal needed at 190–230°C. |
 | August 2, 2026 | Bambu X2D — 3D Fuel PCTG full calibration confirmed | Temp tower 255–275°C → 265°C (270–275°C showed duller surface sheen). MVS 4–14mm³/s in 1mm³/s steps → 12mm³/s; exceptional result — strength held nearly full range, only failed in last ~2mm at 14mm³/s. Single-tier MVS (no Quality/Normal/Draft — range too flat). PA pattern test 0–0.08/0.005 → 0.06. PA field confirmed not exposed in Bambu Studio UI (firmware handles via Flow Dynamics Cal). Real print validation confirmed. Retraction deferred pending further observation. X2D confirmed for PCTG production (siding clips) with occasional ASA deferred. Discussed AMS support material workflow on auxiliary nozzle. |
 | August 2, 2026 | P1S 0.4mm PCTG — nozzle carbonization troubleshooting | Inter-print nozzle buildup diagnosed as external carbonization from missing/degraded silicone sock (not mid-print ooze). Root cause: PCTG contacts bare heater block, bakes on, sheds onto next print. Primary fix: inspect/replace sock. Secondary: re-seat nozzle at temp. Tertiary escalation: drop temp to 260°C → retraction to 0.8mm → MVS to 7mm³/s. Notes added to machines/Bambu_P1S.md and filaments/3DFuel_PCTG.md. |
+| August 2, 2026 | P1S 0.4mm PCTG — full calibration sequence | Temp tower 240–280°C → 265°C confirmed. Retraction tower 0–2mm → blob at 0.4mm (stock), clean from 0.5mm, production 0.6mm @ 45mm/s. Flow coarse calibration → 0.98 confirmed (matches X1C). MVS skinny line 4–16mm³/s → sheen drops at ~9mm³/s, production 8mm³/s (stock 12 not adopted). PA firmware. Fan: 10%/40% conservative correct for PCTG on enclosed machine. Bed 80°C on textured PEI. Booger fix pending validation on siding clip production plate. |
+| August 2, 2026 | Polymaker PETG HF MVS tier correction | MVS 12 tested on P1S — artifacts confirmed. MVS 10 clean. Quality tier = 10mm³/s confirmed. Normal 15 untested. Draft 20 = artifacts on demanding geometry. Overhang speeds corrected from Orca defaults (60/40/12/9) to Bambu-matched values (0/50/15/10). |
 | August 2, 2026 | MK3.5 CHT — California Matte + Polylite PETG (parallel dual-machine) | Two MK3.5 0.6 CHT machines run in parallel, one filament each, shared process profiles. **Polylite PETG:** temp tower 240–260°C → 255°C (clean all-sides; 245 stringy — stringing deferred to retraction, not solved by dropping temp). MVS cliff ~20mm³/s, tiers 15/17/19 Q/N/D. PA pattern clean → 0.044 (cross-validated vs Giga 0.05). Retraction still pending. **California Matte PETG:** temp tower 215–230°C → 220°C. MVS cooling-limited (not flow-limited) → conservative 10–12mm³/s; quality good to ~20mm, matte sheen holds to ~10mm before gloss transition from heat soak. PA UNCONFIRMED — pattern failed repeatedly on first-layer adhesion, Z-offset drop did NOT resolve, reprints lifted off bed and never completed. Retraction + finish tuning (fan/min-layer-time) pending. Corrected phantom July 12 entry (no matching conversation in history). Both spools dried + desiccant-stored. |
