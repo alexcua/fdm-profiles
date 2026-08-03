@@ -11,8 +11,8 @@
 | Filament | Temp | Bed | MVS | Flow | Retraction | PA | Status | Date |
 |---|---|---|---|---|---|---|---|---|---|
 | 3D Fuel PCTG | 260–265°C | 80°C | 24mm³/s | 0.98 | ⚠ TBD | ⚠ TBD | ⚠ Partial | 2026-08-02 |
-| Polylite PETG | 255°C | 80°C | 15/17/19 mm³/s (Q/N/D) | ⚠ TBD | ⚠ TBD | 0.044–0.05 | ⚠ Partial | 2026-07-12 |
-| California Matte PETG | 220°C | 80°C | 10–12mm³/s | ⚠ TBD | ⚠ TBD | ⚠ TBD | ⚠ Partial | 2026-07-12 |
+| Polylite PETG | 255°C | 80°C | 15/17/19 mm³/s (Q/N/D) | ⚠ TBD | ⚠ TBD | 0.044 | ⚠ Partial | 2026-08-02 |
+| California Matte PETG | 220°C | 80°C | 10–12mm³/s | ⚠ TBD | ⚠ TBD | ⚠ TBD | ⚠ Partial | 2026-08-02 |
 
 ---
 
@@ -27,15 +27,15 @@
 
 ### Polylite PETG
 - MVS cliff ~20mm³/s. Tiers 15/17/19 mm³/s Quality/Normal/Draft.
-- PA ~0.044–0.05, cross-validated against Giga result of 0.05.
-- Retraction pending.
+- PA 0.044, confirmed from clean PA pattern. Cross-validated against Giga result of 0.05.
+- Retraction pending. Temp-tower stringing to be resolved at retraction stage, not by dropping temp.
 - Sponsor showcase material at Cherokee Makerspace.
 
 ### California Matte PETG
-- MVS cooling-limited, not flow-limited. Conservative 10–12mm³/s.
-- PA test required Z offset drop to get first-layer adhesion. Final PA value not confirmed.
-- Retraction pending.
-- Sponsor showcase material at Cherokee Makerspace.
+- MVS cooling-limited, not flow-limited. Conservative 10–12mm³/s. Quality good to ~20mm height; matte sheen holds to ~10mm before gloss transition from heat soak.
+- PA UNCONFIRMED. PA pattern failed repeatedly on first-layer adhesion. Z-offset drop did NOT resolve — subsequent reprints lifted off bed and never completed. Bed adhesion on the single-layer pattern is the open blocker.
+- Retraction pending. Finish tuning (fan + min layer time) to push gloss transition above 10mm still to do.
+- Sponsor showcase material at Cherokee Makerspace — non-critical, PA precision low priority (PETG direct-drive lands ~0.04 if a placeholder is needed).
 
 ## ⚠ Pending
 
