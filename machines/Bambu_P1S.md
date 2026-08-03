@@ -41,7 +41,9 @@
 
 - 0.4mm PCTG: lower MVS ceiling than 0.6mm — bore size is the limiting factor.
 - 0.4mm PCTG: retraction increased from stock 0.4mm to 0.6mm to address nozzle booger.
-- Silicone sock must be intact — missing sock causes external nozzle carbonization buildup.
+- Silicone sock must be intact — missing or degraded sock causes progressive external nozzle carbonization that accumulates between prints. PCTG contacts bare aluminum heater block, bakes on, and sheds onto next print. PCTG more aggressive than PETG at 265°C. Replace sock if any hardened material is embedded in its surface. ✅ Session 2026-08-02
+- If external buildup persists with sock intact: re-seat nozzle at temp to eliminate heat-break gap as secondary accumulation point. ⚠ Session 2026-08-02
+- If buildup still persists: try (in order) drop temp to 260°C → retraction to 0.8mm → MVS to 7mm³/s. ⚠ Session 2026-08-02
 - PCTG nozzle drool: enable "Wipe before outside wall" and "Avoid crossing perimeters".
 - Temp tower for P1S 0.4mm PCTG confirmed 265°C, range tested 240–280°C.
 - See Bambu_X1C.md for shared overhang print profile settings.

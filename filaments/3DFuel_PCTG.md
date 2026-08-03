@@ -45,6 +45,7 @@
 ### Bambu P1S — 0.4mm hardened steel
 - Same hotend as 0.6mm but lower MVS ceiling due to bore size.
 - Retraction increased from stock 0.4mm to 0.6mm to address nozzle booger.
+- External nozzle carbonization (inter-print buildup): root cause is missing or degraded silicone sock. PCTG contacts bare heater block, bakes on, accumulates between prints, sheds onto next print. Inspect and replace sock first. If buildup persists with sock intact: re-seat nozzle at temp, then try temp 260°C → retraction 0.8mm → MVS 7mm³/s in that order. Session 2026-08-02
 
 ### Bambu X2D — 0.4mm main nozzle
 - Higher MVS than P1S 0.4mm due to PMSM servo extruder.
