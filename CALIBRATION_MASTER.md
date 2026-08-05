@@ -404,6 +404,7 @@ These settings resolved overhang curl on curved geometry (confirmed August 2026)
 
 | Machine | Filament | Pending |
 |---|---|---|
+| Bambu A1 | 3D Fuel PCTG 0.6mm | Flow ratio, fan settings |
 | Bambu H2D/H2C | 3D Fuel PCTG 0.6mm | Temp tower rerun with chamber heat-soaked |
 | Prusa MK3.5 (Alexactly) | 3D Fuel PCTG | PA, retraction |
 | Prusa XL | 3D Fuel PCTG | Retraction speed, fan settings, print speeds |
@@ -426,6 +427,7 @@ These settings resolved overhang curl on curved geometry (confirmed August 2026)
 | July 19, 2026 | Bambu X2D | 3D Fuel PCTG full calibration |
 | July 28, 2026 | Dental adapters (SLA) | DrySHIELD Tough 1500 production settings |
 | July 29, 2026 | Farmloop/fswap | G-code post-processing automation |
+| August 5, 2026 | Bambu A1 0.6mm — 3D Fuel PCTG full calibration | Temp tower 245–275°C → 265°C (consistent with all other PCTG machines). MVS tested in three passes (5–25, 25–40, 40–55 mm³/s) — clean through 40, hard cliff 40–55. Cliff ~40mm³/s. Tiers: Q 28 / N 32 / D 36 mm³/s. Retraction required four test passes — clean zone confirmed at 3.5–4.0mm, over-retraction above 4.0mm. Confirmed 4.0mm @ 45mm/s. Significantly higher than Polylite PETG on same machine (1.5mm). Flow ratio and fan settings pending. PA firmware. |
 | August 2, 2026 | Multi-machine PCTG/PETG | P1S PCTG, H2 PCTG, MK3.5 PCTG, overhang tuning |
 | August 2, 2026 | Elegoo Giga — Full calibration PCTG + Polylite PETG + profile architecture | 3D Fuel PCTG full sequence: 265°C/MVS 36mm³/s cliff/PA 0.058/ret 0.55mm. Polylite PETG full sequence: 245°C/MVS 23mm³/s cliff/PA 0.05/ret 0.55mm. Fan correction: 100% max caused stringing, corrected to 60% max. Seam blobbing resolved: scarf contour+hole, staggered inner seams, gap 5%. Functional part validated (400×300mm frame). Profile architecture finalized: 1 filament profile per material, 2 shared process profiles (Normal 0.40mm + Draft 0.50mm), 200mm/s speeds, MVS governs. Atomic PLA temp tower flagged as invalid (265°C suspect) — full recal needed at 190–230°C. |
 | August 2, 2026 | Bambu X2D — 3D Fuel PCTG full calibration confirmed | Temp tower 255–275°C → 265°C (270–275°C showed duller surface sheen). MVS 4–14mm³/s in 1mm³/s steps → 12mm³/s; exceptional result — strength held nearly full range, only failed in last ~2mm at 14mm³/s. Single-tier MVS (no Quality/Normal/Draft — range too flat). PA pattern test 0–0.08/0.005 → 0.06. PA field confirmed not exposed in Bambu Studio UI (firmware handles via Flow Dynamics Cal). Real print validation confirmed. Retraction deferred pending further observation. X2D confirmed for PCTG production (siding clips) with occasional ASA deferred. Discussed AMS support material workflow on auxiliary nozzle. |

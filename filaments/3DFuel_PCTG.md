@@ -17,6 +17,7 @@
 | Bambu H2C | 0.6mm HF (left) | 265°C (⚠ retest w/ chamber) | 70°C | 12mm³/s | 0.98 | ⚠ TBD | Firmware | ⚠ | 2026-08-02 |
 | Prusa XL | 0.4mm OBX HF | 265°C / 270°C | 80°C | 10mm³/s | 0.98 | 1.0mm | 0.062 | ✅ | 2026-07-18 |
 | Prusa MK3.5 | 0.6mm CHT | 260–265°C | 80°C | 24mm³/s | 0.98 | ⚠ TBD | ⚠ TBD | ⚠ | 2026-08-02 |
+| Bambu A1 | 0.6mm | 265°C / 265°C | 70°C | 28/32/36 mm³/s (Q/N/D) | ⚠ TBD | 4.0mm @ 45mm/s | Firmware | ✅ | Session 2026-08-05 |
 | Elegoo Giga | 0.8mm brass | 265°C | 75°C | 32mm³/s (Normal) | 1.0 | 0.55mm @ 45mm/s | 0.058 | ✅ | 2026-08-02 |
 
 ---
@@ -77,3 +78,12 @@
 - Tiers: Quality 0.30mm/28mm³/s | Normal 0.40mm/32mm³/s | Draft 0.50mm/35mm³/s.
 - Nano Polymer adhesive required for large parts. 75°C bed maintained throughout.
 - Functional part validation pending.
+
+### Bambu A1 — 0.6mm (Alexactly)
+- Temp tower 245–275°C confirmed 265°C — consistent with all other machines running 3D Fuel PCTG.
+- MVS tested in three passes (5–25, 25–40, 40–55 mm³/s). Clean through 40mm³/s, hard cliff 40–55. Cliff ~40mm³/s.
+- Production MVS tiers: Quality 28 mm³/s / Normal 32 mm³/s / Draft 36 mm³/s.
+- Retraction required four test passes (0.5–2.0, 1.5–3.0, 2.5–4.0, 3.5–5.0mm). Clean zone at 3.5–4.0mm; over-retraction artifacts above 4.0mm. Confirmed 4.0mm @ 45mm/s.
+- Retraction is dramatically higher than Polylite PETG on same machine (1.5mm) — PCTG ooze characteristics are substantially different on open-frame machine.
+- Z-hop 0.4mm. PA firmware-handled. Flow ratio and fan settings pending.
+- Session 2026-08-05
