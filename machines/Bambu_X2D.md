@@ -1,8 +1,7 @@
 # Bambu X2D
 
-**Nozzle:** 0.4mm main nozzle (auxiliary Bowden-fed nozzle available)  
-**Slicer:** OrcaSlicer  
-**Notes:** PMSM servo extruder — higher MVS than expected for 0.4mm bore. PA field not exposed in Bambu Studio; apply only in OrcaSlicer. Originally intended for ASA — currently running PCTG.
+**Slicer:** OrcaSlicer / Bambu Studio  
+**Notes:** PMSM servo extruder — higher MVS than expected vs prior-gen toolheads. PA field not exposed in Bambu Studio; apply only in OrcaSlicer. Originally intended for ASA — currently running PCTG on 0.4mm and Polymaker PETG HF on 0.6mm.
 
 ---
 
@@ -10,8 +9,16 @@
 
 | Filament | Temp | Chamber | Bed | MVS | Flow | Retraction | PA | Status | Date |
 |---|---|---|---|---|---|---|---|---|---|
-| 3D Fuel PCTG | 265°C | 40°C | 70°C | 12mm³/s | 0.98 | ⚠ TBD | 0.06 | ✅ | 2026-08-02 |
+| 3D Fuel PCTG | 265°C | 40°C | 70°C | 12mm³/s | 0.98 | ⚠ TBD | 0.06 | ✅ | Session 2026-08-02 |
 | ASA | ⚠ TBD | ⚠ TBD | ⚠ TBD | ⚠ TBD | ⚠ TBD | ⚠ TBD | ⚠ TBD | ⚠ Deferred | — |
+
+---
+
+## Filament Profiles — 0.6mm main nozzle
+
+| Filament | Temp | Chamber | Bed | MVS | Flow | Retraction | PA | Status | Date |
+|---|---|---|---|---|---|---|---|---|---|
+| Polymaker PETG HF | ⚠ TBD | ⚠ TBD | ⚠ TBD | ⚠ TBD | ⚠ TBD | ⚠ TBD | Firmware | ⚠ Pending | — |
 
 ---
 
