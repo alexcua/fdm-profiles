@@ -48,4 +48,5 @@
   - (4) 260°C stock temp. The drop to 255°C may help on its own.
 - Heat creep recurred on a black print at 255°C / chamber 60°C / bed 100°C / retraction 0.4mm. White printed clean at the same conditions (temp tower). Print was the MVS test (10–30 mm³/s). It failed before finishing layer 1. ❌ No MVS data from this run. Session 2026-10-01
 - Failing in layer 1 points to a feed/hotend state problem before printing (leftover partial clog from the previous creep, or heat soak while the chamber preheated), not to the flow ceiling. ⚠ Diagnose before retrying MVS: inspect the unloaded filament tip, cold pull, then a manual extrude test.
+- Unloaded filament was deformed near the extruder gear, i.e. the gear could not push filament through. ⚠ Still to determine: chewed/ground (blockage below the gear) vs flattened/kinked soft (filament softening at the gear from the 60°C chamber plus toolhead heat). Session 2026-10-01
 - Validate each one on a black print before recording a fix.
