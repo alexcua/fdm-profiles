@@ -374,7 +374,7 @@
 - Temp tower 230–270°C (white, chamber 60°C): ≤240 too cold (overhang curl, stringing), 250–255 cleanest, 260+ surfaces degrade, 265–270 heavy stringing. 255°C chosen.
 - ⚠ Snap test inconclusive: broke at 255 at the mid-tower max-leverage point. Other blocks unbreakable by hand. Controlled vise test pending.
 - ⚠ Tower was white. Black heat creep recurred at 255°C / chamber 60°C / bed 100°C / retraction 0.4mm. White was clean at the same conditions. Short retraction rules out retraction as the cause. Chamber 60°C is the lead suspect.
-- ❌ Black MVS test (10–30) failed in layer 1. No MVS data. Suspect a leftover clog or preheat heat soak. Unloaded filament deformed near the extruder gear (chewed vs softened TBD). Diagnose before retrying.
+- ❌ Black MVS test (10–30) failed in layer 1. No MVS data. Suspect a leftover clog or preheat heat soak. Filament squashed (softened) at the extruder gear: extruder-zone overheating. Nozzle temp ruled out (white tower completed from 270°C). Colour vs object size/layer-1 dwell not yet separated. Next: white MVS at identical conditions.
 
 ---
 

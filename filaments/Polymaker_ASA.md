@@ -45,8 +45,12 @@
   - (1) Chamber temp too high for the cold side of the heat break. Chamber is 60°C, which makes this the lead suspect. First variable to try: step chamber down (e.g. 50°C) on a black print.
   - (2) Low flow rate / long layer times leaving filament heat-soaking in the heat break.
   - ~~(3) Retraction too long~~ — unlikely: retraction was 0.4mm (short) when heat creep recurred. Session 2026-10-01
-  - (4) 260°C stock temp. The drop to 255°C may help on its own.
+  - ~~(4) Nozzle temp~~ — ruled out: white completed starting at 270°C under the same chamber/bed. Session 2026-10-01
+  - (5) Radiant heat from the 100°C bed into the toolhead during a long first layer. (6) Black absorbing more radiant heat than white. (7) Cumulative toolhead heat soak over the session. ⚠ Untested.
 - Heat creep recurred on a black print at 255°C / chamber 60°C / bed 100°C / retraction 0.4mm. White printed clean at the same conditions (temp tower). Print was the MVS test (10–30 mm³/s). It failed before finishing layer 1. ❌ No MVS data from this run. Session 2026-10-01
 - Failing in layer 1 points to a feed/hotend state problem before printing (leftover partial clog from the previous creep, or heat soak while the chamber preheated), not to the flow ceiling. ⚠ Diagnose before retrying MVS: inspect the unloaded filament tip, cold pull, then a manual extrude test.
-- Unloaded filament was deformed near the extruder gear, i.e. the gear could not push filament through. ⚠ Still to determine: chewed/ground (blockage below the gear) vs flattened/kinked soft (filament softening at the gear from the 60°C chamber plus toolhead heat). Session 2026-10-01
+- Unloaded filament was **squashed (soft-deformed, not chewed)** at the extruder gear. The filament softened at the gear itself. This is extruder-zone overheating, not classic heat-break creep. Session 2026-10-01
+- White temp tower completed at the same chamber/bed, starting at 270°C (hottest block is printed first). So nozzle temp is not the cause. Session 2026-10-01
+- Two variables differ between the passing and failing prints: **colour** (white vs black) and **object** (small tower vs larger MVS footprint, i.e. a longer layer 1 with the toolhead low over the 100°C bed). Toolhead heat-soak time also differed (the MVS run came after hours at 60°C chamber).
+- ⚠ Next test to separate them: white MVS test at identical conditions (255 / 60 / 100). White fails → object, layer-1 dwell or soak (lower chamber and/or bed). White passes → black-specific (carbon black absorbs more radiant heat), so lower chamber and bed for black.
 - Validate each one on a black print before recording a fix.
