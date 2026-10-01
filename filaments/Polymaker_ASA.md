@@ -33,7 +33,7 @@
 - **Result: 255°C**, the hot end of the clean 250–255 window. Photos reviewed in session. Session 2026-10-01
 
 **Open items:**
-- ⚠ Snap test of 250 / 255 / 260 blocks pending. A tower can't show layer adhesion, which is ASA's main reason to run hotter. If 255 breaks noticeably easier than 260, reconsider 260 for functional parts.
+- ⚠ Snap test inconclusive. The tower broke at 255, but that was near the middle of the sample, where hand-bending leverage is highest. Other blocks could not be broken by hand. That doesn't show 255 is weaker. Controlled test pending: clamp each 250/255/260 boundary in a vise and load each block the same way. Session 2026-10-01
 - Profile conditions: nozzle 255°C, bed 100°C, chamber 60°C. Session 2026-10-01
 - Temp tower was printed at chamber 60°C, so the 255°C result holds at production chamber temp. Session 2026-10-01
 - Slicer: Bambu Studio. Session 2026-10-01

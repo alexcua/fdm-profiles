@@ -21,7 +21,7 @@ Same profile as H2D. See Bambu_H2D.md.
 | Polymaker ASA | 255°C (stock 260°C) | 60°C | 100°C | ⚠ TBD | ⚠ TBD | ⚠ TBD | Firmware | ⚠ In progress (temp done) | Session 2026-10-01 |
 
 - Temp tower 230–270°C (white, chamber 60°C, Bambu Studio): 250–255 clean, 260+ surfaces degrade and stringing increases, ≤245 overhang curl. 255°C chosen. Session 2026-10-01
-- Snap test pending. Black colorway not yet tower-tested. See filaments/Polymaker_ASA.md.
+- Snap test inconclusive: broke at 255, but at the max-leverage point (mid-tower). Other blocks unbreakable by hand. Controlled vise test pending. Black colorway not yet tower-tested. See filaments/Polymaker_ASA.md.
 - Purpose: black ASA heat creep on this nozzle with the stock profile. Causes not yet isolated. Chamber 60°C is the lead suspect.
 
 ---
@@ -43,4 +43,4 @@ Note: 0.25mm being considered for removal. Larger sizes TBD.
 - Same as H2D: temp rerun with chamber heat-soaked.
 - Right extruder Vortex nozzle sizes to be decided before calibration.
 - All right extruder profiles starting fresh.
-- Polymaker ASA (left 0.6mm HF): snap test 250/255/260, temp check on black, then MVS → retraction (PA firmware). Isolate the black heat creep cause.
+- Polymaker ASA (left 0.6mm HF): controlled (vise) snap test 250/255/260, temp check on black, then MVS → retraction (PA firmware). Isolate the black heat creep cause.
