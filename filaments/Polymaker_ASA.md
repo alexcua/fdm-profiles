@@ -53,5 +53,6 @@
 - Unloaded filament was **squashed (soft-deformed, not chewed)** at the extruder gear. The filament softened at the gear itself. This is extruder-zone overheating, not classic heat-break creep. Session 2026-10-01
 - White temp tower completed at the same chamber/bed, starting at 270°C (hottest block is printed first). So nozzle temp is not the cause. Session 2026-10-01
 - Two variables differ between the passing and failing prints: **colour** (white vs black) and **object** (small tower vs larger MVS footprint, i.e. a longer layer 1 with the toolhead low over the 100°C bed). Toolhead heat-soak time also differed (the MVS run came after hours at 60°C chamber).
-- ⚠ Next test to separate them: white MVS test at identical conditions (255 / 60 / 100). White fails → object, layer-1 dwell or soak (lower chamber and/or bed). White passes → black-specific (carbon black absorbs more radiant heat), so lower chamber and bed for black.
+- **White MVS test (10–30 mm³/s) completed** at identical conditions (255 / 60 / 100, same AMS 3 slot). Object size and AMS ruled out. **The failure is black-specific.** ⚠ Toolhead heat soak still not fully excluded until confirmed whether the machine cooled between runs. Session 2026-10-01
+- ⚠ White MVS ceiling not yet read. Needs a close-up photo and the height where sheen or wall quality drops. Record it as a white-only value, not ported to black.
 - Validate each one on a black print before recording a fix.
