@@ -373,7 +373,7 @@
 - Reason for custom profile: heat creep printing black Polymaker ASA on 0.6mm HF with the stock profile.
 - Temp tower 230–270°C (white, chamber 60°C): ≤240 too cold (overhang curl, stringing), 250–255 cleanest, 260+ surfaces degrade, 265–270 heavy stringing. 255°C chosen.
 - ⚠ Snap test inconclusive: broke at 255 at the mid-tower max-leverage point. Other blocks unbreakable by hand. Controlled vise test pending.
-- ⚠ Tower was white. Black colorway (the problem color) not yet tested.
+- ⚠ Tower was white. Black heat creep recurred at 255°C / chamber 60°C / bed 100°C / retraction 0.4mm. White was clean at the same conditions. Short retraction rules out retraction as the cause. Chamber 60°C is the lead suspect.
 
 ---
 

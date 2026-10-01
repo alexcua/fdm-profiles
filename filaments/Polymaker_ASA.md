@@ -44,6 +44,7 @@
 - ⚠ Untested hypotheses, in order of likelihood:
   - (1) Chamber temp too high for the cold side of the heat break. Chamber is 60°C, which makes this the lead suspect. First variable to try: step chamber down (e.g. 50°C) on a black print.
   - (2) Low flow rate / long layer times leaving filament heat-soaking in the heat break.
-  - (3) Retraction too long, pulling softened filament up into the cold zone.
+  - ~~(3) Retraction too long~~ — unlikely: retraction was 0.4mm (short) when heat creep recurred. Session 2026-10-01
   - (4) 260°C stock temp. The drop to 255°C may help on its own.
+- Heat creep recurred on a black print at 255°C / chamber 60°C / bed 100°C / retraction 0.4mm. White printed clean at the same conditions (temp tower). Failure height/flow not yet recorded. Session 2026-10-01
 - Validate each one on a black print before recording a fix.
