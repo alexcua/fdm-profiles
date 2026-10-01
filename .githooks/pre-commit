@@ -1,0 +1,4 @@
+#!/bin/sh
+# Enforces AGENT.md / CLAUDE.md rules on staged profile changes.
+# Enable once per clone:  git config core.hooksPath .githooks
+exec python3 "$(git rev-parse --show-toplevel)/scripts/check.py"
