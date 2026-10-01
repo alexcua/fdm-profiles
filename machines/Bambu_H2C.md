@@ -43,4 +43,4 @@ Note: 0.25mm being considered for removal. Larger sizes TBD.
 - Same as H2D: temp rerun with chamber heat-soaked.
 - Right extruder Vortex nozzle sizes to be decided before calibration.
 - All right extruder profiles starting fresh.
-- Polymaker ASA (left 0.6mm HF): controlled (vise) snap test 250/255/260, temp check on black, then MVS → retraction (PA firmware). Isolate the black heat creep cause.
+- Polymaker ASA (left 0.6mm HF): controlled (vise) snap test 250/255/260, temp check on black, then MVS → retraction (PA firmware). Isolate the black heat creep cause. Follow `protocols/Polymaker_ASA_H2C_unified.md` (aim: one profile for white and black).

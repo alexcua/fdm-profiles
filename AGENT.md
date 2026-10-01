@@ -23,6 +23,7 @@ fdm-profiles/
   CALIBRATION_MASTER.md      # Narrative history, learnings, session log
   filaments/                 # One file per filament — all machines side by side
   machines/                  # One file per machine model — all filaments
+  protocols/                 # Test plans for open calibration problems (results still go in machines/ + filaments/ + CALIBRATION_MASTER)
 ```
 
 ---

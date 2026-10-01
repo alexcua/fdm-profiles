@@ -56,3 +56,4 @@
 - **White MVS test (10–30 mm³/s) completed** at identical conditions (255 / 60 / 100, same AMS 3 slot). Object size and AMS ruled out. **The failure is black-specific.** ⚠ Toolhead heat soak still not fully excluded until confirmed whether the machine cooled between runs. Session 2026-10-01
 - ⚠ White MVS ceiling not yet read. Needs a close-up photo and the height where sheen or wall quality drops. Record it as a white-only value, not ported to black.
 - Validate each one on a black print before recording a fix.
+- **Test plan:** `protocols/Polymaker_ASA_H2C_unified.md`. Aim is one profile for white and black; split only per that doc's decision rules.

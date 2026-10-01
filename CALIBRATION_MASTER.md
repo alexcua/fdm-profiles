@@ -436,7 +436,7 @@ These settings resolved overhang curl on curved geometry (confirmed August 2026)
 | Elegoo Giga | Atomic PLA | Full recalibration 190–230°C |
 | Elegoo Giga | PCTG + Polylite PETG | Functional part validation |
 | Bambu X2D | ASA | Full calibration sequence (deferred) |
-| Bambu H2C (0.6 HF left) | Polymaker ASA | Controlled (vise) snap test 250/255/260, black temp check, MVS, retraction, heat creep root cause |
+| Bambu H2C (0.6 HF left) | Polymaker ASA | Run `protocols/Polymaker_ASA_H2C_unified.md` (stages A–F). Controlled (vise) snap test 250/255/260, black temp check, MVS, retraction, heat creep root cause |
 
 ---
 

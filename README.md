@@ -10,6 +10,7 @@ Calibration reference for Alexactly and Cherokee Makerspace 3D printing fleets.
 | `filaments/` | Per-filament profiles — all machines side by side for consistency checking |
 | `machines/` | Per-machine profiles — all filaments for a given printer in one place |
 | `AGENT.md` | Instructions for AI agents populating and maintaining this repo |
+| `protocols/` | Step-by-step test plans for open calibration problems |
 
 ## How to use
 
