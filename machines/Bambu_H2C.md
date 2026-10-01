@@ -14,6 +14,16 @@ Same profile as H2D. See Bambu_H2D.md.
 |---|---|---|---|---|---|---|---|---|
 | 3D Fuel PCTG | ⚠ 265°C (retest needed) | 45°C | 70°C | 12mm³/s | 0.98 | ⚠ TBD | Firmware | ⚠ |
 
+### Polymaker ASA — H2C-specific (not yet run on H2D)
+
+| Filament | Temp | Chamber | Bed | MVS | Flow | Retraction | PA | Status | Source |
+|---|---|---|---|---|---|---|---|---|---|
+| Polymaker ASA | 255°C (stock 260°C) | ⚠ TBD | ⚠ TBD | ⚠ TBD | ⚠ TBD | ⚠ TBD | Firmware | ⚠ In progress (temp done) | Session 2026-10-01 |
+
+- Temp tower 230–270°C (white): 250–255 clean, 260+ surfaces degrade and stringing increases, ≤245 overhang curl. 255°C chosen. Session 2026-10-01
+- Snap test pending. Black colorway not yet tower-tested. See filaments/Polymaker_ASA.md.
+- Purpose: black ASA heat creep on this nozzle with the stock profile. Causes not yet isolated.
+
 ---
 
 ## Right Extruder — Vortex Inductive (machine-changeable)
@@ -33,3 +43,4 @@ Note: 0.25mm being considered for removal. Larger sizes TBD.
 - Same as H2D: temp rerun with chamber heat-soaked.
 - Right extruder Vortex nozzle sizes to be decided before calibration.
 - All right extruder profiles starting fresh.
+- Polymaker ASA (left 0.6mm HF): snap test 250/255/260, record chamber/bed/slicer, temp check on black, then MVS → retraction (PA firmware). Isolate the black heat creep cause.

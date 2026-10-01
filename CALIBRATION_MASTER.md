@@ -1,6 +1,6 @@
 # FDM Profiles — Master Calibration Reference
 **Operations:** Alexactly (production) + Cherokee Makerspace  
-**Last updated:** 2026-08-02  
+**Last updated:** 2026-10-01  
 **Slicers:** OrcaSlicer (primary), Bambu Studio (retained for some overhangs), PrusaSlicer  
 **Calibration sequence (OrcaSlicer):** Temperature → Max Volumetric Speed → Pressure Advance → Retraction
 
@@ -354,6 +354,29 @@
 
 ---
 
+## Polymaker ASA — Bambu H2C (0.6mm HF, left extruder)
+
+**Calibrated:** In progress — Session 2026-10-01 | **Slicer:** ⚠ TBD
+
+### Filament Profile
+| Setting | Value |
+|---|---|
+| Temperature (first layer / other layers) | ⚠ TBD / 255°C (stock 260°C) |
+| Chamber temperature | ⚠ TBD |
+| Bed temperature | ⚠ TBD |
+| MVS | ⚠ TBD |
+| Flow ratio | ⚠ TBD |
+| Retraction | ⚠ TBD |
+| Pressure advance | Firmware |
+
+### Notes
+- Reason for custom profile: heat creep printing black Polymaker ASA on 0.6mm HF with the stock profile.
+- Temp tower 230–270°C (white): ≤240 too cold (overhang curl, stringing), 250–255 cleanest, 260+ surfaces degrade, 265–270 heavy stringing. 255°C chosen.
+- ⚠ Snap test (250/255/260) pending. Layer adhesion not visible on a tower.
+- ⚠ Tower was white. Black colorway (the problem color) not yet tested.
+
+---
+
 ## Print Profile — Overhang Settings (X1C / P1S)
 
 These settings resolved overhang curl on curved geometry (confirmed August 2026):
@@ -412,6 +435,7 @@ These settings resolved overhang curl on curved geometry (confirmed August 2026)
 | Elegoo Giga | Atomic PLA | Full recalibration 190–230°C |
 | Elegoo Giga | PCTG + Polylite PETG | Functional part validation |
 | Bambu X2D | ASA | Full calibration sequence (deferred) |
+| Bambu H2C (0.6 HF left) | Polymaker ASA | Snap test 250/255/260, chamber/bed/slicer record, black temp check, MVS, retraction, heat creep root cause |
 
 ---
 
@@ -435,3 +459,4 @@ These settings resolved overhang curl on curved geometry (confirmed August 2026)
 | August 2, 2026 | P1S 0.4mm PCTG — full calibration sequence | Temp tower 240–280°C → 265°C confirmed. Retraction tower 0–2mm → blob at 0.4mm (stock), clean from 0.5mm, production 0.6mm @ 45mm/s. Flow coarse calibration → 0.98 confirmed (matches X1C). MVS skinny line 4–16mm³/s → sheen drops at ~9mm³/s, production 8mm³/s (stock 12 not adopted). PA firmware. Fan: 10%/40% conservative correct for PCTG on enclosed machine. Bed 80°C on textured PEI. Booger fix pending validation on siding clip production plate. |
 | August 2, 2026 | Polymaker PETG HF MVS tier correction | MVS 12 tested on P1S — artifacts confirmed. MVS 10 clean. Quality tier = 10mm³/s confirmed. Normal 15 untested. Draft 20 = artifacts on demanding geometry. Overhang speeds corrected from Orca defaults (60/40/12/9) to Bambu-matched values (0/50/15/10). |
 | August 2, 2026 | MK3.5 CHT — California Matte + Polylite PETG (parallel dual-machine) | Two MK3.5 0.6 CHT machines run in parallel, one filament each, shared process profiles. **Polylite PETG:** temp tower 240–260°C → 255°C (clean all-sides; 245 stringy — stringing deferred to retraction, not solved by dropping temp). MVS cliff ~20mm³/s, tiers 15/17/19 Q/N/D. PA pattern clean → 0.044 (cross-validated vs Giga 0.05). Retraction still pending. **California Matte PETG:** temp tower 215–230°C → 220°C. MVS cooling-limited (not flow-limited) → conservative 10–12mm³/s; quality good to ~20mm, matte sheen holds to ~10mm before gloss transition from heat soak. PA UNCONFIRMED — pattern failed repeatedly on first-layer adhesion, Z-offset drop did NOT resolve, reprints lifted off bed and never completed. Retraction + finish tuning (fan/min-layer-time) pending. Corrected phantom July 12 entry (no matching conversation in history). Both spools dried + desiccant-stored. |
+| October 1, 2026 | Bambu H2C 0.6mm HF — Polymaker ASA temp tower | Custom profile started because of black ASA heat creep on the stock profile (260°C). Temp tower 230–270°C (white) photo-reviewed: 250–255 clean, 260+ degrading, ≤240 overhang curl. 255°C selected. Snap test, chamber/bed temps, and black-colorway check pending. Added CLAUDE.md + scripts/check.py pre-commit enforcement of AGENT.md rules. |
