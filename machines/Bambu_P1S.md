@@ -51,6 +51,25 @@
 
 ---
 
+## Machine G-code mods — purge coil and Z-home debris (PETG/PCTG)
+
+**Problem:**
+- **Debris on the bed after the wipe.** The nozzle touches the bed edge to home Z (X135 Y253) right after only one wipe, at first-layer temp −20. PETG/PCTG ooze at that temp, so it gets left at the touch point.
+- **Purge coil thrown out instead of dropping into the chute.** The stock sequence cools only to −20 before the shake, then makes a fast 15000 mm/min move to X165. PLA's string snaps; ductile PETG/PCTG stays attached, so the coil gets dragged and flung.
+
+**Mods** (`gcode/Bambu_P1S_0.6_start.gcode`, full file; all changes are non-PLA only, PLA runs stock):
+- **1a:** after the purge, cool to first-layer temp −60 with the part fan on, then pause 5s so the string freezes before the shake.
+- **1b:** extra slow passes over the wiper, then a slow (6000 mm/min) exit to X165 so an attached coil isn't flung.
+- **2:** two extra wipes before moving to the Z-home touch point.
+- ⚠ Not yet run on a printer (written 2026-10-06). Base: stock P1S-0.6 start G-code dated 20251031. Cost: roughly 30–60s more per start for PETG/PCTG.
+- First-run checks:
+  - Where the debris was: at the Z-home touch point (rear edge, X≈135) or at the scrub patch (rear centre, X124–131, Y≈260)? Mod 2 targets the touch point.
+  - The coil drops into the chute during the shake.
+  - Clean the exposed steel at the back of the bed once before testing, so old debris isn't mistaken for new.
+- Applies to the 0.6 preset only. The 0.4 P1S needs its own stock file as the base.
+
+---
+
 ## Notes
 
 - 0.4mm PCTG: lower MVS ceiling than 0.6mm — bore size is the limiting factor.

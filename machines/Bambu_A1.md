@@ -66,7 +66,8 @@ MVS cliff confirmed ~40 mm³/s. Production ceiling = 80% of cliff.
 - **End G-code** (`gcode/Bambu_A1_end.gcode`, full file; the change sits between `M621 S255` and `M104 S0`): part fan on, cool at the purge position (X-48.2) to 200°C (PETG/PCTG) or 170°C (PLA), wipe twice, then heater off. ⚠ Not yet run on a printer (written 2026-10-06).
 
 - Base: stock Bambu A1 G-code dated 20260513.
-- Apply both in Bambu Studio: A1 printer preset → Machine G-code. Save as a user preset, for each A1 nozzle preset (0.4 and 0.6).
+- **Bambu Studio user printer preset: `Bambu Lab A1 0.6 (Nozzle Clear)`** holds both modified start and end G-code (Alexactly 0.6mm). Created 2026-10-06.
+- Makerspace A1s (0.4mm): not applied. To apply, make a matching 0.4 user preset with the same two files.
 - Straighten or replace a bent wiper before testing.
 - First-run checks:
   - **Start:** for non-PLA, the head pauses at X-28.5 until it reaches temp before crossing the wiper. If the wiper still bends during the very first `G28 X` (before any heating), that's a different move and needs a different fix.
