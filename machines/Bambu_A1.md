@@ -58,6 +58,23 @@ MVS cliff confirmed ~40 mm³/s. Production ceiling = 80% of cliff.
 
 ---
 
+## Machine G-code mods — nozzle blob (PETG/PCTG)
+
+**Problem:** stock start G-code crosses the nozzle wiper at ~140°C (it sets print temp with `M104` and doesn't wait). A leftover PETG/PCTG blob is still hard at 140°C. It bends the wiper, stays on the nozzle, and makes bed probing read high. The blob comes from the stock end G-code: it turns the heater off right after the last wipe, so the nozzle oozes while cooling and nothing wipes it.
+
+- **Start G-code** (`gcode/Bambu_A1_start.gcode`, full file): non-PLA only. Park at X-28.5, `M109` to first-layer temp, then cross the wiper. ⚠ Not yet run on a printer (written 2026-10-06).
+- **End G-code** (`gcode/Bambu_A1_end_MOD.gcode`, a snippet to insert between `M621 S255` and `M104 S0`): part fan on, cool at the purge position (X-48.2) to 200°C (PETG/PCTG) or 170°C (PLA), wipe twice, then heater off. ⚠ Not yet run on a printer (written 2026-10-06).
+
+- Base: stock Bambu A1 G-code dated 20260513.
+- Apply both in Bambu Studio: A1 printer preset → Machine G-code. Save as a user preset, for each A1 nozzle preset (0.4 and 0.6).
+- Straighten or replace a bent wiper before testing.
+- First-run checks:
+  - **Start:** for non-PLA, the head pauses at X-28.5 until it reaches temp before crossing the wiper. If the wiper still bends during the very first `G28 X` (before any heating), that's a different move and needs a different fix.
+  - **End:** the cooldown ooze drops where purge waste normally goes, not on the frame or the Y-axis path. Check the nozzle tip is clean before the next start.
+- No end-of-print retraction added. Pulling molten PETG/PCTG up into the cool zone risks a jam on the next load.
+
+---
+
 ## Notes
 
 - MVS 8mm³/s showed artifacts on reducing elbow for Polylite PETG. Use 6mm³/s Quality tier for demanding geometry.

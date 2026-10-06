@@ -1,6 +1,6 @@
 # FDM Profiles — Master Calibration Reference
 **Operations:** Alexactly (production) + Cherokee Makerspace  
-**Last updated:** 2026-10-01  
+**Last updated:** 2026-10-06  
 **Slicers:** OrcaSlicer (primary), Bambu Studio (retained for some overhangs), PrusaSlicer  
 **Calibration sequence (OrcaSlicer):** Temperature → Max Volumetric Speed → Pressure Advance → Retraction
 
@@ -436,6 +436,7 @@ These settings resolved overhang curl on curved geometry (confirmed August 2026)
 | Elegoo Giga | Atomic PLA | Full recalibration 190–230°C |
 | Elegoo Giga | PCTG + Polylite PETG | Functional part validation |
 | Bambu X2D | ASA | Full calibration sequence (deferred) |
+| Bambu A1 (all) | — | First-run validation of start/end G-code blob mods (`gcode/`, see machines/Bambu_A1.md) |
 | Bambu H2C (0.6 HF left) | Polymaker ASA | Run `protocols/Polymaker_ASA_H2C_unified.md` (stages A–F). Controlled (vise) snap test 250/255/260, black temp check, MVS, retraction, heat creep root cause |
 
 ---
@@ -461,3 +462,4 @@ These settings resolved overhang curl on curved geometry (confirmed August 2026)
 | August 2, 2026 | Polymaker PETG HF MVS tier correction | MVS 12 tested on P1S — artifacts confirmed. MVS 10 clean. Quality tier = 10mm³/s confirmed. Normal 15 untested. Draft 20 = artifacts on demanding geometry. Overhang speeds corrected from Orca defaults (60/40/12/9) to Bambu-matched values (0/50/15/10). |
 | August 2, 2026 | MK3.5 CHT — California Matte + Polylite PETG (parallel dual-machine) | Two MK3.5 0.6 CHT machines run in parallel, one filament each, shared process profiles. **Polylite PETG:** temp tower 240–260°C → 255°C (clean all-sides; 245 stringy — stringing deferred to retraction, not solved by dropping temp). MVS cliff ~20mm³/s, tiers 15/17/19 Q/N/D. PA pattern clean → 0.044 (cross-validated vs Giga 0.05). Retraction still pending. **California Matte PETG:** temp tower 215–230°C → 220°C. MVS cooling-limited (not flow-limited) → conservative 10–12mm³/s; quality good to ~20mm, matte sheen holds to ~10mm before gloss transition from heat soak. PA UNCONFIRMED — pattern failed repeatedly on first-layer adhesion, Z-offset drop did NOT resolve, reprints lifted off bed and never completed. Retraction + finish tuning (fan/min-layer-time) pending. Corrected phantom July 12 entry (no matching conversation in history). Both spools dried + desiccant-stored. |
 | October 1, 2026 | Bambu H2C 0.6mm HF — Polymaker ASA temp tower | Custom profile started because of black ASA heat creep on the stock profile (260°C). Temp tower 230–270°C (white) photo-reviewed: 250–255 clean, 260+ degrading, ≤240 overhang curl. 255°C selected. Profile conditions: bed 100°C, chamber 60°C (chamber is lead heat creep suspect). Tower run at 60°C chamber in Bambu Studio. Hand snap test inconclusive (broke at 255, mid-tower leverage point). Black-colorway check pending. Added CLAUDE.md + scripts/check.py pre-commit enforcement of AGENT.md rules. |
+| October 6, 2026 | Bambu A1 — start/end G-code nozzle blob fix | Stock start G-code crosses the wiper at ~140°C (M104 without wait), so a hard PETG/PCTG blob bends the wiper and stays on for bed probing. The stock end G-code lets the nozzle ooze during cooldown with no wipe afterwards. Mods: start waits for first-layer temp at X-28.5 before the wiper (non-PLA); end cools with the fan at the purge position to 200°C (PETG/PCTG) or 170°C (PLA), wipes twice, then turns the heater off. Files in `gcode/`. ⚠ Not yet run on a printer. |
