@@ -92,17 +92,18 @@ G1 X76 F15000
 G1 X65 F15000
 G1 X76 F15000
 G1 X65 F15000; shake to put down garbage
-G1 X80 F6000
-G1 X95 F15000
-G1 X80 F15000
-;===== MOD 1b: PETG/PCTG — extra slow passes over the wiper, slower exit so an attached coil isn't flung =====
+;===== MOD 1b: PETG/PCTG — every pass over the wiper (right of the chute) slow, so an attached coil isn't flung =====
 {if filament_type[initial_extruder] != "PLA"}
+G1 X80 F6000
 G1 X95 F6000
 G1 X80 F6000
 G1 X95 F6000
 G1 X80 F6000
 G1 X165 F6000; wipe and exit slowly
 {else}
+G1 X80 F6000
+G1 X95 F15000
+G1 X80 F15000
 G1 X165 F15000; wipe and shake
 {endif}
 ;===== MOD 1b end =====

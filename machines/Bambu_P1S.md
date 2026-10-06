@@ -55,11 +55,12 @@
 
 **Problem:**
 - **Debris on the bed after the wipe.** The nozzle touches the bed edge to home Z (X135 Y253) right after only one wipe, at first-layer temp −20. PETG/PCTG ooze at that temp, so it gets left at the touch point.
-- **Purge coil thrown out instead of dropping into the chute.** The stock sequence cools only to −20 before the shake, then makes a fast 15000 mm/min move to X165. PLA's string snaps; ductile PETG/PCTG stays attached, so the coil gets dragged and flung.
+- **Purge coil thrown out instead of dropping into the chute.** The coil forms at the top of the chute and stays attached to the nozzle by a string. The stock sequence cools only to −20 before the shake, so a PETG/PCTG string bends instead of snapping. The fast passes over the wiper (just right of the chute) then drag the coil off the chute edge and throw it onto the bed. PLA's string snaps, so PLA is fine. Observed 2026-10-06.
 
 **Mods** (`gcode/Bambu_P1S_0.6_start.gcode`, full file; all changes are non-PLA only, PLA runs stock):
 - **1a:** after the purge, cool to first-layer temp −60 with the part fan on, then pause 5s so the string freezes before the shake.
-- **1b:** extra slow passes over the wiper, then a slow (6000 mm/min) exit to X165 so an attached coil isn't flung.
+- **1b:** every pass over the wiper at 6000 mm/min (stock uses 15000), plus extra passes and a slow exit to X165, so a coil that's still attached isn't flung.
+- If the coil still comes out with 1a/1b: cool further before the shake, −60 → −80 (PCTG ≈185°C). It costs more time but freezes the string right at the nozzle.
 - **2:** two extra wipes before moving to the Z-home touch point.
 - ⚠ Not yet run on a printer (written 2026-10-06). Base: stock P1S-0.6 start G-code dated 20251031. Cost: roughly 30–60s more per start for PETG/PCTG.
 - First-run checks:
