@@ -16,6 +16,6 @@
 
 ## ⚠ Pending
 
-- Filament assignment TBD.
+- 3D Fuel PCTG temp tower in progress (2026-10-16): 280→240°C step 5, bed 80°C, MVS cap 6 mm³/s for the tower.
 - Full calibration sequence needed once filament is decided: temp tower → MVS → PA → retraction.
 - Do not port values from CHT or Revo configs — E3D V6 has different flow characteristics.

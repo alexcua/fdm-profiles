@@ -1,6 +1,6 @@
 # FDM Profiles — Master Calibration Reference
 **Operations:** Alexactly (production) + Cherokee Makerspace  
-**Last updated:** 2026-10-06  
+**Last updated:** 2026-10-16  
 **Slicers:** OrcaSlicer (primary), Bambu Studio (retained for some overhangs), PrusaSlicer  
 **Calibration sequence (OrcaSlicer):** Temperature → Max Volumetric Speed → Pressure Advance → Retraction
 
@@ -437,6 +437,8 @@ These settings resolved overhang curl on curved geometry (confirmed August 2026)
 | Elegoo Giga | PCTG + Polylite PETG | Functional part validation |
 | Bambu X2D | ASA | Full calibration sequence (deferred) |
 | Bambu A1 0.6 | — | First-run validation of start/end G-code blob mods (preset `Bambu Lab A1 0.6 (Nozzle Clear)`; see machines/Bambu_A1.md) |
+| Prusa MK3.5 0.4 E3D V6 brass | 3D Fuel PCTG | Full sequence; temp tower in progress (280→240) |
+| Prusa MK3.5 0.6 Revo brass + 0.6 Revo hardened | 3D Fuel PCTG | Separate calibrations (nozzle types don't transfer); tower in progress on one, ⚠ which one TBD |
 | Bambu P1S 0.6 | — | First-run validation of start G-code purge-coil/debris mods (`gcode/Bambu_P1S_0.6_start.gcode`, see machines/Bambu_P1S.md) |
 | Bambu H2C (0.6 HF left) | Polymaker ASA | Run `protocols/Polymaker_ASA_H2C_unified.md` (stages A–F). Controlled (vise) snap test 250/255/260, black temp check, MVS, retraction, heat creep root cause |
 

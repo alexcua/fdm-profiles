@@ -40,7 +40,7 @@ Calibration reference for Alexactly and Cherokee Makerspace 3D printing fleets.
 | Bambu A1 ×2 | 0.4mm | TBD |
 | Prusa MK3.5 ×2 | 0.6mm CHT | Polylite PETG / California Matte PETG |
 | Prusa MK3.5 ×1 | 0.4mm E3D V6 | Generic |
-| Prusa MK3.5 ×2 | 0.6mm Revo (swappable 0.4/0.6/0.8) | Polylite PETG |
+| Prusa MK3.5 ×2 | 0.6mm Revo: 1× brass, 1× hardened (swappable 0.4/0.6/0.8) | Polylite PETG / 3D Fuel PCTG (calibrating) |
 | Elegoo Orangestorm Giga | 0.8mm brass | 3D Fuel PCTG / Polylite PETG / Atomic PLA |
 
 ## Filament Naming Rules
