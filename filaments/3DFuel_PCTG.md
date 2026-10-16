@@ -1,7 +1,8 @@
 # 3D Fuel PCTG — All Machines
 
 **Primary use:** Alexactly production parts (camera mounts, siding clips, structural components)  
-**Material notes:** Moisture sensitive — dry at 65–70°C for 6–8h before printing. Store in sealed container or AMS. Mildly abrasive — use hardened steel nozzles for extended runs.
+**Material notes:** Moisture sensitive — dry at 65–70°C for 6–8h before printing. Store in sealed container or AMS. Not abrasive: unfilled PCTG has no fibre or mineral filler, so brass nozzles are fine. Exception: sparkle/glitter colourways (e.g. Galaxy Black) carry particles that can wear brass over long runs.
+> Previously: "Mildly abrasive — use hardened steel nozzles for extended runs" — corrected 2026-10-16: unfilled PCTG isn't abrasive (per user).
 
 ---
 
