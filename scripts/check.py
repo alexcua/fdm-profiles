@@ -146,10 +146,16 @@ def main():
                     check_naming(path, lineno, line, errors)
             if any(l.lstrip().startswith("|") for l in added_lines + removed):
                 data_touched[path.split("/")[0]] = True
-            # Never silently overwrite a confirmed value.
-            if any(l.lstrip().startswith("|") and "✅" in l for l in removed):
-                if not any("Previously:" in l or "❌" in l for l in added_lines):
-                    errors.append(f"{path}: a ✅ row was changed/removed without a '> Previously: …' note or ❌ marker")
+            # Never silently overwrite a confirmed value. Filling ⚠ cells of a ✅ row is fine:
+            # every cell that wasn't ⚠ must survive unchanged in some added row.
+            added_rows = [cells(l) for l in added_lines if l.lstrip().startswith("|")]
+            def filled_in_only(old):
+                return any(len(new) == len(old) and all(o.startswith("⚠") or o == n for o, n in zip(old, new))
+                           for new in added_rows)
+            overwritten = [l for l in removed if l.lstrip().startswith("|") and "✅" in l
+                           and not filled_in_only(cells(l))]
+            if overwritten and not any("Previously:" in l or "❌" in l for l in added_lines):
+                errors.append(f"{path}: a ✅ row was changed/removed without a '> Previously: …' note or ❌ marker")
 
         # Machine and filament docs move together, with the master log.
         if any(data_touched.values()):
