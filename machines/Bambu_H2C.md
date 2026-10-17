@@ -24,6 +24,9 @@ Same profile as H2D. See Bambu_H2D.md.
 - Snap test inconclusive: broke at 255, but at the max-leverage point (mid-tower). Other blocks unbreakable by hand. Controlled vise test pending. Black colorway not yet tower-tested. See filaments/Polymaker_ASA.md.
 - Run A1 2026-10-17: black at chamber 50 (else 255/100) completed the MVS tower 10→30, glossy throughout, no heat creep. Chamber heat confirmed as the cause. Prongs lifted (adhesion cost of the cooler chamber). Next: A2 at chamber 55.
 - Run A2 2026-10-17: black at chamber 55 tripped the filament jam error (milder than at 60; extruder recovered, white loaded and purged fine, so 55 is at the threshold). Black limit between 50 and 55. Next: A3 at chamber 45 (protocol margin rule).
+- A1 corrected: chamber 50 had one stall needing a resume, so it's marginal.
+- Run A3 2026-10-17: black at chamber 45 (Nano Polymer Adhesive) clean pass. **Black working chamber 45°C** for now.
+- ⚠ The H2D prints black ASA at chamber 60 (same HF nozzle type) without issues, which points to an H2C-specific cause. Check the left hotend fan and heatsink; swap spools H2D↔H2C.
 - Purpose: black ASA heat creep on this nozzle with the stock profile. Causes not yet isolated. Chamber 60°C is the lead suspect. Recurred on black at 255/60/100 with 0.4mm retraction (rules out long retraction). White clean at same conditions. Black MVS test failed in layer 1. ❌ No MVS data. Feed/hotend diagnosis pending. Filament squashed (softened) at the extruder gear, so the extruder zone is overheating. Nozzle temp ruled out (white tower completed starting at 270°C). Colour vs object size not yet separated. Next: white MVS at the same conditions. Black failed at the layer-1 perimeter → fill transition (when extrusion force rose). White MVS test completed at identical conditions in the same AMS slot, so the failure is black-specific. Next black test: chamber 50°C. White MVS ceiling reading pending. Session 2026-10-01
 
 ---

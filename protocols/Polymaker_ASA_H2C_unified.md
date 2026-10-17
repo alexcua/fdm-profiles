@@ -40,7 +40,9 @@ Slight flattening counts as **marginal** — treat it as a fail when choosing se
 | Run | Colour | Chamber | Bed | Nozzle | Next |
 |---|---|---|---|---|---|
 | A1 | Black | 50 | 100 | 255 | Pass → A2. Fail → A3 |
+  > Previously logged as Pass (2026-10-17); changed after the user reported the stall.
 | A2 | 2026-10-17 | Black | 55 | 100 | 255 | ⚠ TBD | **Fail**: filament jam error. Less severe than at 60 (didn't wrap the extruder). Extruder not physically jammed: white loaded and purged normally afterwards. **Threshold**: softening enough to trip the sensor, then recovering. Jam height/time ⚠ TBD. | Not checkable (H2C cutter) | Not logged |
+| A3 | 2026-10-17 | Black | 45 | 100 | 255 | Yes | **Pass**: full tower, no errors or stalls. Glossy throughout; mild waviness near the top edges (flow/speed). Nano Polymer Adhesive on the plate. | Not checkable (H2C cutter) | Received |
 | A2 | Black | 55 | 100 | 255 | Finds the upper edge (pass or fail) → Stage B |
 | A3 | Black | 45 | 100 | 255 | Pass → Stage B. Fail → A4 |
 | A4 | Black | 45 | 90 | 255 | Pass → Stage B. Fail → **stop**: check hardware (toolhead fan, extruder, nozzle seating) before more runs |
