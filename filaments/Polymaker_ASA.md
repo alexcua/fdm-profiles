@@ -67,5 +67,6 @@
 - **Run A3, 2026-10-17:** black, 255 / **chamber 45** / 100, Nano Polymer Adhesive. ✅ **Clean pass**, no errors or stalls, glossy throughout; mild waviness near the top edges (flow/speed). Session 2026-10-17
   - **Black working chamber on this H2C: 45°C** (protocol margin rule: one step below the first failure, 50). Chamber results: 60 hard jam / 55 jam error / 50 stall / 45 clean.
   - Adhesive needed at 45 (at 60 none was needed). User wants to avoid adhesive.
+  - **Provisional black MVS at chamber 45:** ripples start at **11mm**, so the quality ceiling is 10 + 11 = **21 mm³/s** and production ~**17 mm³/s** (80%). Sheen never dropped (>30). ⚠ Provisional until Stage C (temp towers at chamber 45) and Stage D (28→45). Some rippling may be thin-wall flex at ~100+ mm/s rather than a true flow limit; multi-wall parts may hold higher. Session 2026-10-17
   - ⚠ **Strong hint of an H2C-specific cause:** the H2D prints black ASA at chamber 60 with the same HF nozzle type and no issues, and both Polymaker presets use chamber 60. Next: check the H2C left hotend fan and heatsink, and swap spools between H2D and H2C. If it's H2C hardware, fix it and rerun at 60, which would remove the adhesive need.
 - **Test plan:** `protocols/Polymaker_ASA_H2C_unified.md`. Aim is one profile for white and black; split only per that doc's decision rules.
