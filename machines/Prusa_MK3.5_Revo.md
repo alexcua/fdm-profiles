@@ -40,7 +40,7 @@
   - Strings across the whole range, not just the hot end, point to retraction or moisture: dry the spool before MVS.
   - Filament: 3D Fuel PCTG, assumed from the 240–280 tower range; user didn't correct it.
   - ⚠ Pending: tower settings used (bed temp).
-- **MVS at 255°C, 6→20 mm³/s step 1** (settings assumed as recommended; user didn't correct). Session 2026-10-17
+- **MVS at 255°C, 6→20 mm³/s step 1** (recommended settings, confirmed by user). Session 2026-10-17
   - Sheen change at **5mm**, faint but confirmed by user, so the ceiling is 6 + 5 × 1 = **11 mm³/s**. Strength held all the way to the top (≥20).
   - Production = 80% of the sheen ceiling, 8.8, rounded to **9 mm³/s** ✅.
   - Untested option: a strength-based Draft tier (≥16, i.e. 80% of ≥20) if finish doesn't matter. Needs an 18→30 pass to find the real strength limit.
