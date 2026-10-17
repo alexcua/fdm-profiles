@@ -442,7 +442,7 @@ These settings resolved overhang curl on curved geometry (confirmed August 2026)
 | Prusa MK3.5 0.6 Revo brass (CM05) | Polymaker PETG HF | Full sequence (not started) |
 | Prusa MK3.5 0.6 CHT (CM01) | Polymaker PETG HF | Temp 245°C ✅. Dry spool, then MVS at 245 → PA → retraction |
 | Bambu P1S 0.6 | — | First-run validation of start G-code purge-coil/debris mods (`gcode/Bambu_P1S_0.6_start.gcode`, see machines/Bambu_P1S.md) |
-| Bambu H2C (0.6 HF left) | Polymaker ASA | A1 passed (chamber 50, black OK, prongs lifted). Next: A2 at chamber 55. Run `protocols/Polymaker_ASA_H2C_unified.md` (stages A–F). Controlled (vise) snap test 250/255/260, black temp check, MVS, retraction, heat creep root cause |
+| Bambu H2C (0.6 HF left) | Polymaker ASA | A1 pass (chamber 50), A2 fail (chamber 55, jam). Next: A3 at chamber 45 with glue stick, then Stage F. Run `protocols/Polymaker_ASA_H2C_unified.md` (stages A–F). Controlled (vise) snap test 250/255/260, black temp check, MVS, retraction, heat creep root cause |
 
 ---
 
@@ -479,3 +479,4 @@ These settings resolved overhang curl on curved geometry (confirmed August 2026)
 | October 17, 2026 | Prusa MK3.5 CM03 (0.4 E3D V6 brass) — 3D Fuel PCTG retraction | Retraction test 0→2.0 at 260°C: no stringing at any height. 0.6mm @ 45 mm/s. Calibration sequence complete. |
 | October 17, 2026 | Prusa MK3.5 CM04 (0.6 Revo ObXidian) — 3D Fuel PCTG retraction | Retraction towers rough with strings, unreadable. Spool differs from CM03 (clean), so moisture is suspected; MVS 9 flagged as possibly low. Dry, clean nozzle, rerun retraction, recheck MVS. |
 | October 17, 2026 | Bambu H2C 0.6 HF — Polymaker ASA run A1 (black, chamber 50) | Black at 255 / chamber 50 / bed 100 completed the full MVS tower 10→30, glossy throughout, no heat creep. Only change from the failed run was chamber 60 → 50, so chamber heat is confirmed as the cause. Black MVS ceiling >30 at chamber 50. Middle prongs lifted (adhesion cost). Gear check not possible on the H2C (cutter). Next: A2 at 55. |
+| October 17, 2026 | Bambu H2C 0.6 HF — Polymaker ASA run A2 (black, chamber 55) | Filament jam error at chamber 55 (milder than at 60, no wrap around the extruder). Black chamber limit is between 50 and 55. A1 tower ripples on all 3 prongs point to the flow/speed limit near the top, not only to lifting. Next: A3 at 45. |
