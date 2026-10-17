@@ -437,7 +437,7 @@ These settings resolved overhang curl on curved geometry (confirmed August 2026)
 | Elegoo Giga | PCTG + Polylite PETG | Functional part validation |
 | Bambu X2D | ASA | Full calibration sequence (deferred) |
 | Bambu A1 0.6 | — | First-run validation of start/end G-code blob mods (preset `Bambu Lab A1 0.6 (Nozzle Clear)`; see machines/Bambu_A1.md) |
-| Prusa MK3.5 0.4 E3D V6 brass (CM03) | 3D Fuel PCTG | Temp 260°C ✅. Next: MVS 4→14 at 260, then PA → retraction. Confirm tower bed temp. |
+| Prusa MK3.5 0.4 E3D V6 brass (CM03) | 3D Fuel PCTG | Temp 260°C ✅, MVS 9 mm³/s ✅ (ceiling 11.5). Next: PA → retraction. Confirm bed temp. |
 | Prusa MK3.5 0.6 Revo ObXidian (CM04) | 3D Fuel PCTG | Temp 255°C ✅. Dry spool, then MVS at 255 → PA → retraction. Confirm tower bed temp. |
 | Prusa MK3.5 0.6 Revo brass (CM05) | Polymaker PETG HF | Full sequence (not started) |
 | Bambu P1S 0.6 | — | First-run validation of start G-code purge-coil/debris mods (`gcode/Bambu_P1S_0.6_start.gcode`, see machines/Bambu_P1S.md) |
@@ -470,3 +470,4 @@ These settings resolved overhang curl on curved geometry (confirmed August 2026)
 | October 6, 2026 | Bambu P1S 0.6 — start G-code purge coil + bed debris | Stock homes Z on the bed edge after one wipe at first-layer temp −20 (PETG/PCTG ooze left at the touch point), and flings the purge coil with a 15000 mm/min move before the PETG/PCTG string has frozen. Mods (non-PLA only): cool to −60 plus a 5s pause before the shake, slow wiper passes and a slow exit, two extra wipes before the Z-home touch. ⚠ Not yet run on a printer. A1 user preset named `Bambu Lab A1 0.6 (Nozzle Clear)`. |
 | October 16, 2026 | Prusa MK3.5 CM03 (0.4 E3D V6 brass) — 3D Fuel PCTG temp tower | Tower 280→240 photo-reviewed: 255–265 clean, ≤250 rough circle tops, ≥270 stringing, 280 brown speck. 260°C confirmed by user (snap test not run). Also recorded: CM05 = MK3.5 0.6 Revo brass (Polymaker PETG HF loaded); one MK3.5 has a 0.6 Revo hardened. Corrected PCTG note: not abrasive. |
 | October 16, 2026 | Prusa MK3.5 CM04 (0.6 Revo ObXidian) — 3D Fuel PCTG temp tower | Tower 280→240 photo-reviewed: 260 cleanest, ≤245 cold, ≥265 stringing, 275–280 bubbling. User chose 255°C from the part in hand (cleaner bridge, less stringing); my photo read was 260. Strings across the whole range, so check retraction/moisture. CM04 recorded as the ObXidian Revo machine. |
+| October 16, 2026 | Prusa MK3.5 CM03 (0.4 E3D V6 brass) — 3D Fuel PCTG MVS | MVS 4→14 step 1 at 260°C: sheen drop and easy layer split at 7.5mm, so the ceiling is 11.5 mm³/s. Production 9 mm³/s (80%). |
