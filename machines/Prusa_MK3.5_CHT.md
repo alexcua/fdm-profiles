@@ -13,7 +13,7 @@
 |---|---|---|---|---|---|---|---|---|---|
 | 3D Fuel PCTG | 260–265°C | 80°C | 24mm³/s | 0.98 | ⚠ TBD | ⚠ TBD | ⚠ Partial | 2026-08-02 |
 | Polylite PETG | 255°C | 80°C | 15/17/19 mm³/s (Q/N/D) | ⚠ TBD | ⚠ TBD | 0.044 | ⚠ Partial | 2026-08-02 |
-| Polymaker PETG HF | ⚠ 245°C proposed (pick 245/250 pending) | ⚠ TBD | ⚠ TBD | ⚠ TBD | ⚠ TBD | ⚠ TBD | ⚠ In progress | Session 2026-10-17 |
+| Polymaker PETG HF | 245°C ✅ | ⚠ TBD | ⚠ TBD | ⚠ TBD | ⚠ TBD | ⚠ TBD | ⚠ In progress (temp ✅) | Session 2026-10-17 |
 | California Matte PETG | 220°C | 80°C | 10–12mm³/s | ⚠ TBD | ⚠ TBD | ⚠ TBD | ⚠ Partial | 2026-08-02 |
 
 ---
@@ -35,7 +35,8 @@
   - 265–270: hairy circles, sagging stringy bridge at 270, bumpy/bubbly overhang faces. Too hot.
   - **Proposed 245°C** (middle of the clean range); 250 also viable. Fleet: X1C/P1S 0.6 250, XL 0.4 255. Not ported.
   - Bubbly faces at 260–270 can also mean moisture: dry the spool before MVS.
-  - ⚠ Pending: user's pick (245 vs 250) from the part in hand; tower settings used.
+  - ✅ **245°C confirmed by user.** Session 2026-10-17
+  - ⚠ Pending: tower settings used. Next: dry the spool, then MVS at 245°C.
 
 ### Polylite PETG
 - MVS cliff ~20mm³/s. Tiers 15/17/19 mm³/s Quality/Normal/Draft.

@@ -12,7 +12,7 @@
 | Bambu X1C | 0.6mm HS | 250°C / 250°C | 70°C | 20mm³/s | 0.952 | 1.0mm | Firmware | ✅ | Imported 2026-06-10 |
 | Bambu P1S | 0.6mm HS | 250°C / 250°C | 70°C | 20mm³/s | 0.952 | 1.0mm | Firmware | ✅ | Imported 2026-06-10 |
 | Bambu X2D | 0.6mm main | ⚠ TBD | ⚠ TBD | ⚠ TBD | 0.952 | ⚠ TBD | Firmware | ⚠ Pending | — |
-| Prusa MK3.5 (CM01) | 0.6mm CHT | ⚠ 245°C proposed | ⚠ TBD | ⚠ TBD | ⚠ TBD | ⚠ TBD | ⚠ TBD | ⚠ In progress | Session 2026-10-17 |
+| Prusa MK3.5 (CM01) | 0.6mm CHT | 245°C ✅ | ⚠ TBD | ⚠ TBD | ⚠ TBD | ⚠ TBD | ⚠ TBD | ⚠ In progress | Session 2026-10-17 |
 | Prusa XL | 0.4mm OBX HF | 255°C / 255°C | 80°C | 16mm³/s | 1.0 | 0.8mm | 0.050 | ✅ | Imported 2026-06-10 |
 
 ---
@@ -40,7 +40,7 @@
 - G-code sliced on P1S profile can run on X1C with flow cal disabled and purge line removed.
 
 ### Prusa MK3.5 (CM01) — 0.6mm CHT
-- Temp tower 270→230°C (gray): 240–250 clean, ≤235 drooping bridges, ≥255 stringing, 265–270 bubbly. Proposed 245°C (250 viable); user's pick pending. Dry before MVS. Session 2026-10-17
+- Temp tower 270→230°C (gray): 240–250 clean, ≤235 drooping bridges, ≥255 stringing, 265–270 bubbly. **245°C confirmed by user.** Dry before MVS. Session 2026-10-17
 
 ### Prusa XL — 0.4mm Obxidian HF
 - Temp tower range 250–260°C. 245°C fails on bridges. 255°C provides safe buffer.
