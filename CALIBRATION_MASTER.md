@@ -438,7 +438,7 @@ These settings resolved overhang curl on curved geometry (confirmed August 2026)
 | Bambu X2D | ASA | Full calibration sequence (deferred) |
 | Bambu A1 0.6 | — | First-run validation of start/end G-code blob mods (preset `Bambu Lab A1 0.6 (Nozzle Clear)`; see machines/Bambu_A1.md) |
 | Prusa MK3.5 0.4 E3D V6 brass (CM03) | 3D Fuel PCTG | Temp 260°C ✅, MVS 9 mm³/s ✅ (ceiling 11.5). Next: PA → retraction. Confirm bed temp. |
-| Prusa MK3.5 0.6 Revo ObXidian (CM04) | 3D Fuel PCTG | Temp 255°C ✅. Dry spool, then MVS at 255 → PA → retraction. Confirm tower bed temp. |
+| Prusa MK3.5 0.6 Revo ObXidian (CM04) | 3D Fuel PCTG | Temp 255°C ✅, MVS 9 mm³/s ✅ (sheen ceiling 11, strength ≥20). Next: PA → retraction. Confirm bed temp. |
 | Prusa MK3.5 0.6 Revo brass (CM05) | Polymaker PETG HF | Full sequence (not started) |
 | Prusa MK3.5 0.6 CHT (CM01) | Polymaker PETG HF | Temp 245°C ✅. Dry spool, then MVS at 245 → PA → retraction |
 | Bambu P1S 0.6 | — | First-run validation of start G-code purge-coil/debris mods (`gcode/Bambu_P1S_0.6_start.gcode`, see machines/Bambu_P1S.md) |
@@ -473,3 +473,4 @@ These settings resolved overhang curl on curved geometry (confirmed August 2026)
 | October 16, 2026 | Prusa MK3.5 CM04 (0.6 Revo ObXidian) — 3D Fuel PCTG temp tower | Tower 280→240 photo-reviewed: 260 cleanest, ≤245 cold, ≥265 stringing, 275–280 bubbling. User chose 255°C from the part in hand (cleaner bridge, less stringing); my photo read was 260. Strings across the whole range, so check retraction/moisture. CM04 recorded as the ObXidian Revo machine. |
 | October 16, 2026 | Prusa MK3.5 CM03 (0.4 E3D V6 brass) — 3D Fuel PCTG MVS | MVS 4→14 step 1 at 260°C: sheen drop and easy layer split at 7.5mm, so the ceiling is 11.5 mm³/s. Production 9 mm³/s (80%). |
 | October 17, 2026 | Prusa MK3.5 CM01 (0.6 CHT) — Polymaker PETG HF temp tower | Tower 270→230 (gray) photo-reviewed: 240–250 clean, ≥255 stringing, 265–270 bubbly. 245°C confirmed by user. |
+| October 17, 2026 | Prusa MK3.5 CM04 (0.6 Revo ObXidian) — 3D Fuel PCTG MVS | 6→20 step 1 at 255°C: faint sheen change at 5mm, so the ceiling is 11; strength held to 20. Production 9 mm³/s. Same ceiling as CM03's 0.4, consistent with the Revo's short melt zone. |
