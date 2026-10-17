@@ -11,7 +11,7 @@
 
 | Filament | Temp | Bed | MVS | Flow | Retraction | PA | Status |
 |---|---|---|---|---|---|---|---|
-| 3D Fuel PCTG | ⚠ 260°C proposed (snap test + confirm pending) | ⚠ TBD | ⚠ TBD | ⚠ TBD | ⚠ TBD | ⚠ TBD | ⚠ In progress, Session 2026-10-16 |
+| 3D Fuel PCTG | 260°C ✅ | ⚠ TBD | ⚠ TBD | ⚠ TBD | ⚠ TBD | ⚠ TBD | ⚠ In progress (temp ✅), Session 2026-10-16 |
 
 ---
 
@@ -24,7 +24,9 @@
   - 270–275: strings off the overhang tips and around the cone. Too hot.
   - 280: strings plus a tan/brown speck (darkened, overheated plastic, or baked-on residue from the nozzle exterior). Too hot.
   - **Proposed 260°C**, the middle of the clean 255–265 range. Slightly below the fleet's usual 265, which is plausible for a 0.4 brass V6 at low flow. Not ported from other machines.
-  - ⚠ Pending: vise snap test of 255/260/265 (use 265 if it's clearly stronger), user confirmation of the pick, and confirmation of the tower settings used (recommended: bed 80°C, MVS cap 6 mm³/s, fan 10–30%).
+  - ✅ **260°C confirmed by user.** Session 2026-10-16. Vise snap test not run; user accepted 260 on visual result.
+  - ⚠ Pending: confirm the tower settings used (recommended: bed 80°C, MVS cap 6 mm³/s, fan 10–30%).
+  - Next: MVS test at 260°C, 4→14 mm³/s step 1.
   - Check the nozzle exterior for baked-on residue before the next test.
 - Full calibration sequence needed once filament is decided: temp tower → MVS → PA → retraction.
 - Do not port values from CHT or Revo configs — E3D V6 has different flow characteristics.
