@@ -82,7 +82,9 @@
 - Temp tower 280→240°C: 260 cleanest, ≤245 too cold, ≥265 stringing, 275–280 bubbling. **255°C chosen by user** (cleaner bridge, less stringing in hand). My photo read was 260, replaced.
 - MVS 6→20 step 1 at 255°C: faint sheen change at 5mm, so the ceiling is 11 mm³/s; strength held to 20. Production 9 mm³/s. About the same ceiling as CM03's 0.4 (Revo short melt zone). Session 2026-10-17
 - PA pattern 0→0.08 at 255°C: 0.02–0.03 most well formed (user, in hand). PA 0.025. Session 2026-10-17
-- Retraction test unreadable (rough towers, strings). Different spool from CM03, which printed clean. Moisture suspected, so MVS 9 may be low. Dry the spool, rerun retraction, then recheck MVS. Session 2026-10-17 Strings across the whole range, so dry before MVS. Session 2026-10-16
+- Retraction test unreadable (rough towers, strings). Different spool from CM03, which printed clean. Moisture suspected, so MVS 9 may be low. Dry the spool, rerun retraction, then recheck MVS. Session 2026-10-17
+- Rerun with CM03's clean spool: still rough + stringy, so **moisture is ruled out and the cause is CM04 hardware** (suspect partial clog, nozzle buildup, extruder tension, Revo seating). Cold pull, then retraction 0→1.0 step 0.05, then recheck MVS. Session 2026-10-17
+  > Previously: moisture suspected (2026-10-17). Ruled out by the spool swap. Strings across the whole range, so dry before MVS. Session 2026-10-16
 
 ### Prusa MK3.5 — 0.6mm CHT
 - MVS ceiling above 30mm³/s — CHT nozzle high-flow advantage confirmed.

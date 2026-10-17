@@ -56,6 +56,11 @@
   - CM04's spool is **different from CM03's** (CM03 printed clean at every retraction). CM04 strung on every test, so **moisture is the lead suspect**.
   - ⚠ **CM04 results may be moisture-affected:** MVS 9 (sheen ceiling 11) may be low, since moisture lowers the flow limit; the "Revo short melt zone" explanation is unconfirmed. Temp 255 and PA 0.025 are probably sound.
   - Plan: dry the spool (65–70°C, 6–8h), clean the nozzle, rerun retraction 0→2.0. If stringing clears, rerun MVS 6→20 to check whether the ceiling rises.
+- **Retraction rerun with CM03's spool** (the one that printed clean on CM03). ❌ Still rough at every height, with strings mid-height between and around the towers. Session 2026-10-17
+  - **Moisture ruled out; the cause is CM04 itself.** This explains the stringing on every CM04 test.
+  > Previously: moisture was the lead suspect (2026-10-17). Ruled out by the spool swap.
+  - Suspects, cheapest first: partial nozzle clog (do cold pulls until clean), buildup on the nozzle exterior, extruder idler tension (compare with CM03), Revo nozzle seating or tip damage.
+  - Next: cold pull + clean, then retraction 0→1.0 step 0.05 (Revo short melt zone), then recheck MVS (a partial clog would lower it). Temp 255 and PA 0.025 stand.
 
 ---
 
