@@ -28,6 +28,8 @@ A run **passes** only if:
 
 Slight flattening counts as **marginal** — treat it as a fail when choosing settings.
 
+**H2C note (added after A1, 2026-10-17):** the gear check isn't possible on the H2C. On unload, the cutter cuts the filament above the extruder, so the gear-gripped section stays in the toolhead and is purged on the next load. On the H2C a run passes if it completes the stage target with no under-extrusion or heat creep.
+
 ---
 
 ## Stage A — Find black's working window (chamber, then bed)
@@ -135,4 +137,4 @@ Copy one row per run. Log each result in the three repo docs (filament, machine,
 
 | Run | Date | Colour | Chamber | Bed | Nozzle | Cold start | Result (height / stage target) | Filament at gear | Photo |
 |---|---|---|---|---|---|---|---|---|---|
-| A1 | ⚠ TBD | Black | 50 | 100 | 255 | ⚠ TBD | ⚠ TBD | ⚠ TBD | ⚠ TBD |
+| A1 | 2026-10-17 | Black | 50 | 100 | 255 | Yes | **Pass**: full tower (10→30) completed, glossy to the top, no heat creep. Middle prong(s) lifted from the bed. | Not checkable (H2C cutter, see note) | Not logged |

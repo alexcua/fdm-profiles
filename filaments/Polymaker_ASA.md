@@ -56,4 +56,8 @@
 - **White MVS test (10–30 mm³/s) completed** at identical conditions (255 / 60 / 100, same AMS 3 slot). Object size and AMS ruled out. **The failure is black-specific.** ⚠ Toolhead heat soak still not fully excluded until confirmed whether the machine cooled between runs. Session 2026-10-01
 - ⚠ White MVS ceiling not yet read. Needs a close-up photo and the height where sheen or wall quality drops. Record it as a white-only value, not ported to black.
 - Validate each one on a black print before recording a fix.
+- **Run A1 (protocol), 2026-10-17:** black, nozzle 255 / **chamber 50** / bed 100, Max flowrate 10→30, cold start. **Pass:** full tower completed, glossy to the top, no heat creep. Against the failed black MVS run (255 / 60 / 100) the only change was the chamber, so **chamber heat confirmed as the cause of the black failure**. Session 2026-10-17
+  - Black flow limit at chamber 50 is **above 30 mm³/s** (glossy throughout). Second pass 28→45 planned in Stage D. Polymaker's preset leaves the HF MVS empty; Bambu's generic fallback is 12.
+  - ⚠ **Adhesion trade-off:** middle prong(s) lifted at chamber 50; never needed glue at 60. Next: A2 at chamber 55 after a soap wipe of the plate.
+  - Gear check not possible on the H2C (cutter cuts above the extruder).
 - **Test plan:** `protocols/Polymaker_ASA_H2C_unified.md`. Aim is one profile for white and black; split only per that doc's decision rules.
