@@ -27,7 +27,7 @@
 
 | Filament | Temp | Bed | MVS | Flow | Retraction | PA | Status |
 |---|---|---|---|---|---|---|---|
-| 3D Fuel PCTG (⚠ confirm) | ⚠ 260°C proposed (confirm pending) | ⚠ TBD | ⚠ TBD | ⚠ TBD | ⚠ TBD | ⚠ TBD | ⚠ In progress, Session 2026-10-16 |
+| 3D Fuel PCTG | 255°C ✅ | ⚠ TBD | ⚠ TBD | ⚠ TBD | ⚠ TBD | ⚠ TBD | ⚠ In progress (temp ✅), Session 2026-10-16 |
 
 - **Temp tower 280→240°C step 5** (photos reviewed). Session 2026-10-16
   - 240–245: rough, beaded lines under the ledges; drooping layers at the top of the circle at 240; strings in the circle at 245. Too cold.
@@ -35,9 +35,11 @@
   - 260: clean overhang, crisp numerals, clean circle and cone. Best.
   - 265–270: strings in the circle, getting worse.
   - 275–280: lumpy, bubbly texture inside the window, drooping bridges, heavy strings. Too hot.
-  - **Proposed 260°C.** Same as CM03 (0.4 V6 brass). ObXidian conducts heat close to brass.
+  - ✅ **255°C chosen by user** from the part in hand: cleaner bridge and less stringing than 260. Session 2026-10-16
+    > Previously: 260°C proposed from photo review (2026-10-16). Replaced because the user's in-hand inspection showed 255 cleaner. The single long string off the 255 tip is likely from a travel move, not temperature.
   - Strings across the whole range, not just the hot end, point to retraction or moisture: dry the spool before MVS.
-  - ⚠ Pending: user confirmation of filament (assumed 3D Fuel PCTG from the 240–280 range) and of the 260 pick; tower settings used.
+  - Filament: 3D Fuel PCTG, assumed from the 240–280 tower range; user didn't correct it.
+  - ⚠ Pending: tower settings used (bed temp). Next: dry the spool, then MVS at 255°C.
 
 ---
 
@@ -52,6 +54,6 @@
 ## ⚠ Pending
 
 - All nozzle sizes and filament combinations need full calibration.
-- CM04 (0.6 ObXidian): 3D Fuel PCTG temp tower done, 260°C proposed (2026-10-16). CM05 (0.6 brass): Polymaker PETG HF loaded, not yet calibrated.
+- CM04 (0.6 ObXidian): 3D Fuel PCTG temp 255°C ✅ (2026-10-16). CM05 (0.6 brass): Polymaker PETG HF loaded, not yet calibrated.
 - Calibrate in this priority order based on usage frequency.
 - Each nozzle size is a separate calibration — values do not transfer between sizes.
