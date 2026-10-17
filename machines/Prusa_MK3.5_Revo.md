@@ -2,7 +2,7 @@
 
 **Nozzle:** E3D Revo swappable system — available sizes: 0.4mm, 0.6mm, 0.8mm  
 **Slicer:** OrcaSlicer / PrusaSlicer  
-**Machines (Cherokee Makerspace ×2):** one with a 0.6 **brass** Revo nozzle, one with a 0.6 **hardened** Revo nozzle (⚠ confirm: ObXidian or plain hardened steel). Recorded 2026-10-16.  
+**Machines (Cherokee Makerspace ×2):** **CM05** has the 0.6 **brass** Revo nozzle; one with a 0.6 **hardened** Revo nozzle (⚠ confirm: ObXidian or plain hardened steel). Recorded 2026-10-16.  
 **Notes:** Bed slinger. Brass and hardened are different nozzle types: separate calibrations, values don't transfer between them. Revo nozzle swaps tool-free. Each nozzle size requires independent calibration — do not port MVS between sizes. Do not port from CHT config even at same 0.6mm diameter.
 
 ---
