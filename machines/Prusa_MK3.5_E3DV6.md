@@ -11,7 +11,7 @@
 
 | Filament | Temp | Bed | MVS | Flow | Retraction | PA | Status |
 |---|---|---|---|---|---|---|---|
-| 3D Fuel PCTG | 260°C ✅ | ⚠ TBD | 9 mm³/s ✅ (ceiling 11.5) | ⚠ TBD | ⚠ TBD | 0.03 ✅ | ⚠ In progress (temp + MVS + PA ✅), Session 2026-10-16 / 2026-10-17 |
+| 3D Fuel PCTG | 260°C ✅ | ⚠ TBD | 9 mm³/s ✅ (ceiling 11.5) | ⚠ TBD (0.98 working) | 0.6mm @ 45mm/s ✅ | 0.03 ✅ | ⚠ Sequence complete; bed + flow TBD, Session 2026-10-16 / 2026-10-17 |
 
 ---
 
@@ -33,7 +33,10 @@
   - User's in-hand inspection: tips smooth from **0.03 to 0.05**, nearly identical.
   - **PA 0.03 ✅, chosen by user** (low end of the flat clean range). A flat pattern means PA isn't sensitive here. Not ported.
     > Previously: 0.04 (2026-10-17), the middle of the clean range. Replaced by the user's choice of 0.03 within the same range.
-  - Next: retraction.
+- **Retraction test (0→2.0, step 0.1, @ 45 mm/s), 260°C, PA 0.03** (photo reviewed + user). Session 2026-10-17
+  - Towers smooth and even with **no stringing at any height**, including the bottom (user: "super clean"). One string off the final travel, small blob at the base.
+  - **0.6mm @ 45 mm/s ✅**: a low value with margin to stop ooze blobs, since strings aren't the issue at any length. Close to the P1S 0.4 (0.6mm). Not ported.
+- ⚠ Remaining: bed temp used (80°C if the recommended settings were used), flow ratio not tested (0.98 working value), fan not tuned.
   - Check the nozzle exterior for baked-on residue before the next test.
 - Full calibration sequence needed once filament is decided: temp tower → MVS → PA → retraction.
 - Do not port values from CHT or Revo configs — E3D V6 has different flow characteristics.

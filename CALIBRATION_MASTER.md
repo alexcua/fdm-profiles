@@ -437,7 +437,7 @@ These settings resolved overhang curl on curved geometry (confirmed August 2026)
 | Elegoo Giga | PCTG + Polylite PETG | Functional part validation |
 | Bambu X2D | ASA | Full calibration sequence (deferred) |
 | Bambu A1 0.6 | — | First-run validation of start/end G-code blob mods (preset `Bambu Lab A1 0.6 (Nozzle Clear)`; see machines/Bambu_A1.md) |
-| Prusa MK3.5 0.4 E3D V6 brass (CM03) | 3D Fuel PCTG | Temp 260°C ✅, MVS 9 ✅, PA 0.03 ✅. Next: retraction. Confirm bed temp. |
+| Prusa MK3.5 0.4 E3D V6 brass (CM03) | 3D Fuel PCTG | Sequence complete: 260°C / MVS 9 / PA 0.03 / retraction 0.6 @ 45. Remaining: bed temp, flow ratio (0.98 working), fan. |
 | Prusa MK3.5 0.6 Revo ObXidian (CM04) | 3D Fuel PCTG | Temp 255°C ✅, MVS 9 ✅, PA 0.025 ✅. Next: retraction (dry spool, clean nozzle first). Confirm bed temp. |
 | Prusa MK3.5 0.6 Revo brass (CM05) | Polymaker PETG HF | Full sequence (not started) |
 | Prusa MK3.5 0.6 CHT (CM01) | Polymaker PETG HF | Temp 245°C ✅. Dry spool, then MVS at 245 → PA → retraction |
@@ -476,3 +476,4 @@ These settings resolved overhang curl on curved geometry (confirmed August 2026)
 | October 17, 2026 | Prusa MK3.5 CM04 (0.6 Revo ObXidian) — 3D Fuel PCTG MVS | 6→20 step 1 at 255°C: faint sheen change at 5mm, so the ceiling is 11; strength held to 20. Production 9 mm³/s. Same ceiling as CM03's 0.4, consistent with the Revo's short melt zone. |
 | October 17, 2026 | Prusa MK3.5 CM03 (0.4 E3D V6 brass) — 3D Fuel PCTG PA | Pattern 0→0.08 at 260°C: 0–0.01 blobby tips, 0.03–0.05 smooth and nearly identical (user, in hand). PA 0.03 (user's choice; 0.04 proposed first). |
 | October 17, 2026 | Prusa MK3.5 CM04 (0.6 Revo ObXidian) — 3D Fuel PCTG PA | Pattern 0→0.08 at 255°C: tips rounded below ~0.015, 0.02–0.03 most well formed (user, in hand). PA 0.025. Wisps at tips = stringing, not PA. |
+| October 17, 2026 | Prusa MK3.5 CM03 (0.4 E3D V6 brass) — 3D Fuel PCTG retraction | Retraction test 0→2.0 at 260°C: no stringing at any height. 0.6mm @ 45 mm/s. Calibration sequence complete. |
