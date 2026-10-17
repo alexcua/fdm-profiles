@@ -27,7 +27,7 @@
 
 | Filament | Temp | Bed | MVS | Flow | Retraction | PA | Status |
 |---|---|---|---|---|---|---|---|
-| 3D Fuel PCTG | 255°C ✅ | ⚠ TBD | 9 mm³/s ✅ (sheen ceiling 11) | ⚠ TBD | ⚠ TBD | ⚠ TBD | ⚠ In progress (temp + MVS ✅), Session 2026-10-16 / 2026-10-17 |
+| 3D Fuel PCTG | 255°C ✅ | ⚠ TBD | 9 mm³/s ✅ (sheen ceiling 11) | ⚠ TBD | ⚠ TBD | 0.025 ✅ | ⚠ In progress (temp + MVS + PA ✅), Session 2026-10-16 / 2026-10-17 |
 
 - **Temp tower 280→240°C step 5** (photos reviewed). Session 2026-10-16
   - 240–245: rough, beaded lines under the ledges; drooping layers at the top of the circle at 240; strings in the circle at 245. Too cold.
@@ -45,7 +45,12 @@
   - Production = 80% of the sheen ceiling, 8.8, rounded to **9 mm³/s** ✅.
   - Untested option: a strength-based Draft tier (≥16, i.e. 80% of ≥20) if finish doesn't matter. Needs an 18→30 pass to find the real strength limit.
   - Ceiling is about the same as CM03's 0.4 V6 (11.5) despite the larger 0.6 nozzle. Consistent with the Revo's short melt zone limiting flow. Not ported.
-  - Next: PA, then retraction.
+- **PA pattern test, 0→0.08 step 0.005, at 255°C** (photo reviewed). Session 2026-10-17
+  - 0 to ~0.015: rounded, bulging tips (too low). No visible over-advance through 0.08 at photo resolution.
+  - User's in-hand inspection: **0.02–0.03** most well formed.
+  - **PA 0.025 ✅**, the middle of that range. Slightly below CM03 (0.03), as expected for the larger nozzle. Not ported.
+  - Small wisps at several tips: stringing (matches the temp tower), not PA. Dry the spool and clean nozzle buildup before the retraction test. The booger on the left of the pattern was nozzle buildup, ignored.
+  - Next: retraction.
 
 ---
 
