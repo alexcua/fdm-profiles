@@ -11,7 +11,7 @@
 
 | Filament | Temp | Bed | MVS | Flow | Retraction | PA | Status |
 |---|---|---|---|---|---|---|---|
-| 3D Fuel PCTG | 260°C ✅ | ⚠ TBD | 9 mm³/s ✅ (ceiling 11.5) | ⚠ TBD | ⚠ TBD | 0.04 ✅ | ⚠ In progress (temp + MVS + PA ✅), Session 2026-10-16 / 2026-10-17 |
+| 3D Fuel PCTG | 260°C ✅ | ⚠ TBD | 9 mm³/s ✅ (ceiling 11.5) | ⚠ TBD | ⚠ TBD | 0.03 ✅ | ⚠ In progress (temp + MVS + PA ✅), Session 2026-10-16 / 2026-10-17 |
 
 ---
 
@@ -31,7 +31,8 @@
 - **PA pattern test, 0→0.08 step 0.005, at 260°C** (photo reviewed). Session 2026-10-17
   - 0–0.01: rounded, blobby tips (too low). No visible over-advance by 0.08 at photo resolution.
   - User's in-hand inspection: tips smooth from **0.03 to 0.05**, nearly identical.
-  - **PA 0.04 ✅**, the middle of the flat clean range. A flat pattern means PA isn't sensitive here. In line with the other Prusa machines (0.044–0.062). Not ported.
+  - **PA 0.03 ✅, chosen by user** (low end of the flat clean range). A flat pattern means PA isn't sensitive here. Not ported.
+    > Previously: 0.04 (2026-10-17), the middle of the clean range. Replaced by the user's choice of 0.03 within the same range.
   - Next: retraction.
   - Check the nozzle exterior for baked-on residue before the next test.
 - Full calibration sequence needed once filament is decided: temp tower → MVS → PA → retraction.
