@@ -1,5 +1,6 @@
 # Prusa MK3.5 — 0.6mm CHT Nozzle
 
+**Machines:** ×2, same profile. **CM01** is one (second machine ID ⚠ TBD).  
 **Nozzle:** 0.6mm CHT (non-swappable)  
 **Slicer:** OrcaSlicer / PrusaSlicer  
 **Notes:** Bed slinger. CHT nozzle has high MVS ceiling but machine motion limits print speeds. PA set in slicer. Independent calibration required — do not port MVS from Revo or E3D V6 configs.
@@ -12,6 +13,7 @@
 |---|---|---|---|---|---|---|---|---|---|
 | 3D Fuel PCTG | 260–265°C | 80°C | 24mm³/s | 0.98 | ⚠ TBD | ⚠ TBD | ⚠ Partial | 2026-08-02 |
 | Polylite PETG | 255°C | 80°C | 15/17/19 mm³/s (Q/N/D) | ⚠ TBD | ⚠ TBD | 0.044 | ⚠ Partial | 2026-08-02 |
+| Polymaker PETG HF | ⚠ 245°C proposed (pick 245/250 pending) | ⚠ TBD | ⚠ TBD | ⚠ TBD | ⚠ TBD | ⚠ TBD | ⚠ In progress | Session 2026-10-17 |
 | California Matte PETG | 220°C | 80°C | 10–12mm³/s | ⚠ TBD | ⚠ TBD | ⚠ TBD | ⚠ Partial | 2026-08-02 |
 
 ---
@@ -24,6 +26,16 @@
 - Layer shift during MVS test caused by bed slinger speed limits — not a filament issue. Does not affect production at 45mm/s.
 - PA and retraction pending.
 - Dry at 65–70°C for 6–8h before printing.
+
+### Polymaker PETG HF (CM01, gray)
+- **Temp tower 270→230°C step 5** (photos reviewed). Session 2026-10-17
+  - 230–235: crisp numerals, drooping lines under the ledges. A bit cold for bridging.
+  - 240–250: crisp numerals, cleanest circles (slight wisps by 250), smooth overhang faces. Clean range.
+  - 255–260: strings across the window and in the circle; overhang faces getting rough.
+  - 265–270: hairy circles, sagging stringy bridge at 270, bumpy/bubbly overhang faces. Too hot.
+  - **Proposed 245°C** (middle of the clean range); 250 also viable. Fleet: X1C/P1S 0.6 250, XL 0.4 255. Not ported.
+  - Bubbly faces at 260–270 can also mean moisture: dry the spool before MVS.
+  - ⚠ Pending: user's pick (245 vs 250) from the part in hand; tower settings used.
 
 ### Polylite PETG
 - MVS cliff ~20mm³/s. Tiers 15/17/19 mm³/s Quality/Normal/Draft.
