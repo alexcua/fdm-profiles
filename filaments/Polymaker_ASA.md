@@ -61,6 +61,6 @@
   - ⚠ **Adhesion trade-off:** middle prong(s) lifted at chamber 50; never needed glue at 60. Next: A2 at chamber 55 after a soap wipe of the plate.
   - Gear check not possible on the H2C (cutter cuts above the extruder).
   - A1 tower: ripples near the top on **all 3 prongs** (2 of 3 lifted), so they're not only from lifting. Likely the flow/speed limit approaching (~150 mm/s single wall at 30 mm³/s). Ripple onset height ⚠ TBD; it gives black's practical quality ceiling (10 + height mm³/s).
-- **Run A2, 2026-10-17:** black, 255 / **chamber 55** / 100. ❌ **Fail: filament jam error**, less severe than at 60 (filament didn't wrap the extruder). **Black's limit is between 50 (pass) and 55 (fail).** Jam timing ⚠ TBD. Session 2026-10-17
+- **Run A2, 2026-10-17:** black, 255 / **chamber 55** / 100. ❌ **Fail: filament jam error**, less severe than at 60 (filament didn't wrap the extruder). **Black's limit is between 50 (pass) and 55 (fail).** Extruder not physically jammed: white loaded and purged normally afterwards, so 55 is right at the threshold (trips the jam sensor, recovers once cool). Still a fail for unattended prints. Jam timing ⚠ TBD. Session 2026-10-17
   - Protocol margin rule gives a working chamber of **45** (one 5°C step below the first fail). Next: A3 at chamber 45 with glue stick for adhesion, then Stage F long print.
 - **Test plan:** `protocols/Polymaker_ASA_H2C_unified.md`. Aim is one profile for white and black; split only per that doc's decision rules.
