@@ -51,6 +51,11 @@
   - **PA 0.025 ✅**, the middle of that range. Slightly below CM03 (0.03), as expected for the larger nozzle. Not ported.
   - Small wisps at several tips: stringing (matches the temp tower), not PA. Dry the spool and clean nozzle buildup before the retraction test. The booger on the left of the pattern was nozzle buildup, ignored.
   - Next: retraction.
+- **Retraction test (0→2.0, step 0.1, @ 45 mm/s), 255°C, PA 0.025** (photo reviewed). ❌ Not readable. Session 2026-10-17
+  - Both towers rough and bumpy, worse toward the top; hairy strings mid–upper; lower section cleanest.
+  - CM04's spool is **different from CM03's** (CM03 printed clean at every retraction). CM04 strung on every test, so **moisture is the lead suspect**.
+  - ⚠ **CM04 results may be moisture-affected:** MVS 9 (sheen ceiling 11) may be low, since moisture lowers the flow limit; the "Revo short melt zone" explanation is unconfirmed. Temp 255 and PA 0.025 are probably sound.
+  - Plan: dry the spool (65–70°C, 6–8h), clean the nozzle, rerun retraction 0→2.0. If stringing clears, rerun MVS 6→20 to check whether the ceiling rises.
 
 ---
 
