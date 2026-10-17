@@ -20,7 +20,7 @@
 | Prusa MK3.5 | 0.6mm CHT | 260–265°C | 80°C | 24mm³/s | 0.98 | ⚠ TBD | ⚠ TBD | ⚠ | 2026-08-02 |
 | Bambu A1 | 0.6mm | 265°C / 265°C | 70°C | 28/32/36 mm³/s (Q/N/D) | ⚠ TBD | 4.0mm @ 45mm/s | Firmware | ✅ | Session 2026-08-05 |
 | Prusa MK3.5 (CM03) | 0.4mm E3D V6 brass | 260°C ✅ | ⚠ TBD | ⚠ TBD | ⚠ TBD | ⚠ TBD | ⚠ TBD | ⚠ In progress | Session 2026-10-16 |
-| Prusa MK3.5 | 0.6mm Revo (brass/hardened ⚠ TBD) | ⚠ TBD (tower in progress) | ⚠ TBD | ⚠ TBD | ⚠ TBD | ⚠ TBD | ⚠ TBD | ⚠ In progress | — |
+| Prusa MK3.5 (CM04) | 0.6mm Revo ObXidian | ⚠ 260°C proposed | ⚠ TBD | ⚠ TBD | ⚠ TBD | ⚠ TBD | ⚠ TBD | ⚠ In progress | Session 2026-10-16 |
 | Elegoo Giga | 0.8mm brass | 265°C | 75°C | 32mm³/s (Normal) | 1.0 | 0.55mm @ 45mm/s | 0.058 | ✅ | 2026-08-02 |
 
 ---
@@ -73,6 +73,9 @@
 
 ### Prusa MK3.5 (CM03) — 0.4mm E3D V6 brass
 - Temp tower 280→240°C: 255–265 clean, ≤250 rough circle tops, ≥270 stringing, 280 brown speck. **260°C confirmed by user** (snap test not run). Session 2026-10-16
+
+### Prusa MK3.5 (CM04) — 0.6mm Revo ObXidian
+- Temp tower 280→240°C: 260 cleanest, ≤245 too cold, ≥265 stringing, 275–280 bubbling. Proposed 260°C (same as CM03); confirmation pending. Strings across the whole range, so dry before MVS. Session 2026-10-16
 
 ### Prusa MK3.5 — 0.6mm CHT
 - MVS ceiling above 30mm³/s — CHT nozzle high-flow advantage confirmed.
