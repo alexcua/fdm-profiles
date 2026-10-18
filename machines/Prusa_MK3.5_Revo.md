@@ -27,7 +27,7 @@
 
 | Filament | Temp | Bed | MVS | Flow | Retraction | PA | Status |
 |---|---|---|---|---|---|---|---|
-| 3D Fuel PCTG | 255°C ✅ | ⚠ TBD | 9 mm³/s ✅ (sheen ceiling 11) | ⚠ TBD | ⚠ TBD | 0.025 ✅ | ⚠ In progress (temp + MVS + PA ✅), Session 2026-10-16 / 2026-10-17 |
+| 3D Fuel PCTG | 255°C ✅ | ⚠ TBD | 9 mm³/s ✅ (sheen ceiling 11) | ⚠ TBD | 0.6mm @ 45mm/s ✅ | 0.025 ✅ | ⚠ Sequence complete; MVS recheck (dry) + bed + flow TBD, Session 2026-10-16 → 2026-10-18 |
 
 - **Temp tower 280→240°C step 5** (photos reviewed). Session 2026-10-16
   - 240–245: rough, beaded lines under the ledges; drooping layers at the top of the circle at 240; strings in the circle at 245. Too cold.
@@ -64,7 +64,7 @@
 - **Retraction rerun after drying the same spool 3h (near-empty spool) AND two cold pulls:** towers smooth and even, one fine string off the top. Clean. Session 2026-10-18
   - **Cause not isolated:** moisture (fixed by drying), a partial clog (cleared by the cold pulls), or both. Both are routine upkeep; CM04 now prints clean.
   > Previously: "Moisture ruled out; the cause is CM04 itself" (2026-10-17), then "moisture was the cause, nothing else changed" (2026-10-18). Both overstated: the user also did two cold pulls, so drying and clog removal changed together.
-  - ⚠ Retraction value pending: lowest clean height from the user (likely ~0.6mm @ 45 if clean from the bottom).
+  - **Retraction 0.6mm @ 45 mm/s ✅**: clean from the bottom, same as CM03 (user). Session 2026-10-18
   - ⚠ **Rerun MVS** (dry spool, clean nozzle): both moisture and a partial clog lower the flow limit, so 9 is likely low.
   - Handling: keep PCTG in a dry box or sealed AMS between machines; re-dry a spool that's been out more than a day.
 

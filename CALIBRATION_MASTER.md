@@ -438,7 +438,7 @@ These settings resolved overhang curl on curved geometry (confirmed August 2026)
 | Bambu X2D | ASA | Full calibration sequence (deferred) |
 | Bambu A1 0.6 | — | First-run validation of start/end G-code blob mods (preset `Bambu Lab A1 0.6 (Nozzle Clear)`; see machines/Bambu_A1.md) |
 | Prusa MK3.5 0.4 E3D V6 brass (CM03) | 3D Fuel PCTG | Sequence complete: 260°C / MVS 9 / PA 0.03 / retraction 0.6 @ 45. Bed 80°C ✅. Remaining: flow ratio (0.98 working), fan, real-print validation. |
-| Prusa MK3.5 0.6 Revo ObXidian (CM04) | 3D Fuel PCTG | Temp 255°C ✅, PA 0.025 ✅. Retraction clean after drying (value pending). Rerun MVS with a dry spool. |
+| Prusa MK3.5 0.6 Revo ObXidian (CM04) | 3D Fuel PCTG | Sequence complete: 255°C / PA 0.025 / retraction 0.6 @ 45. Rerun MVS dry (9 likely low). Bed temp + flow TBD. |
 | Prusa MK3.5 0.6 Revo brass (CM05) | Polymaker PETG HF | Full sequence (not started) |
 | Prusa MK3.5 0.6 CHT (CM01) | Polymaker PETG HF | Temp 245°C ✅. Dry spool, then MVS at 245 → PA → retraction |
 | Bambu P1S 0.6 | — | First-run validation of start G-code purge-coil/debris mods (`gcode/Bambu_P1S_0.6_start.gcode`, see machines/Bambu_P1S.md) |
@@ -482,4 +482,4 @@ These settings resolved overhang curl on curved geometry (confirmed August 2026)
 | October 17, 2026 | Bambu H2C 0.6 HF — Polymaker ASA run A2 (black, chamber 55) | Filament jam error at chamber 55 (milder than at 60, no wrap around the extruder; white loaded and purged fine afterwards, so 55 is the threshold). Black chamber limit is between 50 and 55. A1 tower ripples on all 3 prongs point to the flow/speed limit near the top, not only to lifting. Next: A3 at 45. |
 | October 17, 2026 | Bambu H2C 0.6 HF — Polymaker ASA run A3 (black, chamber 45) | Clean pass, no errors, Nano Polymer Adhesive. Ripple onset at 11mm gives a provisional black MVS of 21, production ~17 (sheen >30). A1 (chamber 50) corrected to marginal: one stall needed a resume. Black working chamber on this H2C is 45. The H2D prints black at 60 with the same HF nozzle type, so an H2C hardware cause (hotend cooling) is suspected. |
 | October 17, 2026 | Prusa MK3.5 CM04 (0.6 Revo ObXidian) — PCTG retraction rerun with CM03's spool | Still rough at every height with strings, using the spool that printed clean on CM03. Moisture ruled out; the cause is CM04 hardware. Next: cold pull, inspect the Revo, retraction 0→1.0 step 0.05, recheck MVS. |
-| October 18, 2026 | Prusa MK3.5 CM04 — PCTG retraction after drying + cold pulls | Same spool dried 3h (near empty) plus two cold pulls: clean towers. Cause not isolated (moisture and/or partial clog). Rerun CM04 MVS. |
+| October 18, 2026 | Prusa MK3.5 CM04 — PCTG retraction after drying + cold pulls | Same spool dried 3h (near empty) plus two cold pulls: clean towers. Cause not isolated (moisture and/or partial clog). Retraction 0.6 @ 45, same as CM03. Rerun CM04 MVS. |
