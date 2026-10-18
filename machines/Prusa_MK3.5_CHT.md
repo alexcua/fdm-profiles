@@ -1,6 +1,6 @@
 # Prusa MK3.5 — 0.6mm CHT Nozzle
 
-**Machines:** ×2, same profile. **CM01** is one (second machine ID ⚠ TBD).  
+**Machines:** **CM01** and **CM02**, functionally the same machine; one shared profile.  
 **Nozzle:** 0.6mm CHT (non-swappable)  
 **Slicer:** OrcaSlicer / PrusaSlicer  
 **Notes:** Bed slinger. CHT nozzle has high MVS ceiling but machine motion limits print speeds. PA set in slicer. Independent calibration required — do not port MVS from Revo or E3D V6 configs.
@@ -26,6 +26,7 @@
 - Layer shift during MVS test caused by bed slinger speed limits — not a filament issue. Does not affect production at 45mm/s.
 - PA and retraction pending.
 - Dry at 65–70°C for 6–8h before printing.
+- **CM02 (black PCTG), 2026-10-18:** many wisps at seams, a blob line up the seam, and speckled bumps/pits across the outer walls. Likely a damp spool (bumps on the walls, not only the seam) plus untuned retraction. Plan (Makerspace policy): dry the spool, one retraction test (0→2.0 step 0.1 @ 45) on CM02 (covers CM01 too), turn on wipe-while-retracting / wipe before outer wall / avoid crossing perimeters, seam to the rear or aligned.
 
 ### Polymaker PETG HF (CM01, gray)
 - **Temp tower 270→230°C step 5** (photos reviewed). Session 2026-10-17

@@ -431,6 +431,7 @@ These settings resolved overhang curl on curved geometry (confirmed August 2026)
 | Bambu A1 | 3D Fuel PCTG 0.6mm | Flow ratio, fan settings |
 | Bambu H2D/H2C | 3D Fuel PCTG 0.6mm | Temp tower rerun with chamber heat-soaked |
 | Prusa MK3.5 (Alexactly) | 3D Fuel PCTG | PA, retraction |
+| Prusa MK3.5 CHT (CM01/CM02) | 3D Fuel PCTG | Seam wisps on CM02: dry spool, one retraction test, wipe/seam settings |
 | Prusa XL | 3D Fuel PCTG | Retraction speed, fan settings, print speeds |
 | MK3.5 Makerspace | California Matte PETG | PA confirmation, retraction |
 | Elegoo Giga | Atomic PLA | Full recalibration 190–230°C |
@@ -486,3 +487,4 @@ These settings resolved overhang curl on curved geometry (confirmed August 2026)
 | October 18, 2026 | Calibration depth policy | User: Makerspace machines (robotics, older MK3.5s, not production) get a reliable middle ground: temp tower, one MVS pass, one retraction test; PA/flow only if needed. Recorded in AGENT.md and CLAUDE.md. CM04 closed with MVS 10 (user; was 9). |
 | October 18, 2026 | MK3.5 CM05 (0.6 Revo brass) — assigned 3D Fuel PCTG | CM05 will run PCTG. Starting values copied from CM04 (ObXidian), untested: 255°C, MVS 10, PA 0.025, retraction 0.6 @ 45. CM03 MVS stays 9 (its 11.5 ceiling was a layer split). |
 | October 18, 2026 | Bambu H2C 0.6 HF — Polymaker ASA white MVS | White 10→30 at 255 / chamber 60 / bed 100: clean throughout (user). Ceiling >30, production 24 mm³/s (floor). Black NoJam ~17 provisional. Photo to follow. |
+| October 18, 2026 | Prusa MK3.5 CM02 (0.6 CHT) — black PCTG seam wisps | CM02 recorded as the second CHT machine (same as CM01). Seam wisps, a blob line at the seam, speckled walls. Suspect a damp spool plus untuned retraction. Plan: dry, one retraction test, wipe/seam settings. |
