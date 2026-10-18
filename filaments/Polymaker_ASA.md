@@ -54,7 +54,8 @@
 - White temp tower completed at the same chamber/bed, starting at 270°C (hottest block is printed first). So nozzle temp is not the cause. Session 2026-10-01
 - Two variables differ between the passing and failing prints: **colour** (white vs black) and **object** (small tower vs larger MVS footprint, i.e. a longer layer 1 with the toolhead low over the 100°C bed). Toolhead heat-soak time also differed (the MVS run came after hours at 60°C chamber).
 - **White MVS test (10–30 mm³/s) completed** at identical conditions (255 / 60 / 100, same AMS 3 slot). Object size and AMS ruled out. **The failure is black-specific.** ⚠ Toolhead heat soak still not fully excluded until confirmed whether the machine cooled between runs. Session 2026-10-01
-- ⚠ White MVS ceiling not yet read. Needs a close-up photo and the height where sheen or wall quality drops. Record it as a white-only value, not ported to black.
+- **White MVS (10→30 at 255°C / chamber 60 / bed 100):** clean all the way up, no sheen drop or ripples (user report 2026-10-18; photo to follow). Ceiling >30, so **white production MVS 24 mm³/s** (80% of 30, a floor). White-only; not ported to black. Session 2026-10-18
+  > Previously: "⚠ White MVS ceiling not yet read" (2026-10-01).
 - Validate each one on a black print before recording a fix.
 - **Run A1 (protocol), 2026-10-17:** black, nozzle 255 / **chamber 50** / bed 100, Max flowrate 10→30, cold start. ⚠ **Marginal:** one stall needed a manual resume (reported after the first log). Otherwise: full tower completed, glossy to the top, no heat creep. Against the failed black MVS run (255 / 60 / 100) the only change was the chamber, so **chamber heat confirmed as the cause of the black failure**. Session 2026-10-17
   - Black flow limit at chamber 50 is **above 30 mm³/s** (glossy throughout). Second pass 28→45 planned in Stage D. Polymaker's preset leaves the HF MVS empty; Bambu's generic fallback is 12.
