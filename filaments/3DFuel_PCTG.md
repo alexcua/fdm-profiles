@@ -1,7 +1,7 @@
 # 3D Fuel PCTG — All Machines
 
 **Primary use:** Alexactly production parts (camera mounts, siding clips, structural components)  
-**Material notes:** Moisture sensitive — dry at 65–70°C for 6–8h before printing. Picks up enough moisture in about a day out to string badly (CM03→CM04, 2026-10-17/18). Drying time scales with the filament left: 6–8h is for a full spool; a near-empty spool dried in 3h (CM04, 2026-10-18). Store in sealed container or AMS. Not abrasive: unfilled PCTG has no fibre or mineral filler, so brass nozzles are fine. Exception: sparkle/glitter colourways (e.g. Galaxy Black) carry particles that can wear brass over long runs.
+**Material notes:** Moisture sensitive — dry at 65–70°C for 6–8h before printing. May pick up enough moisture in about a day out to string badly (CM03→CM04, 2026-10-17/18; not isolated from a nozzle clog). Drying time scales with the filament left: 6–8h is for a full spool; a near-empty spool dried in 3h (CM04, 2026-10-18). Store in sealed container or AMS. Not abrasive: unfilled PCTG has no fibre or mineral filler, so brass nozzles are fine. Exception: sparkle/glitter colourways (e.g. Galaxy Black) carry particles that can wear brass over long runs.
 > Previously: "Mildly abrasive — use hardened steel nozzles for extended runs" — corrected 2026-10-16: unfilled PCTG isn't abrasive (per user).
 
 ---
@@ -85,8 +85,8 @@
 - Retraction test unreadable (rough towers, strings). Different spool from CM03, which printed clean. Moisture suspected, so MVS 9 may be low. Dry the spool, rerun retraction, then recheck MVS. Session 2026-10-17
 - Rerun with CM03's clean spool: still rough + stringy, so **moisture is ruled out and the cause is CM04 hardware** (suspect partial clog, nozzle buildup, extruder tension, Revo seating). Cold pull, then retraction 0→1.0 step 0.05, then recheck MVS. Session 2026-10-17
   > Previously: moisture suspected (2026-10-17). Ruled out by the spool swap.
-- **Correction 2026-10-18:** after drying that same spool 3h (nothing else changed), CM04's retraction towers came out clean. **Moisture was the cause.** The spool picked up moisture between CM03 and CM04. Hardware suspicion withdrawn. Rerun CM04 MVS dry. Session 2026-10-18
-  > Previously: "moisture ruled out, CM04 hardware" (2026-10-17). Wrong. Strings across the whole range, so dry before MVS. Session 2026-10-16
+- **Update 2026-10-18:** after drying that same spool 3h **and two cold pulls on CM04**, the retraction towers came out clean. Cause not isolated (moisture, partial clog, or both). Rerun CM04 MVS. Session 2026-10-18
+  > Previously: "moisture ruled out, CM04 hardware" (2026-10-17), then "moisture was the cause" (2026-10-18). Both overstated: drying and cold pulls changed together. Strings across the whole range, so dry before MVS. Session 2026-10-16
 
 ### Prusa MK3.5 — 0.6mm CHT
 - MVS ceiling above 30mm³/s — CHT nozzle high-flow advantage confirmed.

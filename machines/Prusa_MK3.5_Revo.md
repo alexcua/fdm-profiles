@@ -61,11 +61,11 @@
   > Previously: moisture was the lead suspect (2026-10-17). Ruled out by the spool swap.
   - Suspects, cheapest first: partial nozzle clog (do cold pulls until clean), buildup on the nozzle exterior, extruder idler tension (compare with CM03), Revo nozzle seating or tip damage.
   - Next: cold pull + clean, then retraction 0→1.0 step 0.05 (Revo short melt zone), then recheck MVS (a partial clog would lower it). Temp 255 and PA 0.025 stand.
-- **Retraction rerun after drying the same spool 3h, nothing else changed:** towers smooth and even, one fine string off the top. Clean. Session 2026-10-18
-  - **Moisture was the cause.** CM03's spool printed clean on CM03 while fresh, then picked up moisture before it moved to CM04.
-  > Previously: "Moisture ruled out; the cause is CM04 itself" (2026-10-17). Wrong: the spool had absorbed moisture between machines. Hardware suspicion withdrawn.
+- **Retraction rerun after drying the same spool 3h (near-empty spool) AND two cold pulls:** towers smooth and even, one fine string off the top. Clean. Session 2026-10-18
+  - **Cause not isolated:** moisture (fixed by drying), a partial clog (cleared by the cold pulls), or both. Both are routine upkeep; CM04 now prints clean.
+  > Previously: "Moisture ruled out; the cause is CM04 itself" (2026-10-17), then "moisture was the cause, nothing else changed" (2026-10-18). Both overstated: the user also did two cold pulls, so drying and clog removal changed together.
   - ⚠ Retraction value pending: lowest clean height from the user (likely ~0.6mm @ 45 if clean from the bottom).
-  - ⚠ **Rerun MVS with a dry spool:** moisture lowers the flow limit, so 9 is likely low.
+  - ⚠ **Rerun MVS** (dry spool, clean nozzle): both moisture and a partial clog lower the flow limit, so 9 is likely low.
   - Handling: keep PCTG in a dry box or sealed AMS between machines; re-dry a spool that's been out more than a day.
 
 ---
