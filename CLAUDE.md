@@ -26,6 +26,10 @@ Calibration reference for the Alexactly and Cherokee Makerspace 3D printer fleet
 10. **Calibration order:** Temp → MVS → PA → Retraction. Don't record a later step as ✅ while an earlier one is ⚠.
 11. **Production MVS = 80% of the tested ceiling**, unless the user says otherwise. Record both the ceiling and the production value.
 
+## Calibration depth
+
+Alexactly is production: full calibration. **Cherokee Makerspace machines (CM01–CM05, robotics, older machines) get a reliable middle ground only:** temp tower, one MVS pass, one retraction test. Skip PA, flow and extra passes unless prints show a problem. See `AGENT.md` → "Calibration depth by fleet".
+
 ## Reviewing test photos
 
 When the user shares a tower photo:

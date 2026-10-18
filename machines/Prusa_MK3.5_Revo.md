@@ -27,7 +27,7 @@
 
 | Filament | Temp | Bed | MVS | Flow | Retraction | PA | Status |
 |---|---|---|---|---|---|---|---|
-| 3D Fuel PCTG | 255°C ✅ | ⚠ TBD | 9 mm³/s ✅ (sheen ceiling 11) | ⚠ TBD | 0.6mm @ 45mm/s ✅ | 0.025 ✅ | ⚠ Sequence complete; MVS recheck (dry) + bed + flow TBD, Session 2026-10-16 → 2026-10-18 |
+| 3D Fuel PCTG | 255°C ✅ | ⚠ TBD | 10 mm³/s ✅ (user; sheen ceiling 11 measured on a damp spool, strength ≥20) | ⚠ TBD | 0.6mm @ 45mm/s ✅ | 0.025 ✅ | ⚠ Makerspace standard complete; bed + flow TBD, Session 2026-10-16 → 2026-10-18 |
 
 - **Temp tower 280→240°C step 5** (photos reviewed). Session 2026-10-16
   - 240–245: rough, beaded lines under the ledges; drooping layers at the top of the circle at 240; strings in the circle at 245. Too cold.
@@ -65,7 +65,8 @@
   - **Cause not isolated:** moisture (fixed by drying), a partial clog (cleared by the cold pulls), or both. Both are routine upkeep; CM04 now prints clean.
   > Previously: "Moisture ruled out; the cause is CM04 itself" (2026-10-17), then "moisture was the cause, nothing else changed" (2026-10-18). Both overstated: the user also did two cold pulls, so drying and clog removal changed together.
   - **Retraction 0.6mm @ 45 mm/s ✅**: clean from the bottom, same as CM03 (user). Session 2026-10-18
-  - ⚠ **Rerun MVS** (dry spool, clean nozzle): both moisture and a partial clog lower the flow limit, so 9 is likely low.
+  - **MVS raised to 10 mm³/s ✅ (user, 2026-10-18).** The 11 sheen ceiling was measured on a damp spool before the cold pulls, and strength held to ≥20, so 10 is very likely still under 80% of the true limit. No rerun, per the Makerspace middle-ground policy.
+    > Previously: 9 mm³/s (2026-10-17), 80% of the damp-spool sheen ceiling. Replaced by the user's 10.
   - Handling: keep PCTG in a dry box or sealed AMS between machines; re-dry a spool that's been out more than a day.
 
 ---

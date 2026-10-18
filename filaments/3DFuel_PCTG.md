@@ -20,7 +20,7 @@
 | Prusa MK3.5 | 0.6mm CHT | 260–265°C | 80°C | 24mm³/s | 0.98 | ⚠ TBD | ⚠ TBD | ⚠ | 2026-08-02 |
 | Bambu A1 | 0.6mm | 265°C / 265°C | 70°C | 28/32/36 mm³/s (Q/N/D) | ⚠ TBD | 4.0mm @ 45mm/s | Firmware | ✅ | Session 2026-08-05 |
 | Prusa MK3.5 (CM03) | 0.4mm E3D V6 brass | 260°C ✅ | 80°C | 9mm³/s | ⚠ TBD | 0.6mm @ 45mm/s | 0.03 | ⚠ In progress | Session 2026-10-16 |
-| Prusa MK3.5 (CM04) | 0.6mm Revo ObXidian | 255°C ✅ | ⚠ TBD | 9mm³/s | ⚠ TBD | 0.6mm @ 45mm/s | 0.025 | ⚠ In progress | Session 2026-10-16 |
+| Prusa MK3.5 (CM04) | 0.6mm Revo ObXidian | 255°C ✅ | ⚠ TBD | 10mm³/s | ⚠ TBD | 0.6mm @ 45mm/s | 0.025 | ⚠ In progress | Session 2026-10-16 |
 | Elegoo Giga | 0.8mm brass | 265°C | 75°C | 32mm³/s (Normal) | 1.0 | 0.55mm @ 45mm/s | 0.058 | ✅ | 2026-08-02 |
 
 ---
@@ -85,7 +85,8 @@
 - Retraction test unreadable (rough towers, strings). Different spool from CM03, which printed clean. Moisture suspected, so MVS 9 may be low. Dry the spool, rerun retraction, then recheck MVS. Session 2026-10-17
 - Rerun with CM03's clean spool: still rough + stringy, so **moisture is ruled out and the cause is CM04 hardware** (suspect partial clog, nozzle buildup, extruder tension, Revo seating). Cold pull, then retraction 0→1.0 step 0.05, then recheck MVS. Session 2026-10-17
   > Previously: moisture suspected (2026-10-17). Ruled out by the spool swap.
-- **Update 2026-10-18:** after drying that same spool 3h **and two cold pulls on CM04**, the retraction towers came out clean. Cause not isolated (moisture, partial clog, or both). Retraction 0.6mm @ 45 (clean from the bottom, same as CM03). Rerun CM04 MVS. Session 2026-10-18
+- **Update 2026-10-18:** after drying that same spool 3h **and two cold pulls on CM04**, the retraction towers came out clean. Cause not isolated (moisture, partial clog, or both). Retraction 0.6mm @ 45 (clean from the bottom, same as CM03). MVS set to 10 (user; damp-spool ceiling 11, strength ≥20); no rerun (Makerspace policy). Session 2026-10-18
+  > Previously: CM04 MVS 9 (2026-10-17). Replaced by 10.
   > Previously: "moisture ruled out, CM04 hardware" (2026-10-17), then "moisture was the cause" (2026-10-18). Both overstated: drying and cold pulls changed together. Strings across the whole range, so dry before MVS. Session 2026-10-16
 
 ### Prusa MK3.5 — 0.6mm CHT

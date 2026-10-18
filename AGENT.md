@@ -97,6 +97,15 @@ Memory-imported data carries the same risk as mid-session summaries: values may 
 
 ---
 
+## Calibration depth by fleet
+
+| Fleet | Use | Depth |
+|---|---|---|
+| **Alexactly** | Production | Full sequence: temp → MVS (extra passes as needed, tiers where useful) → PA → retraction → flow; validate on a real print. |
+| **Cherokee Makerspace** | Robotics team, older machines, not production | **Reliable middle ground:** temp tower, one MVS pass (production = 80% of ceiling, no extra passes), one retraction test (low value with margin). PA and flow only if prints show a problem; otherwise keep working values (flow 0.98). Conservative values are fine. |
+
+Set by the user 2026-10-18. Don't push extra tests on Makerspace machines. Still follow the provenance, sync and no-porting rules.
+
 ## Calibration sequence (OrcaSlicer standard)
 
 1. Temperature tower
