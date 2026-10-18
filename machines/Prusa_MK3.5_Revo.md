@@ -19,7 +19,10 @@
 
 | Filament | Temp | Bed | MVS | Flow | Retraction | PA | Status |
 |---|---|---|---|---|---|---|---|
-| ⚠ TBD | ⚠ TBD | ⚠ TBD | ⚠ TBD | ⚠ TBD | ⚠ TBD | ⚠ TBD | ⚠ Not calibrated |
+| 3D Fuel PCTG | ⚠ TBD (start 255°C from CM04) | ⚠ TBD (start 80°C) | ⚠ 10 mm³/s starting value (from CM04, untested) | ⚠ TBD | ⚠ TBD (start 0.6mm @ 45mm/s) | ⚠ TBD (start 0.025) | ⚠ Starting values only, Imported 2026-10-18 |
+
+- **CM05 will run 3D Fuel PCTG** (user, 2026-10-18; currently has Polymaker PETG HF loaded). Starting values copied from CM04 (0.6 Revo **ObXidian**) and **not calibrated**: brass and ObXidian are different nozzle types. Brass conducts heat better, so MVS 10 is very likely safe.
+- Makerspace standard still to run: temp tower (280→240), one MVS pass (6→20), one retraction test. Dry the spool first.
 
 ---
 

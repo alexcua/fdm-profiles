@@ -21,6 +21,7 @@
 | Bambu A1 | 0.6mm | 265°C / 265°C | 70°C | 28/32/36 mm³/s (Q/N/D) | ⚠ TBD | 4.0mm @ 45mm/s | Firmware | ✅ | Session 2026-08-05 |
 | Prusa MK3.5 (CM03) | 0.4mm E3D V6 brass | 260°C ✅ | 80°C | 9mm³/s | ⚠ TBD | 0.6mm @ 45mm/s | 0.03 | ⚠ In progress | Session 2026-10-16 |
 | Prusa MK3.5 (CM04) | 0.6mm Revo ObXidian | 255°C ✅ | ⚠ TBD | 10mm³/s | ⚠ TBD | 0.6mm @ 45mm/s | 0.025 | ⚠ In progress | Session 2026-10-16 |
+| Prusa MK3.5 (CM05) | 0.6mm Revo brass | ⚠ TBD (start 255°C) | ⚠ TBD | ⚠ 10 (start, from CM04) | ⚠ TBD | ⚠ TBD (start 0.6mm @ 45) | ⚠ TBD (start 0.025) | ⚠ Starting values only | Imported 2026-10-18 |
 | Elegoo Giga | 0.8mm brass | 265°C | 75°C | 32mm³/s (Normal) | 1.0 | 0.55mm @ 45mm/s | 0.058 | ✅ | 2026-08-02 |
 
 ---
