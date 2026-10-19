@@ -75,5 +75,6 @@
   - ⚠ **Strong hint of an H2C-specific cause:** the H2D prints black ASA at chamber 60 with the same HF nozzle type and no issues, and both Polymaker presets use chamber 60. Next: check the H2C left hotend fan and heatsink, and swap spools between H2D and H2C. If it's H2C hardware, fix it and rerun at 60, which would remove the adhesive need.
 - **Standard 0.6 nozzle trial (H2C left), 2026-10-19:** testing whether a non-HF nozzle stops black jamming at chamber 60.
   - **White**, 255 / chamber 60 / bed 100, Max flowrate 6→20 step 1 (recommended settings, assumed): clean to the top, no sheen change, couldn't be broken. Ceiling **>20**, so production **≥16 mm³/s** (floor); already above Polymaker's 14. Also confirms the nozzle install is good. Session 2026-10-19
-  - ⚠ Next: **black** on the same settings. Does it jam or throw an air-print error? If the standard nozzle is adopted, run a second pass 18→30 for white.
+  - White re-look (user): **very faint sheen change at 8mm**, glossy otherwise. Sheen ceiling 6 + 8 = **14** (production ~11); strength held through 20 (production ≥16). ⚠ Production value pending user choice: strength 16, sheen 11, or tiers Q11/S16. Session 2026-10-19
+  - ⚠ Next: **black** on the same settings (running). Does it jam or throw an air-print error? If the standard nozzle is adopted, run a second pass 18→30 for white.
 - **Test plan:** `protocols/Polymaker_ASA_H2C_unified.md`. Aim is one profile for white and black; split only per that doc's decision rules.
