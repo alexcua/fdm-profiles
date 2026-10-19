@@ -30,6 +30,10 @@ Calibration reference for the Alexactly and Cherokee Makerspace 3D printer fleet
 
 Alexactly is production: full calibration. **Cherokee Makerspace machines (CM01–CM05, robotics, older machines) get a reliable middle ground only:** temp tower, one MVS pass, one retraction test. Skip PA, flow and extra passes unless prints show a problem. See `AGENT.md` → "Calibration depth by fleet".
 
+## Test settings
+
+The user runs calibration tests with the settings Claude recommended in the session unless they say otherwise. Record results against those settings, noted as "recommended settings (assumed)". Ask only when a result would be ambiguous or wrong under them (e.g. a tower height that doesn't fit the range).
+
 ## Reviewing test photos
 
 When the user shares a tower photo:
