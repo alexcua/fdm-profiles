@@ -73,4 +73,7 @@
   - Bambu Studio user filament preset holding the chamber-45 settings: **NoJam** (named 2026-10-17).
   - **Provisional black MVS at chamber 45:** ripples start at **11mm**, so the quality ceiling is 10 + 11 = **21 mm³/s** and production ~**17 mm³/s** (80%). Sheen never dropped (>30). ⚠ Provisional until Stage C (temp towers at chamber 45) and Stage D (28→45). Some rippling may be thin-wall flex at ~100+ mm/s rather than a true flow limit; multi-wall parts may hold higher. Session 2026-10-17
   - ⚠ **Strong hint of an H2C-specific cause:** the H2D prints black ASA at chamber 60 with the same HF nozzle type and no issues, and both Polymaker presets use chamber 60. Next: check the H2C left hotend fan and heatsink, and swap spools between H2D and H2C. If it's H2C hardware, fix it and rerun at 60, which would remove the adhesive need.
+- **Standard 0.6 nozzle trial (H2C left), 2026-10-19:** testing whether a non-HF nozzle stops black jamming at chamber 60.
+  - **White**, 255 / chamber 60 / bed 100, Max flowrate 6→20 step 1 (recommended settings, assumed): clean to the top, no sheen change, couldn't be broken. Ceiling **>20**, so production **≥16 mm³/s** (floor); already above Polymaker's 14. Also confirms the nozzle install is good. Session 2026-10-19
+  - ⚠ Next: **black** on the same settings. Does it jam or throw an air-print error? If the standard nozzle is adopted, run a second pass 18→30 for white.
 - **Test plan:** `protocols/Polymaker_ASA_H2C_unified.md`. Aim is one profile for white and black; split only per that doc's decision rules.
