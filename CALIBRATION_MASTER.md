@@ -1,6 +1,6 @@
 # FDM Profiles — Master Calibration Reference
 **Operations:** Alexactly (production) + Cherokee Makerspace  
-**Last updated:** 2026-10-18  
+**Last updated:** 2026-10-19  
 **Slicers:** OrcaSlicer (primary), Bambu Studio (retained for some overhangs), PrusaSlicer  
 **Calibration sequence (OrcaSlicer):** Temperature → Max Volumetric Speed → Pressure Advance → Retraction
 
@@ -488,3 +488,4 @@ These settings resolved overhang curl on curved geometry (confirmed August 2026)
 | October 18, 2026 | MK3.5 CM05 (0.6 Revo brass) — assigned 3D Fuel PCTG | CM05 will run PCTG. Starting values copied from CM04 (ObXidian), untested: 255°C, MVS 10, PA 0.025, retraction 0.6 @ 45. CM03 MVS stays 9 (its 11.5 ceiling was a layer split). |
 | October 18, 2026 | Bambu H2C 0.6 HF — Polymaker ASA white MVS | White 10→30 at 255 / chamber 60 / bed 100: clean throughout (user). Ceiling >30, production 24 mm³/s (floor). Black NoJam ~17 provisional. Photo to follow. |
 | October 18, 2026 | Prusa MK3.5 CM02 (0.6 CHT) — black PCTG seam wisps | CM02 recorded as the second CHT machine (same as CM01). Seam wisps, a blob line at the seam, speckled walls. Suspect a damp spool plus untuned retraction. Plan: dry, one retraction test, wipe/seam settings. |
+| October 19, 2026 | Bambu H2C 0.6 HF — Polymaker ASA white MVS correction | White tower glossy to the top but easier to break above 15mm: strength ceiling 25, production 20 mm³/s (was 24, sheen-only). |
