@@ -19,6 +19,7 @@
 | Filament | Temp | Chamber | Bed | MVS | Flow | Retraction | PA | Status | Date |
 |---|---|---|---|---|---|---|---|---|---|
 | Polymaker PETG HF | ⚠ TBD (start 240°C, Polymaker) | ⚠ TBD | ⚠ TBD (start 70°C) | ⚠ 12 mm³/s starting value (Polymaker X2D preset, untested) | ⚠ TBD (start 0.952) | ⚠ TBD | Firmware | ⚠ Starting values only; testing started | Imported 2026-10-19 |
+| 3D Fuel PCTG | ⚠ TBD | ⚠ TBD | ⚠ TBD | ⚠ TBD | ⚠ TBD | ⚠ TBD | ⚠ TBD | ⚠ Not calibrated (planned) | — |
 
 ---
 
@@ -40,6 +41,10 @@
   - 265–270: heavy strings, booger at 270, lumpy/wrinkled overhang edges. Too hot.
   - ~~Proposed 245°C~~ (void: tower invalid).
   - Stringing at every temperature, so it's a retraction or moisture issue, not temperature. Handle at the retraction step; dry the spool if it's been out.
+- **0.6 plan (user, 2026-10-20): full profiles for both Polymaker PETG HF and 3D Fuel PCTG.** One filament at a time; label every test piece with the filament (after the 2026-10-20 mix-up); dry both spools first.
+  - PCTG: tower 280→240 (bed 70, chamber 40, MVS cap 10) → MVS 10→30 → PA 0→0.08 → retraction 0→2.0 (extend to 3.0) → flow → real print.
+  - PETG HF: tower 270→230 (bed 70, fan 30–100%) → MVS 10→30 → Quality-tier check on curved parts → PA → retraction → flow (start 0.952).
+  - ⚠ Open: PA handling on the X2D. AGENT.md says firmware, but the 0.4 PCTG profile stores a tested 0.06 (OrcaSlicer). Decide: X2D exception, or firmware.
 - ASA calibration deferred — needs full sequence (temp tower → MVS → PA → retraction) when needed.
 - PCTG and ASA can share machine with separate profiles (different chamber/bed temps).
 - AI defect detection may trigger false-positive stops during calibration — continue print.
