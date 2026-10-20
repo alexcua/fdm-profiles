@@ -11,7 +11,7 @@
 |---|---|---|---|---|---|---|---|---|---|
 | Bambu X1C | 0.6mm HS | 250°C / 250°C | 70°C | 20mm³/s | 0.952 | 1.0mm | Firmware | ✅ | Imported 2026-06-10 |
 | Bambu P1S | 0.6mm HS | 250°C / 250°C | 70°C | 20mm³/s | 0.952 | 1.0mm | Firmware | ✅ | Imported 2026-06-10 |
-| Bambu X2D | 0.6mm main | ⚠ TBD (start 240°C) | ⚠ TBD (start 70°C) | ⚠ 12 (start, Polymaker preset) | 0.952 | ⚠ TBD | Firmware | ⚠ Starting values only | Imported 2026-10-19 |
+| Bambu X2D | 0.6mm HF main | ⚠ TBD (start 240°C) | ⚠ TBD (start 70°C) | ⚠ 12 (start, Polymaker preset) | 0.952 | ⚠ TBD | Firmware | ⚠ Starting values only | Imported 2026-10-19 |
 | Prusa MK3.5 (CM01) | 0.6mm CHT | 245°C ✅ | ⚠ TBD | ⚠ TBD | ⚠ TBD | ⚠ TBD | ⚠ TBD | ⚠ In progress | Session 2026-10-17 |
 | Prusa XL | 0.4mm OBX HF | 255°C / 255°C | 80°C | 16mm³/s | 1.0 | 0.8mm | 0.050 | ✅ | Imported 2026-06-10 |
 
@@ -39,7 +39,7 @@
 - Overhang speeds (corrected from Bambu Studio reference profile): 10% → 0mm/s, 25% → 50mm/s, 50% → 15mm/s, 75% → 10mm/s. Previous Orca defaults (60/40/12/9) were too fast at 25–50% range.
 - G-code sliced on P1S profile can run on X1C with flow cal disabled and purge line removed.
 
-### Bambu X2D — 0.6mm main
+### Bambu X2D — 0.6mm HF main
 - ❌ Temp tower 270→230 (2026-10-20) **invalid**: filament likely PCTG, not PETG HF. Retest planned.
   > Previously: logged as PETG HF with 245°C proposed.
 

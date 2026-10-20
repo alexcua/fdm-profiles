@@ -14,7 +14,7 @@
 
 ---
 
-## Filament Profiles — 0.6mm main nozzle
+## Filament Profiles — 0.6mm main nozzle (High Flow)
 
 | Filament | Temp | Chamber | Bed | MVS | Flow | Retraction | PA | Status | Date |
 |---|---|---|---|---|---|---|---|---|---|
@@ -41,7 +41,8 @@
   - 265–270: heavy strings, booger at 270, lumpy/wrinkled overhang edges. Too hot.
   - ~~Proposed 245°C~~ (void: tower invalid).
   - Stringing at every temperature, so it's a retraction or moisture issue, not temperature. Handle at the retraction step; dry the spool if it's been out.
-- **0.6 plan (user, 2026-10-20): full profiles for both Polymaker PETG HF and 3D Fuel PCTG.** One filament at a time; label every test piece with the filament (after the 2026-10-20 mix-up); dry both spools first.
+- **0.6 main nozzle is HF (High Flow)** (user, 2026-10-20). Select High Flow in the X2D printer preset. Values from standard nozzles don't transfer.
+- **0.6 plan (user, 2026-10-20): full profiles for both Polymaker PETG HF and 3D Fuel PCTG.** Order: **Polymaker PETG HF first**, then PCTG. One filament at a time; label every test piece with the filament (after the 2026-10-20 mix-up); dry both spools first.
   - PCTG: tower 280→240 (bed 70, chamber 40, MVS cap 10) → MVS 10→30 → PA 0→0.08 → retraction 0→2.0 (extend to 3.0) → flow → real print.
   - PETG HF: tower 270→230 (bed 70, fan 30–100%) → MVS 10→30 → Quality-tier check on curved parts → PA → retraction → flow (start 0.952).
   - ⚠ Open: PA handling on the X2D. AGENT.md says firmware, but the 0.4 PCTG profile stores a tested 0.06 (OrcaSlicer). Decide: X2D exception, or firmware.
