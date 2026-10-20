@@ -18,7 +18,7 @@
 
 | Filament | Temp | Chamber | Bed | MVS | Flow | Retraction | PA | Status | Date |
 |---|---|---|---|---|---|---|---|---|---|
-| Polymaker PETG HF | ⚠ TBD (start 240°C, Polymaker) | ⚠ TBD | ⚠ TBD (start 70°C) | ⚠ 12 mm³/s starting value (Polymaker X2D preset, untested) | ⚠ TBD (start 0.952) | ⚠ TBD | Firmware | ⚠ Starting values only; testing started | Imported 2026-10-19 |
+| Polymaker PETG HF | ⚠ 245°C proposed (tower; pick pending) | ⚠ TBD | ⚠ TBD (start 70°C) | ⚠ 12 mm³/s starting value (Polymaker X2D preset, untested) | ⚠ TBD (start 0.952) | ⚠ TBD | Firmware | ⚠ Starting values only; testing started | Imported 2026-10-19 |
 
 ---
 
@@ -32,6 +32,13 @@
 - Real print validation confirmed Aug 2026 — profile quality described as "really good."
 - Retraction pending real-world print test (deferred after initial validation print).
 - Polymaker PETG HF 0.6 starting values from Polymaker's X2D preset for this filament (Polymaker preset repo, updated 2026-08-14): 240°C, MVS 12 (same for all nozzle variants), flow 0.95, bed 70. It inherits Bambu's **0.4** nozzle preset, so it isn't 0.6-specific. X1C/P1S 0.6 reference (Imported): 250°C, MVS 20, Quality tier 10 for curved geometry. Full sequence (production machine): temp tower 270→230, MVS 10→30 step 1 (note sheen and break point), Quality-tier check on curved parts. Testing started 2026-10-19.
+- **Temp tower 270→230 step 5, white** (photos reviewed). Session 2026-10-20
+  - 230–235: soft, fuzzy numerals, wisps in the circles. A bit cold.
+  - 240–250: crisper numerals, fairly clean circles (light wisps), clean overhangs. Cleanest range.
+  - 255–260: strings across the window under the ledges, more wisps, overhang edges roughening.
+  - 265–270: heavy strings, booger at 270, lumpy/wrinkled overhang edges. Too hot.
+  - **Proposed 245°C** (middle of the clean range; Polymaker 240 and X1C/P1S 250 sit at its edges). ⚠ User's pick from the part in hand pending.
+  - Stringing at every temperature, so it's a retraction or moisture issue, not temperature. Handle at the retraction step; dry the spool if it's been out.
 - ASA calibration deferred — needs full sequence (temp tower → MVS → PA → retraction) when needed.
 - PCTG and ASA can share machine with separate profiles (different chamber/bed temps).
 - AI defect detection may trigger false-positive stops during calibration — continue print.
