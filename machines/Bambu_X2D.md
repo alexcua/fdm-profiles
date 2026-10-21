@@ -19,7 +19,7 @@
 
 | Filament | Temp | Chamber | Bed | MVS | Flow | Retraction | PA | Status | Date |
 |---|---|---|---|---|---|---|---|---|---|
-| Polymaker PETG HF | 250°C ✅ | ⚠ TBD | ⚠ TBD (start 70°C) | 24 mm³/s ✅ (floor; clean + strong to 30) | ⚠ TBD (start 0.952) | ⚠ TBD | Firmware | ⚠ In progress (temp + MVS ✅) | Session 2026-10-21 |
+| Polymaker PETG HF | 250°C ✅ | ⚠ TBD | ⚠ TBD (start 70°C) | 36 mm³/s ✅ (floor; glossy + strong to 45) | ⚠ TBD (start 0.952) | ⚠ TBD | Firmware | ⚠ In progress (temp + MVS ✅) | Session 2026-10-21 |
 | 3D Fuel PCTG | ⚠ TBD | ⚠ TBD | ⚠ TBD | ⚠ TBD | ⚠ TBD | ⚠ TBD | ⚠ TBD | ⚠ Not calibrated (planned) | — |
 
 ---
@@ -44,7 +44,10 @@
   - Stringing at every temperature, so it's a retraction or moisture issue, not temperature. Handle at the retraction step; dry the spool if it's been out.
 - **X2D-3 Polymaker PETG HF temp tower 270→230 (0.6 HF), 2026-10-21** (photo reviewed): 230 fuzzy/cold; 235–240 OK; **245–255 crispest numerals, cleanest overhang edges**; 260–270 softer and rougher, heavier wisps. Strings across the windows at every temperature → retraction/moisture, not temp. **250°C ✅** (user). Matches X1C/P1S 0.6 (250). Session 2026-10-21
   - **MVS 10→30 step 1 at 250°C** (recommended settings, assumed): clean and strong all the way up (user). Ceiling >30, so **production 24 mm³/s ✅ (a floor)**, above X1C/P1S 20. Session 2026-10-21
-  - Next: second pass 28→45 to find the true ceiling; Quality-tier check on curved parts (X1C/P1S curves needed 10); then PA → retraction → flow.
+  - **Second pass 28→45 step 1** (photo reviewed): glossy and strong all the way up (user). Ceiling **>45**, so **production 36 mm³/s ✅ (80% floor, repo convention)**. Session 2026-10-21
+    > Previously: 24 mm³/s (2026-10-21), floor from the 10→30 pass. Replaced by the higher floor from the second pass.
+  - No flow limit found. Above ~30, cooling, curved surfaces and motion limits govern quality more than flow. Suggested practical cap ~30 for general parts; set the Quality tier from a curved-part check (X1C/P1S curves needed 10). ⚠ Pending.
+  - Next: curved-part Quality-tier check, then PA → retraction → flow.
 - **0.6 main nozzle is HF (High Flow)** (user, 2026-10-20). Select High Flow in the X2D printer preset. Values from standard nozzles don't transfer.
 - **0.6 plan (user, 2026-10-20): full profiles for both Polymaker PETG HF and 3D Fuel PCTG.** Order: **Polymaker PETG HF first**, then PCTG. One filament at a time; label every test piece with the filament (after the 2026-10-20 mix-up); dry both spools first.
   - PCTG: tower 280→240 (bed 70, chamber 40, MVS cap 10) → MVS 10→30 → PA 0→0.08 → retraction 0→2.0 (extend to 3.0) → flow → real print.
