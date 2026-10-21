@@ -132,7 +132,7 @@
 | Chamber temperature | 40°C |
 | MVS | 12mm³/s |
 | Flow ratio | 0.98 |
-| Pressure advance | 0.06 (apply in OrcaSlicer; PA field not exposed in Bambu Studio) |
+| Pressure advance | Firmware (Bambu Flow Dynamics). Previously 0.06 via OrcaSlicer; superseded 2026-10-21 per user |
 
 ### Notes
 - Higher MVS ceiling than P1S 0.4mm — attributed to X2D's PMSM servo extruder.
@@ -498,3 +498,4 @@ These settings resolved overhang curl on curved geometry (confirmed August 2026)
 | October 21, 2026 | Bambu X2D-3 (0.6 HF) — Polymaker PETG HF MVS | 10→30 at 250°C clean and strong to the top. Ceiling >30, production 24 mm³/s (floor), above X1C/P1S 20. Next: 28→45 pass, curved-part check. |
 | October 21, 2026 | Bambu X2D-3 (0.6 HF) — Polymaker PETG HF MVS second pass | 28→45 glossy and strong throughout. Ceiling >45, production 36 mm³/s (floor), replacing 24. No flow limit found; cooling/curves/motion govern above ~30. |
 | October 21, 2026 | Polymaker ASA black — root cause found | The black spool from H2C AMS slot 3 also jammed on the H2D, which prints its own black ASA fine; the spool has a different sheen. Root cause is the spool (batch/formulation/product), not the H2C. All black chamber results (A1–A3, NoJam, standard-nozzle trial) are spool-confounded. Next: good black spool on the H2C at stock chamber 60, no adhesive; check the bad spool's lot number. |
+| October 21, 2026 | Bambu X2D — PA policy | User: PA is maintained by Bambu firmware. X2D 0.4 PCTG PA 0.06 (OrcaSlicer) replaced by Firmware, kept as a Previously note. Resolves the AGENT.md conflict. |

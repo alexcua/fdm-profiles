@@ -10,7 +10,9 @@
 
 | Filament | Temp | Chamber | Bed | MVS | Flow | Retraction | PA | Status | Date |
 |---|---|---|---|---|---|---|---|---|---|
-| 3D Fuel PCTG | 265°C | 40°C | 70°C | 12mm³/s | 0.98 | ⚠ TBD | 0.06 | ✅ | Session 2026-08-02 |
+| 3D Fuel PCTG | 265°C | 40°C | 70°C | 12mm³/s | 0.98 | ⚠ TBD | Firmware | ✅ | Session 2026-08-02 |
+
+> Previously: PA 0.06 (OrcaSlicer manual pattern test, Session 2026-08-02). Replaced 2026-10-21 by Firmware (Bambu Flow Dynamics), per user and AGENT.md.
 | ASA | ⚠ TBD | ⚠ TBD | ⚠ TBD | ⚠ TBD | ⚠ TBD | ⚠ TBD | ⚠ TBD | ⚠ Deferred | — |
 
 ---
@@ -26,7 +28,7 @@
 
 ## Notes
 
-- PA = 0.06 confirmed via manual pattern test, range 0–0.08 in 0.005 steps.
+- ~~PA = 0.06 confirmed via manual pattern test, range 0–0.08 in 0.005 steps.~~ Superseded 2026-10-21: PA is firmware-handled on the X2D (user). 0.06 kept here as history only.
 - PA field not in Bambu Studio UI — apply when setting up OrcaSlicer profile only.
 - Higher MVS than P1S 0.4mm (12 vs 8mm³/s) attributed to PMSM servo extruder.
 - MVS test (Aug 2026): range 4–14mm³/s in 1mm³/s steps. Structural strength held across full range — only failed in last ~2mm at 14mm³/s. Exceptional result vs P1S 0.4mm ceiling of 8mm³/s.
@@ -52,7 +54,7 @@
 - **0.6 plan (user, 2026-10-20): full profiles for both Polymaker PETG HF and 3D Fuel PCTG.** Order: **Polymaker PETG HF first**, then PCTG. One filament at a time; label every test piece with the filament (after the 2026-10-20 mix-up); dry both spools first.
   - PCTG: tower 280→240 (bed 70, chamber 40, MVS cap 10) → MVS 10→30 → retraction 0→2.0 (extend to 3.0) → flow → real print. PA: firmware.
   - PETG HF: tower 270→230 (bed 70, fan 30–100%) → MVS 10→30 → Quality-tier check on curved parts → retraction → flow (start 0.952). PA: firmware.
-  - PA handling resolved for the 0.6 (user, 2026-10-21): **firmware**, per AGENT.md. ⚠ Still open: what to do with the 0.4 PCTG's stored OrcaSlicer PA 0.06.
+  - PA handling resolved (user, 2026-10-21): **firmware** for all X2D nozzles, per AGENT.md. The 0.4 PCTG's 0.06 is now a Previously note.
 - ASA calibration deferred — needs full sequence (temp tower → MVS → PA → retraction) when needed.
 - PCTG and ASA can share machine with separate profiles (different chamber/bed temps).
 - AI defect detection may trigger false-positive stops during calibration — continue print.

@@ -13,7 +13,10 @@
 | Bambu X1C | 0.6mm HS | 265°C / 265°C | 70°C | 12mm³/s | 0.98 | 1.4mm @ 45mm/s | Firmware | ✅ | 2026-08-02 |
 | Bambu P1S | 0.6mm HS | 265°C / 265°C | 70°C | 12mm³/s | 0.98 | 1.4mm @ 45mm/s | Firmware | ✅ | 2026-08-02 |
 | Bambu P1S | 0.4mm HS | 265°C / 265°C | 80°C | 8mm³/s | 0.98 | 0.6mm @ 45mm/s | Firmware | ✅ | Session 2026-08-02 |
-| Bambu X2D | 0.4mm main | 265°C | 70°C | 12mm³/s | 0.98 | ⚠ TBD | 0.06 (OrcaSlicer) | ✅ | 2026-07-19 |
+| Bambu X2D | 0.4mm main | 265°C | 70°C | 12mm³/s | 0.98 | ⚠ TBD | Firmware | ✅ | Session 2026-08-02 |
+
+> Previously: PA 0.06 (OrcaSlicer). Replaced 2026-10-21 by Firmware, per user and AGENT.md.
+> Source tag aligned 2026-10-21 to the X2D machine doc's `Session 2026-08-02`. This doc previously showed a bare date, 2026-07-19; the session log has X2D PCTG entries on both dates.
 | Bambu X2D | 0.6mm HF main | ⚠ TBD | ⚠ TBD | ⚠ TBD | ⚠ TBD | ⚠ TBD | ⚠ TBD | ⚠ Not calibrated (planned) | — |
 | Bambu H2D | 0.6mm HF | 265°C (⚠ retest w/ chamber) | 70°C | 12mm³/s | 0.98 | ⚠ TBD | Firmware | ⚠ | 2026-08-02 |
 | Bambu H2C | 0.6mm HF (left) | 265°C (⚠ retest w/ chamber) | 70°C | 12mm³/s | 0.98 | ⚠ TBD | Firmware | ⚠ | 2026-08-02 |
@@ -58,7 +61,7 @@
 - MVS test (Aug 2026): 4–14mm³/s in 1mm³/s steps. Strength held full range — failed only in last ~2mm at 14mm³/s.
 - Single-tier MVS profile — no Quality/Normal/Draft split. Range too flat to justify multiple profiles.
 - Temp tower (Aug 2026): 255–275°C. Sweet spot 265°C confirmed. 270–275°C showed duller surface sheen.
-- PA = 0.06 confirmed via manual pattern test (range 0–0.08, step 0.005).
+- ~~PA = 0.06 confirmed via manual pattern test (range 0–0.08, step 0.005).~~ Superseded 2026-10-21: firmware-handled (user).
 - PA field not exposed in Bambu Studio — apply only in OrcaSlicer.
 - Real print validation confirmed Aug 2026.
 - Retraction pending real-world print test.
