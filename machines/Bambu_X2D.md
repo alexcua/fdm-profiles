@@ -47,12 +47,12 @@
   - **Second pass 28→45 step 1** (photo reviewed): glossy and strong all the way up (user). Ceiling **>45**, so **production 36 mm³/s ✅ (80% floor, repo convention)**. Session 2026-10-21
     > Previously: 24 mm³/s (2026-10-21), floor from the 10→30 pass. Replaced by the higher floor from the second pass.
   - No flow limit found. Above ~30, cooling, curved surfaces and motion limits govern quality more than flow. Suggested practical cap ~30 for general parts; set the Quality tier from a curved-part check (X1C/P1S curves needed 10). ⚠ Pending.
-  - Next: curved-part Quality-tier check, then PA → retraction → flow.
+  - Next: curved-part Quality-tier check, then retraction → flow. **PA: firmware (Bambu Flow Dynamics)**, per user 2026-10-21; no PA test.
 - **0.6 main nozzle is HF (High Flow)** (user, 2026-10-20). Select High Flow in the X2D printer preset. Values from standard nozzles don't transfer.
 - **0.6 plan (user, 2026-10-20): full profiles for both Polymaker PETG HF and 3D Fuel PCTG.** Order: **Polymaker PETG HF first**, then PCTG. One filament at a time; label every test piece with the filament (after the 2026-10-20 mix-up); dry both spools first.
-  - PCTG: tower 280→240 (bed 70, chamber 40, MVS cap 10) → MVS 10→30 → PA 0→0.08 → retraction 0→2.0 (extend to 3.0) → flow → real print.
-  - PETG HF: tower 270→230 (bed 70, fan 30–100%) → MVS 10→30 → Quality-tier check on curved parts → PA → retraction → flow (start 0.952).
-  - ⚠ Open: PA handling on the X2D. AGENT.md says firmware, but the 0.4 PCTG profile stores a tested 0.06 (OrcaSlicer). Decide: X2D exception, or firmware.
+  - PCTG: tower 280→240 (bed 70, chamber 40, MVS cap 10) → MVS 10→30 → retraction 0→2.0 (extend to 3.0) → flow → real print. PA: firmware.
+  - PETG HF: tower 270→230 (bed 70, fan 30–100%) → MVS 10→30 → Quality-tier check on curved parts → retraction → flow (start 0.952). PA: firmware.
+  - PA handling resolved for the 0.6 (user, 2026-10-21): **firmware**, per AGENT.md. ⚠ Still open: what to do with the 0.4 PCTG's stored OrcaSlicer PA 0.06.
 - ASA calibration deferred — needs full sequence (temp tower → MVS → PA → retraction) when needed.
 - PCTG and ASA can share machine with separate profiles (different chamber/bed temps).
 - AI defect detection may trigger false-positive stops during calibration — continue print.
