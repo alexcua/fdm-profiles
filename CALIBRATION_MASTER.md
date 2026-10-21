@@ -1,6 +1,6 @@
 # FDM Profiles — Master Calibration Reference
 **Operations:** Alexactly (production) + Cherokee Makerspace  
-**Last updated:** 2026-10-20  
+**Last updated:** 2026-10-21  
 **Slicers:** OrcaSlicer (primary), Bambu Studio (retained for some overhangs), PrusaSlicer  
 **Calibration sequence (OrcaSlicer):** Temperature → Max Volumetric Speed → Pressure Advance → Retraction
 
@@ -438,7 +438,7 @@ These settings resolved overhang curl on curved geometry (confirmed August 2026)
 | Elegoo Giga | PCTG + Polylite PETG | Functional part validation |
 | Bambu X2D | ASA | Full calibration sequence (deferred) |
 | Bambu X2D 0.6 HF | 3D Fuel PCTG | Full sequence planned (2026-10-20): tower 280→240, MVS, PA, retraction, flow, real print. |
-| Bambu X2D 0.6 HF | Polymaker PETG HF | Testing started 2026-10-19; first tower invalid (wrong filament). Restarting first (2026-10-20): tower 270→230. Starting values from Polymaker's X2D preset (240°C / MVS 12, untested). Full sequence: temp tower 270→230, MVS 10→30, Quality-tier check. |
+| Bambu X2D 0.6 HF | Polymaker PETG HF | Testing started 2026-10-19; first tower invalid (wrong filament). Temp 250°C ✅ (X2D-3, 2026-10-21). Next: dry spool, MVS 10→30 → quality tier → PA → retraction → flow. Starting values from Polymaker's X2D preset (240°C / MVS 12, untested). Full sequence: temp tower 270→230, MVS 10→30, Quality-tier check. |
 | Bambu A1 0.6 | — | First-run validation of start/end G-code blob mods (preset `Bambu Lab A1 0.6 (Nozzle Clear)`; see machines/Bambu_A1.md) |
 | Prusa MK3.5 0.4 E3D V6 brass (CM03) | 3D Fuel PCTG | Sequence complete: 260°C / MVS 9 / PA 0.03 / retraction 0.6 @ 45. Bed 80°C ✅. Remaining: flow ratio (0.98 working), fan, real-print validation. |
 | Prusa MK3.5 0.6 Revo ObXidian (CM04) | 3D Fuel PCTG | Done to the Makerspace standard: 255°C / MVS 10 / PA 0.025 / retraction 0.6 @ 45. Bed temp + flow TBD. |
@@ -494,3 +494,4 @@ These settings resolved overhang curl on curved geometry (confirmed August 2026)
 | October 19, 2026 | Bambu H2C — standard 0.6 nozzle trial, Polymaker ASA white | White at 255 / chamber 60 / bed 100, MVS 6→20: unbreakable through 20; on a re-look, a faint sheen change at 8mm (ceiling 14). White production 14 (user's choice; matches Polymaker's 14; ≤70% of the strength limit). Nozzle install confirmed good. Next: black at chamber 60, does it jam? |
 | October 19, 2026 | Bambu H2C — standard 0.6 nozzle trial, Polymaker ASA black | Black at 255 / chamber 60 / bed 100 on the standard nozzle: motor-overloaded error, the same feed failure as on HF. Nozzle type ruled out. Remaining: H2C toolhead (cooling/extruder) or spool. Next: H2C's black spool on the H2D at 60; Bambu support with HMS codes. |
 | October 20, 2026 | Bambu X2D 0.6 — Polymaker PETG HF temp tower | 270→230 (white) photo-reviewed: 240–250 clean, ≥255 stringing/roughness, 265–270 lumpy. Proposed 245°C (Polymaker 240, X1C/P1S 250). Stringing at every temperature, so address via retraction/drying. ❌ **Invalidated same day:** filament likely 3D Fuel PCTG, and the range was too cold for PCTG. Retest. |
+| October 21, 2026 | Bambu X2D-3 (0.6 HF) — Polymaker PETG HF temp tower | 270→230 photo-reviewed: 245–255 cleanest, 230 cold, 260–270 rougher. Strings at every temperature (retraction/moisture). 250°C chosen (matches X1C/P1S 0.6). Machine ID X2D-3 recorded. |

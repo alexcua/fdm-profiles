@@ -1,5 +1,6 @@
 # Bambu X2D
 
+**Machines:** includes **X2D-3** (0.6 HF main).  
 **Slicer:** OrcaSlicer / Bambu Studio  
 **Notes:** PMSM servo extruder — higher MVS than expected vs prior-gen toolheads. PA field not exposed in Bambu Studio; apply only in OrcaSlicer. Originally intended for ASA — currently running PCTG on 0.4mm and Polymaker PETG HF on 0.6mm.
 
@@ -18,7 +19,7 @@
 
 | Filament | Temp | Chamber | Bed | MVS | Flow | Retraction | PA | Status | Date |
 |---|---|---|---|---|---|---|---|---|---|
-| Polymaker PETG HF | ⚠ TBD (start 240°C, Polymaker) | ⚠ TBD | ⚠ TBD (start 70°C) | ⚠ 12 mm³/s starting value (Polymaker X2D preset, untested) | ⚠ TBD (start 0.952) | ⚠ TBD | Firmware | ⚠ Starting values only; testing started | Imported 2026-10-19 |
+| Polymaker PETG HF | 250°C ✅ | ⚠ TBD | ⚠ TBD (start 70°C) | ⚠ 12 mm³/s starting value (Polymaker X2D preset, untested) | ⚠ TBD (start 0.952) | ⚠ TBD | Firmware | ⚠ In progress (temp ✅); other values are starting values | Session 2026-10-21 |
 | 3D Fuel PCTG | ⚠ TBD | ⚠ TBD | ⚠ TBD | ⚠ TBD | ⚠ TBD | ⚠ TBD | ⚠ TBD | ⚠ Not calibrated (planned) | — |
 
 ---
@@ -41,6 +42,8 @@
   - 265–270: heavy strings, booger at 270, lumpy/wrinkled overhang edges. Too hot.
   - ~~Proposed 245°C~~ (void: tower invalid).
   - Stringing at every temperature, so it's a retraction or moisture issue, not temperature. Handle at the retraction step; dry the spool if it's been out.
+- **X2D-3 Polymaker PETG HF temp tower 270→230 (0.6 HF), 2026-10-21** (photo reviewed): 230 fuzzy/cold; 235–240 OK; **245–255 crispest numerals, cleanest overhang edges**; 260–270 softer and rougher, heavier wisps. Strings across the windows at every temperature → retraction/moisture, not temp. **250°C ✅** (user). Matches X1C/P1S 0.6 (250). Session 2026-10-21
+  - Next: dry the spool, then MVS 10→30 step 1 at 250°C (note sheen + break point).
 - **0.6 main nozzle is HF (High Flow)** (user, 2026-10-20). Select High Flow in the X2D printer preset. Values from standard nozzles don't transfer.
 - **0.6 plan (user, 2026-10-20): full profiles for both Polymaker PETG HF and 3D Fuel PCTG.** Order: **Polymaker PETG HF first**, then PCTG. One filament at a time; label every test piece with the filament (after the 2026-10-20 mix-up); dry both spools first.
   - PCTG: tower 280→240 (bed 70, chamber 40, MVS cap 10) → MVS 10→30 → PA 0→0.08 → retraction 0→2.0 (extend to 3.0) → flow → real print.
