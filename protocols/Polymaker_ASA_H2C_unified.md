@@ -136,6 +136,8 @@ This separates "black is softer" from "black gets hotter".
 
 ## Run log
 
+> ⚠ **2026-10-21:** all black runs below used one bad spool (H2C AMS slot 3; also jams on the H2D; different sheen). The chamber results reflect that spool, not black Polymaker ASA in general. Next: rerun A at chamber 60 with a good spool.
+
 Copy one row per run. Log each result in the three repo docs (filament, machine, CALIBRATION_MASTER) with `Session <date>`.
 
 | Run | Date | Colour | Chamber | Bed | Nozzle | Cold start | Result (height / stage target) | Filament at gear | Photo |

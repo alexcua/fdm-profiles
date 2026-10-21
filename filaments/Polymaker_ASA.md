@@ -1,6 +1,7 @@
 # Polymaker ASA — All Machines
 
 **Primary use:** ⚠ TBD (UV/heat-resistant outdoor parts)  
+**⚠ ROOT CAUSE FOUND (2026-10-21): the black jams came from one bad spool** (H2C AMS slot 3), not the H2C. See "Spool finding" below.  
 **Material notes:** Needs an enclosure. Heated-chamber machines (H2 series) are the target. Black colorway has shown heat creep on H2C 0.6mm HF; see notes. Polymaker ASA and PolyLite ASA are the same product (branding only). All stock is labeled Polymaker ASA, so use that name.
 
 ---
@@ -78,4 +79,9 @@
   - White re-look (user): **very faint sheen change at 8mm**, glossy otherwise. Sheen ceiling 6 + 8 = **14** (production ~11); strength held through 20 (production ≥16). **White production MVS 14 mm³/s** (user's choice): at most 70% of the strength limit (unbreakable through 20); at the faint sheen change, so slight gloss loss at full speed is possible (cosmetic). Matches Polymaker's preset value. Revisit if black comes in lower (unified profile uses the lower). Session 2026-10-19
   - **Black** on the same settings (standard 0.6, 255 / chamber 60 / bed 100): ❌ **"motor overloaded" error** (assumed extruder; ⚠ confirm). Same feed failure as on HF. **Nozzle type (HF vs standard) ruled out.** Session 2026-10-19
   - Remaining suspects: the H2C toolhead (cooling or extruder) or the black spool/batch. The H2D prints black ASA at chamber 60 fine. Deciding test: print the H2C's black spool on the H2D at chamber 60. Then Bambu support with HMS codes if it's the H2C.
-- **Test plan:** `protocols/Polymaker_ASA_H2C_unified.md`. Aim is one profile for white and black; split only per that doc's decision rules.
+- **Spool finding, 2026-10-21:** the black spool from H2C AMS slot 3 **also jammed on the H2D**, which prints black ASA fine with its own spool. The spool has a **visibly different sheen** from the other spools. **Root cause: that spool (different batch, formulation or product), not the H2C.** Session 2026-10-21
+  > Previously: "H2C-specific cause suspected (hotend cooling)" (2026-10-17/19). Withdrawn: the spool fails on both machines.
+  - Every black H2C result above (60 hard jam, 55 jam error, 50 stall, 45 pass, NoJam's long-print failure, the standard-nozzle motor overload) was **run on this spool**. Treat them as spool-confounded, not as limits of black Polymaker ASA.
+  - NoJam (chamber 45 + adhesive) is **likely unnecessary** with a good spool. ⚠ Confirm: print black from a good spool on the H2C at the stock 60°C chamber, no adhesive.
+  - Actions: compare label and lot number with the H2D's good black spool; set the spool aside; if it's Polymaker ASA, report the lot to Polymaker. Drying (70°C, 7h) is optional; the sheen difference points to batch/product, not moisture.
+- **Test plan:** `protocols/Polymaker_ASA_H2C_unified.md`. ⚠ Black chamber results were spool-confounded (2026-10-21). Aim is one profile for white and black; split only per that doc's decision rules.
