@@ -11,7 +11,7 @@
 |---|---|---|---|---|---|---|---|---|---|
 | Bambu X1C | 0.6mm HS | 250°C / 250°C | 70°C | 20mm³/s | 0.952 | 1.0mm | Firmware | ✅ | Imported 2026-06-10 |
 | Bambu P1S | 0.6mm HS | 250°C / 250°C | 70°C | 20mm³/s | 0.952 | 1.0mm | Firmware | ✅ | Imported 2026-06-10 |
-| Bambu X2D (X2D-3) | 0.6mm HF main | 250°C ✅ | ⚠ TBD (start 70°C) | 36mm³/s (floor) | 0.952 | ⚠ TBD | Firmware | ⚠ In progress (temp + MVS ✅) | Session 2026-10-21 |
+| Bambu X2D (X2D-3) | 0.6mm HF main | 250°C ✅ | 70°C | 36mm³/s (floor) | 0.952 | ⚠ TBD | Firmware | ⚠ In progress (temp + MVS ✅) | Session 2026-10-21 |
 | Prusa MK3.5 (CM01) | 0.6mm CHT | 245°C ✅ | ⚠ TBD | ⚠ TBD | ⚠ TBD | ⚠ TBD | ⚠ TBD | ⚠ In progress | Session 2026-10-17 |
 | Prusa XL | 0.4mm OBX HF | 255°C / 255°C | 80°C | 16mm³/s | 1.0 | 0.8mm | 0.050 | ✅ | Imported 2026-06-10 |
 
