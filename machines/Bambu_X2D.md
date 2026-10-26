@@ -59,6 +59,7 @@
     - **Nozzle 245°C** (one change): **same droop.** Temp stays 250.
     - Full process diff P1S vs X2D: remaining differences are only prime tower, counterbore bridging and travel angle, so **slicing is effectively identical**. Cause is most likely **hardware**: X2D toolhead part-cooling airflow, or the HF nozzle vs the P1S's standard HS nozzle.
     - Options: rotate the part 90° (airflow diagnostic); aux fan 50% in a part-specific preset; painted support under the center; or print this part on the P1S. Session 2026-10-26
+    - **Decision (user, 2026-10-26): modify the model** (e.g. a ≤45° chamfer or fillet under the center of the ledge) so it prints without support on the X2D. Profile unchanged: 250°C / bed 70 / Normal MVS 28; process keeps smoothing off and outer wall 80.
 - **0.6 main nozzle is HF (High Flow)** (user, 2026-10-20). Select High Flow in the X2D printer preset. Values from standard nozzles don't transfer.
 - **0.6 plan (user, 2026-10-20): full profiles for both Polymaker PETG HF and 3D Fuel PCTG.** Order: **Polymaker PETG HF first**, then PCTG. One filament at a time; label every test piece with the filament (after the 2026-10-20 mix-up); dry both spools first.
   - PCTG: tower 280→240 (bed 70, chamber 40, MVS cap 10) → MVS 10→30 → retraction 0→2.0 (extend to 3.0) → flow → real print. PA: firmware.
