@@ -437,7 +437,7 @@ These settings resolved overhang curl on curved geometry (confirmed August 2026)
 | Elegoo Giga | Atomic PLA | Full recalibration 190–230°C |
 | Elegoo Giga | PCTG + Polylite PETG | Functional part validation |
 | Bambu X2D | ASA | Full calibration sequence (deferred) |
-| Bambu X2D 0.6 HF | 3D Fuel PCTG | Full sequence planned (2026-10-20): tower 280→240, MVS, PA, retraction, flow, real print. |
+| Bambu X2D 0.6 HF | 3D Fuel PCTG | Full sequence planned (2026-10-20): tower 280→240, MVS, retraction, flow, real print. PA firmware. |
 | Bambu X2D 0.6 HF | Polymaker PETG HF | Testing started 2026-10-19; first tower invalid (wrong filament). Temp 250°C ✅, MVS 36 ✅ (floor; glossy + strong to 45). Next: curved-part Quality-tier check (practical cap ~30 suggested), retraction → flow. PA firmware. Starting values from Polymaker's X2D preset (240°C / MVS 12, untested). Full sequence: temp tower 270→230, MVS 10→30, Quality-tier check. |
 | Bambu A1 0.6 | — | First-run validation of start/end G-code blob mods (preset `Bambu Lab A1 0.6 (Nozzle Clear)`; see machines/Bambu_A1.md) |
 | Prusa MK3.5 0.4 E3D V6 brass (CM03) | 3D Fuel PCTG | Sequence complete: 260°C / MVS 9 / PA 0.03 / retraction 0.6 @ 45. Bed 80°C ✅. Remaining: flow ratio (0.98 working), fan, real-print validation. |
