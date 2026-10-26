@@ -50,6 +50,11 @@
     > Previously: 24 mm³/s (2026-10-21), floor from the 10→30 pass. Replaced by the higher floor from the second pass.
   - No flow limit found. Above ~30, cooling, curved surfaces and motion limits govern quality more than flow. Suggested practical cap ~30 for general parts; set the Quality tier from a curved-part check (X1C/P1S curves needed 10). ⚠ Pending.
   - Next: curved-part Quality-tier check, then retraction → flow. **PA: firmware (Bambu Flow Dynamics)**, per user 2026-10-21; no PA test.
+  - **Curved/overhang part check (oval ring with overhanging ledge), 2026-10-26:**
+    - MVS 28 with the overhang settings (threshold 10%, overhang fan 100%, overhang speeds 0/50/15/10, bridge 20 @ 0.85): curved walls clean; **center of the overhang droops** (symmetric). The P1S prints this part fine without support, so it's not the geometry. Session 2026-10-26
+    - Quality preset (inherited MVS 12, about the P1S's 10): nearly identical droop, so MVS alone isn't the cause.
+    - Preset comparison: filament cooling is identical to the P1S (fan 30–100, overhang 100 @ 10%, exhaust 70, chamber 0, aux 0, prestart 3s). The process presets differ: X2D has **smooth Z outer-wall speed ON** (P1S off), outer wall 200 vs 80 mm/s, outer-wall accel 5000 vs 3600. X2D `slow_down_min_speed` 20 vs P1S 10.
+    - **Smoothing OFF → better, but the P1S is still better** (user). Next: outer wall speed 80 + outer-wall accel 3600 at MVS 28; then aux fan 50% if still behind.
 - **0.6 main nozzle is HF (High Flow)** (user, 2026-10-20). Select High Flow in the X2D printer preset. Values from standard nozzles don't transfer.
 - **0.6 plan (user, 2026-10-20): full profiles for both Polymaker PETG HF and 3D Fuel PCTG.** Order: **Polymaker PETG HF first**, then PCTG. One filament at a time; label every test piece with the filament (after the 2026-10-20 mix-up); dry both spools first.
   - PCTG: tower 280→240 (bed 70, chamber 40, MVS cap 10) → MVS 10→30 → retraction 0→2.0 (extend to 3.0) → flow → real print. PA: firmware.
