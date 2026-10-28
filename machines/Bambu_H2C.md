@@ -18,7 +18,7 @@ Same profile as H2D. See Bambu_H2D.md.
 
 | Filament | Temp | Chamber | Bed | MVS | Flow | Retraction | PA | Status | Source |
 |---|---|---|---|---|---|---|---|---|---|
-| Polymaker ASA | 255°C (stock 260°C) | 60°C | 100°C | ⚠ TBD | ⚠ TBD | ⚠ TBD | Firmware | ⚠ In progress (temp done; black OK at chamber 60) | Session 2026-10-01 / 2026-10-28 |
+| Polymaker ASA | 255°C (stock 260°C) | 60°C | 100°C | ⚠ TBD | ⚠ TBD | ⚠ TBD | Firmware | ⚠ In progress (temp 255 white + black; black OK at chamber 60) | Session 2026-10-01 / 2026-10-28 |
 
 - Temp tower 230–270°C (white, chamber 60°C, Bambu Studio): 250–255 clean, 260+ surfaces degrade and stringing increases, ≤245 overhang curl. 255°C chosen. Session 2026-10-01
 - Snap test inconclusive: broke at 255, but at the max-leverage point (mid-tower). Other blocks unbreakable by hand. Controlled vise test pending. Black colorway not yet tower-tested. See filaments/Polymaker_ASA.md.
@@ -35,6 +35,7 @@ Same profile as H2D. See Bambu_H2D.md.
   > Previously: H2C toolhead (cooling/extruder) suspected (2026-10-17/19).
 - **2026-10-28: the slot-3 spool was mislabeled PolyLite ASA.** Good black **Polymaker ASA** spool, nozzle 255 / chamber 60 / bed 100, no adhesive, MVS tower 10→30 (recommended settings, assumed): **completed, no jam** (user). Nozzle (HF or the standard 0.6 from the 10-19 trial) ⚠ confirm. MVS ceiling reading ⚠ TBD. Session 2026-10-28
   - ❌ Black chamber 45 working point, provisional black MVS ~17 and the NoJam preset came from the PolyLite spool. Invalid for Polymaker ASA. **Black chamber = stock 60, no adhesive.**
+- **Black temp tower 270→240 (Stage C), 2026-10-28** (photo reviewed; black Polymaker ASA, chamber 60 / bed 100, no adhesive: recommended settings, assumed). Completed with no jam. 270 glossy but soft numerals, fine strings in the cutout; 265–260 mushy/blobby numerals, wisps; **255 cleanest** (crisp numerals, clean cutout and overhang); 250 crisp, a few strings in the cutout; 245–240 webbing in the cutout, rougher numerals. Curved overhang edge similar at all temps. **Black = 255°C, same as white**, so one temp for both colours. ⚠ Snap test 250/255/260 still pending (white and black towers now both on hand). Session 2026-10-28
 - Purpose: black ASA heat creep on this nozzle with the stock profile. Causes not yet isolated. Chamber 60°C is the lead suspect. Recurred on black at 255/60/100 with 0.4mm retraction (rules out long retraction). White clean at same conditions. Black MVS test failed in layer 1. ❌ No MVS data. Feed/hotend diagnosis pending. Filament squashed (softened) at the extruder gear, so the extruder zone is overheating. Nozzle temp ruled out (white tower completed starting at 270°C). Colour vs object size not yet separated. Next: white MVS at the same conditions. Black failed at the layer-1 perimeter → fill transition (when extrusion force rose). White MVS test completed at identical conditions in the same AMS slot, so the failure is black-specific. Next black test: chamber 50°C. White MVS ceiling reading pending. Session 2026-10-01
 
 ---
@@ -56,5 +57,5 @@ Note: 0.25mm being considered for removal. Larger sizes TBD.
 - Same as H2D: temp rerun with chamber heat-soaked.
 - Right extruder Vortex nozzle sizes to be decided before calibration.
 - All right extruder profiles starting fresh.
-- Polymaker ASA (left 0.6mm HF): black runs at chamber 60 (2026-10-28). Next: black MVS ceiling reading from that tower, confirm nozzle (HF vs standard), controlled (vise) snap test 250/255/260, then retraction (PA firmware), then Stage F real prints. Follow `protocols/Polymaker_ASA_H2C_unified.md`.
+- Polymaker ASA (left 0.6mm HF): black runs at chamber 60 (2026-10-28). Black temp 255 ✅ by tower (2026-10-28). Next: confirm nozzle (HF vs standard), vise snap test 250/255/260, black MVS 10→30 at 255 (earlier tower not on hand), then retraction (PA firmware), then Stage F real prints. Follow `protocols/Polymaker_ASA_H2C_unified.md`.
   > Previously: "Isolate the black heat creep cause" (resolved 2026-10-28: mislabeled PolyLite ASA spool).

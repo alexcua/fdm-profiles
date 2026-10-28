@@ -10,7 +10,7 @@
 
 | Machine | Nozzle | Temp (1st/Other) | Chamber | Bed | MVS | Flow | Retraction | PA | Status | Source |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Bambu H2C | 0.6mm HF (left) | ⚠ TBD / 255°C | 60°C | 100°C | ⚠ TBD | ⚠ TBD | ⚠ TBD | Firmware | ⚠ In progress (temp done; black OK at chamber 60) | Session 2026-10-01 / 2026-10-28 |
+| Bambu H2C | 0.6mm HF (left) | ⚠ TBD / 255°C | 60°C | 100°C | ⚠ TBD | ⚠ TBD | ⚠ TBD | Firmware | ⚠ In progress (temp 255 white + black; black OK at chamber 60) | Session 2026-10-01 / 2026-10-28 |
 
 ---
 
@@ -88,5 +88,6 @@
   - ❌ All black results above from 2026-10-01 to 2026-10-21 (failed MVS at 60, A1–A3 chamber 50/55/45, black working chamber 45, provisional black MVS ~17, NoJam, standard-nozzle motor overload) were PolyLite ASA. **Invalid for Polymaker ASA.** Kept for the record only.
   - **Black chamber = stock 60°C, no adhesive.** NoJam (chamber 45 + Nano Polymer Adhesive) is superseded. White and black share chamber 60 / bed 100 / 255°C, so Stage A/B of the protocol are done; no split needed so far.
   - No PolyLite ASA left in stock (user).
-- **Test plan:** `protocols/Polymaker_ASA_H2C_unified.md`. Stages A/B closed by the 2026-10-28 result. Remaining: black MVS reading (Stage D), vise snap 250/255/260, retraction (Stage E), Stage F real prints.
+- **Black temp tower 270→240 (Stage C), 2026-10-28** (photo reviewed; black Polymaker ASA, chamber 60 / bed 100, no adhesive: recommended settings, assumed). Completed with no jam. 270 glossy but soft numerals, fine strings in the cutout; 265–260 mushy/blobby numerals, wisps; **255 cleanest** (crisp numerals, clean cutout and overhang); 250 crisp, a few strings in the cutout; 245–240 webbing in the cutout, rougher numerals. Curved overhang edge similar at all temps. **Black = 255°C, same as white**, so one temp for both colours. ⚠ Snap test 250/255/260 still pending (white and black towers now both on hand). Session 2026-10-28
+- **Test plan:** `protocols/Polymaker_ASA_H2C_unified.md`. Stages A/B closed by the 2026-10-28 result. Stage C (black temp) done 2026-10-28: 255. Remaining: black MVS 10→30 at 255 (Stage D), vise snap 250/255/260, retraction (Stage E), Stage F real prints.
   > Previously (2026-10-21): black chamber results spool-confounded; aim one profile for white and black, split only per that doc's decision rules.
