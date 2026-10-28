@@ -435,6 +435,7 @@ These settings resolved overhang curl on curved geometry (confirmed August 2026)
 | Prusa MK3.5 CHT (CM01/CM02) | 3D Fuel PCTG | Seam wisps on CM02: dry spool, one retraction test, wipe/seam settings |
 | Prusa XL | 3D Fuel PCTG | Retraction speed, fan settings, print speeds |
 | MK3.5 Makerspace | California Matte PETG | PA confirmation, retraction |
+| Bambu A1 0.4 (Makerspace, ID ⚠ TBD) | California Filament PETG Matte (black) | Temp 225°C (2026-10-28). Next: hand snap 220/225/230, one MVS pass at 225, one retraction test. Bed TBD. |
 | Elegoo Giga | Atomic PLA | Full recalibration 190–230°C |
 | Elegoo Giga | PCTG + Polylite PETG | Functional part validation |
 | Bambu X2D | ASA | Full calibration sequence (deferred) |
@@ -503,3 +504,4 @@ These settings resolved overhang curl on curved geometry (confirmed August 2026)
 | October 26, 2026 | Bambu X2D-3 (0.6 HF) — PETG HF overhang droop vs P1S | Curved walls clean at MVS 28; center overhang droops; the P1S prints the same part fine. Not MVS (same at 12). Filament cooling identical; X2D process has smooth Z outer-wall speed on (off on P1S), outer wall 200 vs 80, accel 5000 vs 3600. Smoothing off improved it. Next: outer wall 80 / accel 3600, then aux fan. |
 | October 26, 2026 | Bambu X2D-3 — PETG HF overhang droop, continued | Outer wall 80 / accel 3600 and nozzle 245 gave the same center droop. Full process diff vs P1S shows effectively identical slicing, so the cause is X2D hardware (part-cooling airflow or HF nozzle). Production: painted support or print on the P1S; diagnostic: rotate 90°; aux fan as compensation. **Decision: modify the model** (chamfer/fillet under the ledge center). |
 | October 28, 2026 | Bambu H2C — Polymaker ASA black, good spool | The slot-3 spool was mislabeled PolyLite ASA (Polymaker: a different product from Polymaker ASA). Good black Polymaker ASA at 255 / chamber 60 / bed 100, no adhesive: MVS tower completed, no jam. Black chamber = stock 60; NoJam superseded; earlier black results invalid. Naming rule updated in AGENT.md/CLAUDE.md. No PolyLite ASA left in stock. Next: MVS reading, vise snap test, retraction. |
+| October 28, 2026 | Bambu A1 0.4 (Makerspace) — California Filament PETG Matte black temp tower | 240→210 photo-reviewed: 225 cleanest (clean cutout, crisp numerals, clean overhang), 220–230 usable, 235–240 droop/blobs, 210–215 strings in cutout. 225°C chosen. Overhang edge curl at all temps (cooling). Snap test suggested. Run while fixing the A1 0.4 nozzle. |

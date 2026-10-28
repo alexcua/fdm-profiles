@@ -19,7 +19,10 @@
 
 | Filament | Temp | Bed | MVS | Flow | Retraction | PA | Status | Date |
 |---|---|---|---|---|---|---|---|---|
-| ⚠ TBD | ⚠ TBD | ⚠ TBD | ⚠ TBD | ⚠ TBD | ⚠ TBD | ⚠ TBD | ⚠ Not calibrated | — |
+| California Filament PETG Matte (black) | 225°C | ⚠ TBD | ⚠ TBD | ⚠ TBD | ⚠ TBD | Firmware | ⚠ In progress (temp done) | Session 2026-10-28 |
+
+- **California Filament PETG Matte (black), A1 0.4 (Makerspace; machine ID ⚠ TBD), temp tower 240→210, 2026-10-28** (photos reviewed; run while fixing the 0.4 nozzle): 240 drooping ledge, layer separation on the overhang, soft numerals; 235 blobby numerals, fine strings; 230 clean cutout, a few hair strings; **225 cleanest** (clean cutout and spike, crisp numerals, clean overhang); 220 minor wisps, slight edge curl; 215–210 heavy strings/blobs in the cutout. **225°C** (user: 220–225 is normal for this matte PETG). Overhang outer edge curls a little at every temp (cooling, not temp). ⚠ Layer adhesion not visible in photos; hand snap test 220/225/230 suggested. Session 2026-10-28
+- Next (Makerspace standard): one MVS pass at 225, then one retraction test. Values don't transfer from the MK3.5 CHT (220°C).
 
 ---
 
