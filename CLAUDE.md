@@ -20,7 +20,7 @@ Calibration reference for the Alexactly and Cherokee Makerspace 3D printer fleet
 7. **Bambu PA = `Firmware`.** Applies to X1C, P1S, A1, X2D, H2D and H2C. Store a numeric PA only for Prusa and Elegoo machines.
 8. **Naming:**
    - **Polymaker PETG HF** (high flow) and **Polylite PETG** (standard) are different products. Always write "Polymaker PETG HF" in full.
-   - **Polymaker ASA** and PolyLite ASA are the same product (unlike PETG). Always write "Polymaker ASA".
+   - **Polymaker ASA** and PolyLite ASA are different products (per Polymaker, 2026-10-28). All ASA stock is Polymaker ASA. Always write "Polymaker ASA".
    - For any other Polymaker line, record the exact product name from the spool. If it's unclear, ask before writing.
 9. **Values don't transfer.** Never port MVS, temp or retraction between nozzle sizes, nozzle types (CHT, Revo, HF, brass, Vortex), machine models or colorways. Write "may apply to X — unverified" instead.
 10. **Calibration order:** Temp → MVS → PA → Retraction. Don't record a later step as ✅ while an earlier one is ⚠.

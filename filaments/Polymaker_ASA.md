@@ -1,8 +1,8 @@
 # Polymaker ASA — All Machines
 
 **Primary use:** ⚠ TBD (UV/heat-resistant outdoor parts)  
-**⚠ ROOT CAUSE FOUND (2026-10-21): the black jams came from one bad spool** (H2C AMS slot 3), not the H2C. See "Spool finding" below.  
-**Material notes:** Needs an enclosure. Heated-chamber machines (H2 series) are the target. Black colorway has shown heat creep on H2C 0.6mm HF; see notes. Polymaker ASA and PolyLite ASA are the same product (branding only). All stock is labeled Polymaker ASA, so use that name.
+**✅ RESOLVED (2026-10-28): the black jams came from a mislabeled PolyLite ASA spool** (H2C AMS slot 3), not Polymaker ASA and not the H2C. Black Polymaker ASA prints at the stock chamber 60°C. See "Spool finding" below.  
+**Material notes:** Needs an enclosure. Heated-chamber machines (H2 series) are the target. Black jams on H2C 0.6mm HF were a mislabeled PolyLite ASA spool; see notes. Polymaker ASA and PolyLite ASA are different products (per Polymaker, 2026-10-28). All stock is Polymaker ASA.
 
 ---
 
@@ -10,7 +10,7 @@
 
 | Machine | Nozzle | Temp (1st/Other) | Chamber | Bed | MVS | Flow | Retraction | PA | Status | Source |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Bambu H2C | 0.6mm HF (left) | ⚠ TBD / 255°C | 60°C | 100°C | ⚠ TBD | ⚠ TBD | ⚠ TBD | Firmware | ⚠ In progress (temp done) | Session 2026-10-01 |
+| Bambu H2C | 0.6mm HF (left) | ⚠ TBD / 255°C | 60°C | 100°C | ⚠ TBD | ⚠ TBD | ⚠ TBD | Firmware | ⚠ In progress (temp done; black OK at chamber 60) | Session 2026-10-01 / 2026-10-28 |
 
 ---
 
@@ -84,4 +84,9 @@
   - Every black H2C result above (60 hard jam, 55 jam error, 50 stall, 45 pass, NoJam's long-print failure, the standard-nozzle motor overload) was **run on this spool**. Treat them as spool-confounded, not as limits of black Polymaker ASA.
   - NoJam (chamber 45 + adhesive) is **likely unnecessary** with a good spool. ⚠ Confirm: print black from a good spool on the H2C at the stock 60°C chamber, no adhesive.
   - Actions: compare label and lot number with the H2D's good black spool; set the spool aside; if it's Polymaker ASA, report the lot to Polymaker. Drying (70°C, 7h) is optional; the sheen difference points to batch/product, not moisture.
-- **Test plan:** `protocols/Polymaker_ASA_H2C_unified.md`. ⚠ Black chamber results were spool-confounded (2026-10-21). Aim is one profile for white and black; split only per that doc's decision rules.
+- **Spool identified, 2026-10-28:** the slot-3 spool was **mislabeled PolyLite ASA**. Good black **Polymaker ASA** spool on the H2C, nozzle 255 / chamber 60 / bed 100, no adhesive, MVS tower 10→30 (recommended settings, assumed): **completed, no jam** (user). Nozzle (HF or the standard 0.6 from the 10-19 trial) ⚠ confirm. MVS ceiling reading ⚠ TBD. Session 2026-10-28
+  - ❌ All black results above from 2026-10-01 to 2026-10-21 (failed MVS at 60, A1–A3 chamber 50/55/45, black working chamber 45, provisional black MVS ~17, NoJam, standard-nozzle motor overload) were PolyLite ASA. **Invalid for Polymaker ASA.** Kept for the record only.
+  - **Black chamber = stock 60°C, no adhesive.** NoJam (chamber 45 + Nano Polymer Adhesive) is superseded. White and black share chamber 60 / bed 100 / 255°C, so Stage A/B of the protocol are done; no split needed so far.
+  - No PolyLite ASA left in stock (user).
+- **Test plan:** `protocols/Polymaker_ASA_H2C_unified.md`. Stages A/B closed by the 2026-10-28 result. Remaining: black MVS reading (Stage D), vise snap 250/255/260, retraction (Stage E), Stage F real prints.
+  > Previously (2026-10-21): black chamber results spool-confounded; aim one profile for white and black, split only per that doc's decision rules.

@@ -1,6 +1,6 @@
 # FDM Profiles — Master Calibration Reference
 **Operations:** Alexactly (production) + Cherokee Makerspace  
-**Last updated:** 2026-10-21  
+**Last updated:** 2026-10-28  
 **Slicers:** OrcaSlicer (primary), Bambu Studio (retained for some overhangs), PrusaSlicer  
 **Calibration sequence (OrcaSlicer):** Temperature → Max Volumetric Speed → Pressure Advance → Retraction
 
@@ -371,6 +371,7 @@
 
 ### Notes
 - Reason for custom profile: heat creep printing black Polymaker ASA on 0.6mm HF with the stock profile.
+- ✅ **Resolved 2026-10-28:** the black "Polymaker ASA" spool was mislabeled PolyLite ASA (a different product, per Polymaker). Good black Polymaker ASA at 255 / chamber 60 / bed 100, no adhesive, completed the MVS tower with no jam. ❌ Earlier black results (chamber 45/50/55, NoJam, provisional MVS ~17) are invalid for Polymaker ASA. MVS reading ⚠ TBD. Session 2026-10-28
 - Temp tower 230–270°C (white, chamber 60°C): ≤240 too cold (overhang curl, stringing), 250–255 cleanest, 260+ surfaces degrade, 265–270 heavy stringing. 255°C chosen.
 - ⚠ Snap test inconclusive: broke at 255 at the mid-tower max-leverage point. Other blocks unbreakable by hand. Controlled vise test pending.
 - ⚠ Tower was white. Black heat creep recurred at 255°C / chamber 60°C / bed 100°C / retraction 0.4mm. White was clean at the same conditions. Short retraction rules out retraction as the cause. Chamber 60°C is the lead suspect.
@@ -445,7 +446,7 @@ These settings resolved overhang curl on curved geometry (confirmed August 2026)
 | Prusa MK3.5 0.6 Revo brass (CM05) | 3D Fuel PCTG | Starting values from CM04 (255 / MVS 10 / PA 0.025 / ret 0.6, untested). Makerspace standard: temp tower, one MVS pass, one retraction test. |
 | Prusa MK3.5 0.6 CHT (CM01) | Polymaker PETG HF | Temp 245°C ✅. Dry spool, then MVS at 245 → PA → retraction |
 | Bambu P1S 0.6 | — | First-run validation of start G-code purge-coil/debris mods (`gcode/Bambu_P1S_0.6_start.gcode`, see machines/Bambu_P1S.md) |
-| Bambu H2C (0.6 HF left) | Polymaker ASA | Chamber results for black: 60 jam / 55 jam error / 50 stall / 45 clean (A3, with Nano Polymer Adhesive). Working chamber 45 for now. Next: check the H2C left hotend fan and heatsink and swap spools with the H2D (which prints black at 60), then Stage B/C. Run `protocols/Polymaker_ASA_H2C_unified.md` (stages A–F). Controlled (vise) snap test 250/255/260, black temp check, MVS, retraction, heat creep root cause |
+| Bambu H2C (0.6 HF left) | Polymaker ASA | Black OK at stock chamber 60, no adhesive (2026-10-28; earlier jams were a mislabeled PolyLite ASA spool). Next: black MVS ceiling reading, confirm nozzle (HF vs standard), vise snap test 250/255/260, retraction, Stage F real prints. |
 
 ---
 
@@ -501,3 +502,4 @@ These settings resolved overhang curl on curved geometry (confirmed August 2026)
 | October 21, 2026 | Bambu X2D — PA policy | User: PA is maintained by Bambu firmware. X2D 0.4 PCTG PA 0.06 (OrcaSlicer) replaced by Firmware, kept as a Previously note. Resolves the AGENT.md conflict. |
 | October 26, 2026 | Bambu X2D-3 (0.6 HF) — PETG HF overhang droop vs P1S | Curved walls clean at MVS 28; center overhang droops; the P1S prints the same part fine. Not MVS (same at 12). Filament cooling identical; X2D process has smooth Z outer-wall speed on (off on P1S), outer wall 200 vs 80, accel 5000 vs 3600. Smoothing off improved it. Next: outer wall 80 / accel 3600, then aux fan. |
 | October 26, 2026 | Bambu X2D-3 — PETG HF overhang droop, continued | Outer wall 80 / accel 3600 and nozzle 245 gave the same center droop. Full process diff vs P1S shows effectively identical slicing, so the cause is X2D hardware (part-cooling airflow or HF nozzle). Production: painted support or print on the P1S; diagnostic: rotate 90°; aux fan as compensation. **Decision: modify the model** (chamfer/fillet under the ledge center). |
+| October 28, 2026 | Bambu H2C — Polymaker ASA black, good spool | The slot-3 spool was mislabeled PolyLite ASA (Polymaker: a different product from Polymaker ASA). Good black Polymaker ASA at 255 / chamber 60 / bed 100, no adhesive: MVS tower completed, no jam. Black chamber = stock 60; NoJam superseded; earlier black results invalid. Naming rule updated in AGENT.md/CLAUDE.md. No PolyLite ASA left in stock. Next: MVS reading, vise snap test, retraction. |

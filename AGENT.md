@@ -36,7 +36,7 @@ fdm-profiles/
 | Polymaker PETG | HF (high flow) formula. Used on X1C, P1S 0.6mm. |
 | Polylite PETG | Standard non-HF formula. Used on A1, Makerspace MK3.5s. |
 | 3D Fuel PCTG | Primary structural filament for Alexactly production. |
-| Polymaker ASA | Same product as PolyLite ASA (branding only — unlike PETG). Always write "Polymaker ASA". |
+| Polymaker ASA | **Different product from PolyLite ASA** (per Polymaker, 2026-10-28; previously treated as the same). All ASA stock and calibration is Polymaker ASA. Always write "Polymaker ASA". A PolyLite ASA spool must not be used for Polymaker ASA calibration. |
 
 **Polymaker PETG and Polylite PETG are different products.** Past AI sessions have repeatedly confused these. If you are unsure which is meant, ask before writing.
 
