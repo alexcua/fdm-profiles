@@ -18,7 +18,7 @@
 > Previously: PA 0.06 (OrcaSlicer). Replaced 2026-10-21 by Firmware, per user and AGENT.md.
 > Source tag aligned 2026-10-21 to the X2D machine doc's `Session 2026-08-02`. This doc previously showed a bare date, 2026-07-19; the session log has X2D PCTG entries on both dates.
 | Bambu X2D | 0.6mm HF main | ⚠ TBD | ⚠ TBD | ⚠ TBD | ⚠ TBD | ⚠ TBD | ⚠ TBD | ⚠ Not calibrated (planned) | — |
-| Bambu H2D | 0.6mm HF | 265°C (⚠ retest w/ chamber) | 70°C | 12mm³/s | 0.98 | ⚠ TBD | Firmware | ⚠ | 2026-08-02 |
+| Bambu H2D | 0.6mm HF | ⚠ 255°C (chamber-45 tower; snap test pending) | 70°C | 12mm³/s | 0.98 | ⚠ TBD | Firmware | ⚠ | Session 2026-10-28 |
 | Bambu H2C | 0.6mm HF (left) | 265°C (⚠ retest w/ chamber) | 70°C | 12mm³/s | 0.98 | ⚠ TBD | Firmware | ⚠ | 2026-08-02 |
 | Prusa XL | 0.4mm OBX HF | 265°C / 270°C | 80°C | 10mm³/s | 0.98 | 1.0mm | 0.062 | ✅ | 2026-07-18 |
 | Prusa MK3.5 | 0.6mm CHT | 260–265°C | 80°C | 24mm³/s | 0.98 | ⚠ TBD | ⚠ TBD | ⚠ | 2026-08-02 |
@@ -67,6 +67,9 @@
 - Retraction pending real-world print test.
 
 ### Bambu H2D / H2C — 0.6mm HF (left extruder)
+
+- **H2D temp tower 280→250, 2026-10-28** (photo reviewed; chamber 45 heat-soaked, bed 70: recommended settings, assumed; extruder L/R ⚠ TBD): 280 pitted/bubbly surface, numerals illegible; 275 bubbly surface, long strings off the overhang; 270–265 long strings off the overhang, webbing in the cutout; 260 a few strings, light webbing, good numerals; **255 and 250 cleanest** (crisp numerals, clean overhang, minimal webbing). Proposed **255°C** (hotter end of the clean window, for layer adhesion on structural parts). Cold edge not found (250 still clean). Fine webbing in the cutout at every temp and bubbling at 275–280 suggest moisture: dry the spool before MVS. ⚠ Pending: snap test 250/255/260 (photos can't show layer adhesion). H2D only; H2C left not yet retested. Session 2026-10-28
+  > Previously: 265°C (2026-08-02), tower run without the chamber heater; replaced by the chamber-45 tower.
 - 3D Fuel stock profile (0.4mm) uses 275°C, 12mm³/s, chamber 45°C, max fan 20%.
 - Temp tower run at 265°C without active chamber — needs rerun with chamber heat-soaked.
 - Conservative fan settings intentional for active chamber environment.

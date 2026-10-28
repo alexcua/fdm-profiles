@@ -162,7 +162,7 @@
 - These conservative fan settings are intentional — active chamber heating at 45°C conflicts with aggressive cooling.
 
 ### ⚠ Pending
-- 0.6mm temp tower must be rerun with chamber fully heat-soaked at 45°C before locking values.
+- 0.6mm temp tower must be rerun with chamber fully heat-soaked at 45°C before locking values. **H2D done 2026-10-28:** 250–255 cleanest, 255°C proposed (snap test pending); 260+ stringing, 275–280 bubbling. H2C still 265 ⚠. Session 2026-10-28
 - H2 is large format enclosed — chamber heat buildup affects thermal behavior differently than X1C/P1S.
 
 
@@ -430,7 +430,8 @@ These settings resolved overhang curl on curved geometry (confirmed August 2026)
 | Machine | Filament | Pending |
 |---|---|---|
 | Bambu A1 | 3D Fuel PCTG 0.6mm | Flow ratio, fan settings |
-| Bambu H2D/H2C | 3D Fuel PCTG 0.6mm | Temp tower rerun with chamber heat-soaked |
+| Bambu H2D | 3D Fuel PCTG 0.6mm | Tower at chamber 45 done (2026-10-28): 255°C proposed. Next: dry spool, snap test 250/255/260, MVS 10→30, retraction. |
+| Bambu H2C (left) | 3D Fuel PCTG 0.6mm | Temp tower rerun with chamber heat-soaked (H2D result may apply — unverified) |
 | Prusa MK3.5 (Alexactly) | 3D Fuel PCTG | PA, retraction |
 | Prusa MK3.5 CHT (CM01/CM02) | 3D Fuel PCTG | Seam wisps on CM02: dry spool, one retraction test, wipe/seam settings |
 | Prusa XL | 3D Fuel PCTG | Retraction speed, fan settings, print speeds |
@@ -505,3 +506,4 @@ These settings resolved overhang curl on curved geometry (confirmed August 2026)
 | October 26, 2026 | Bambu X2D-3 — PETG HF overhang droop, continued | Outer wall 80 / accel 3600 and nozzle 245 gave the same center droop. Full process diff vs P1S shows effectively identical slicing, so the cause is X2D hardware (part-cooling airflow or HF nozzle). Production: painted support or print on the P1S; diagnostic: rotate 90°; aux fan as compensation. **Decision: modify the model** (chamfer/fillet under the ledge center). |
 | October 28, 2026 | Bambu H2C — Polymaker ASA black, good spool | The slot-3 spool was mislabeled PolyLite ASA (Polymaker: a different product from Polymaker ASA). Good black Polymaker ASA at 255 / chamber 60 / bed 100, no adhesive: MVS tower completed, no jam. Black chamber = stock 60; NoJam superseded; earlier black results invalid. Naming rule updated in AGENT.md/CLAUDE.md. No PolyLite ASA left in stock. Next: MVS reading, vise snap test, retraction. |
 | October 28, 2026 | Bambu A1 0.4 (Makerspace) — California Filament PETG Matte black temp tower | 240→210 photo-reviewed: 225 cleanest (clean cutout, crisp numerals, clean overhang), 220–230 usable, 235–240 droop/blobs, 210–215 strings in cutout. 225°C chosen. Overhang edge curl at all temps (cooling). Snap test suggested. Run while fixing the A1 0.4 nozzle. |
+| October 28, 2026 | Bambu H2D 0.6 HF — 3D Fuel PCTG temp tower, chamber 45 | 280→250 photo-reviewed: 250–255 cleanest, 260 light strings, 265–270 long strings, 275–280 bubbly/pitted. 255°C proposed (was 265 from a no-chamber run). Webbing at all temps: dry spool. Next: snap test 250/255/260, MVS. |
