@@ -162,7 +162,7 @@
 - These conservative fan settings are intentional — active chamber heating at 45°C conflicts with aggressive cooling.
 
 ### ⚠ Pending
-- 0.6mm temp tower must be rerun with chamber fully heat-soaked at 45°C before locking values. **H2D done 2026-10-28:** 250–255 cleanest, 255°C proposed (snap test pending); 260+ stringing, 275–280 bubbling. H2C still 265 ⚠. Session 2026-10-28
+- 0.6mm temp tower must be rerun with chamber fully heat-soaked at 45°C before locking values. **H2D (right extruder) done 2026-10-28:** 250–255 cleanest, 255°C proposed (snap test pending); 260+ stringing, 275–280 bubbling. H2C still 265 ⚠. Session 2026-10-28
 - H2 is large format enclosed — chamber heat buildup affects thermal behavior differently than X1C/P1S.
 
 
@@ -430,7 +430,7 @@ These settings resolved overhang curl on curved geometry (confirmed August 2026)
 | Machine | Filament | Pending |
 |---|---|---|
 | Bambu A1 | 3D Fuel PCTG 0.6mm | Flow ratio, fan settings |
-| Bambu H2D | 3D Fuel PCTG 0.6mm | Tower at chamber 45 done (2026-10-28): 255°C proposed. Next: dry spool, snap test 250/255/260, MVS 10→30, retraction. |
+| Bambu H2D (right) | 3D Fuel PCTG 0.6mm | Tower at chamber 45 done on the right extruder (2026-10-28; left may apply — unverified): 255°C proposed. Next: dry spool, snap test 250/255/260, MVS 10→30, retraction. |
 | Bambu H2C (left) | 3D Fuel PCTG 0.6mm | Temp tower rerun with chamber heat-soaked (H2D result may apply — unverified) |
 | Prusa MK3.5 (Alexactly) | 3D Fuel PCTG | PA, retraction |
 | Prusa MK3.5 CHT (CM01/CM02) | 3D Fuel PCTG | Seam wisps on CM02: dry spool, one retraction test, wipe/seam settings |
@@ -448,7 +448,7 @@ These settings resolved overhang curl on curved geometry (confirmed August 2026)
 | Prusa MK3.5 0.6 Revo brass (CM05) | 3D Fuel PCTG | Starting values from CM04 (255 / MVS 10 / PA 0.025 / ret 0.6, untested). Makerspace standard: temp tower, one MVS pass, one retraction test. |
 | Prusa MK3.5 0.6 CHT (CM01) | Polymaker PETG HF | Temp 245°C ✅. Dry spool, then MVS at 245 → PA → retraction |
 | Bambu P1S 0.6 | — | First-run validation of start G-code purge-coil/debris mods (`gcode/Bambu_P1S_0.6_start.gcode`, see machines/Bambu_P1S.md) |
-| Bambu H2C (0.6 HF left) | Polymaker ASA | Black OK at stock chamber 60, no adhesive (2026-10-28; earlier jams were a mislabeled PolyLite ASA spool). Black temp tower 2026-10-28: 255, same as white. Next: confirm nozzle (HF vs standard), vise snap test 250/255/260, black MVS 10→30 at 255, retraction, Stage F real prints. |
+| Bambu H2C (0.6 HF left) | Polymaker ASA | Black OK at stock chamber 60, no adhesive (2026-10-28; earlier jams were a mislabeled PolyLite ASA spool). Black temp tower 2026-10-28: 255, same as white. Next: vise snap test 250/255/260, black MVS 10→30 at 255, retraction, Stage F real prints. |
 
 ---
 
