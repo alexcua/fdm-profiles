@@ -70,7 +70,7 @@
     > Previously: flagged out of order with temp TBD (2026-10-28); corrected 2026-10-29 because the temp had been done but not recorded.
   - **3D Fuel PCTG temp on X2D-3 0.6 HF: 265°C** (user, 2026-10-29: temp tower done earlier, not previously recorded; date and tower range unknown). Imported 2026-10-29
   - **X2D-3 0.6 HF, 3D Fuel PCTG MVS 10→30 at 265°C, 2026-10-29** (photo reviewed; white; bed 70 / chamber 40, step 1 mm³/s per mm: recommended settings, assumed): glossy all the way up, no sheen change or ripples, but **easy to separate at 10mm** (user). Strength ceiling 10 + 10 = **20 mm³/s**, so **production 16 mm³/s** (80%). Strength, not sheen, sets the limit; the photo can't show layer adhesion. Above X2D 0.4 PCTG (12). Session 2026-10-29
-  > Previously: ceiling 20 / production 16 (2026-10-29, from 'easy to separate at 10mm'); replaced the same day because the user found it **durable only to 6.5mm**: ceiling 10 + 6.5 = 16.5, production 13 mm³/s (80%, rounded down). Session 2026-10-29
+  > Previously: ceiling 20 / production 16 (2026-10-29, from 'easy to separate at 10mm'); replaced the same day because the user found it **durable only to 6.5mm** (method: hand bend snapped the wall at 10mm; working down with a hard concentrated fingernail clamp, it broke at every height above 6.5 and could not be broken at 6.5): ceiling 10 + 6.5 = 16.5, production 13 mm³/s (80%, rounded down). Session 2026-10-29
   - PA handling resolved (user, 2026-10-21): **firmware** for all X2D nozzles, per AGENT.md. The 0.4 PCTG's 0.06 is now a Previously note.
 - ASA calibration deferred — needs full sequence (temp tower → MVS → PA → retraction) when needed.
 - PCTG and ASA can share machine with separate profiles (different chamber/bed temps).
