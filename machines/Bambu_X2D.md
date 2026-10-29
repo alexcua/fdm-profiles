@@ -22,7 +22,7 @@
 | Filament | Temp | Chamber | Bed | MVS | Flow | Retraction | PA | Status | Date |
 |---|---|---|---|---|---|---|---|---|---|
 | Polymaker PETG HF | 250°C ✅ | ⚠ TBD | 70°C ✅ | 36 mm³/s ✅ (floor; glossy + strong to 45) | Firmware (auto flow cal) | ⚠ TBD | Firmware | ⚠ In progress (temp + MVS ✅) | Session 2026-10-21 |
-| 3D Fuel PCTG | ⚠ TBD | ⚠ TBD | ⚠ TBD | ⚠ TBD | Firmware (auto flow cal) | ⚠ No stringing 0–1.6 mm (test 2026-10-28; temp not yet calibrated) | Firmware | ⚠ In progress (retraction only) | Session 2026-10-28 |
+| 3D Fuel PCTG | 265°C | ⚠ TBD | ⚠ TBD | ⚠ TBD | Firmware (auto flow cal) | ⚠ No stringing 0–1.6 mm (test 2026-10-28 at 265°C) | Firmware | ⚠ In progress (temp + retraction run; MVS TBD) | Imported 2026-10-29 / Session 2026-10-28 |
 
 ---
 
@@ -66,7 +66,9 @@
   - PETG HF: tower 270→230 (bed 70, fan 30–100%) → MVS 10→30 → Quality-tier check on curved parts → retraction. PA and flow: firmware.
   - **Flow ratio: Bambu auto flow calibration** (user, 2026-10-29), like PA. No manual flow test on the X2D 0.6. Applies to the X2D only; other machines unchanged unless the user says so.
     > Previously: manual flow test planned, start 0.952 (2026-10-20); replaced because the X2D auto-calibrates flow.
-  - **X2D-3 0.6 HF, 3D Fuel PCTG retraction test 0→1.6 mm step 0.1 @ 40 mm/s, 2026-10-28** (photo reviewed; white): **clean at every length, no strings** (user). The test can't pick a value: even 0 mm didn't string. ⚠ Out of order: run before the PCTG temp tower (rule 10), and nozzle temp ⚠ TBD (the recommended 250°C was for PETG HF). Suggested production retraction ~0.8 mm @ 45 mm/s (mid-range margin; not measured). Session 2026-10-28
+  - **X2D-3 0.6 HF, 3D Fuel PCTG retraction test 0→1.6 mm step 0.1 @ 40 mm/s, 2026-10-28** (photo reviewed; white): **clean at every length, no strings** (user). The test can't pick a value: even 0 mm didn't string. Run at 265°C (assumed; the PCTG temp was already done, user). Suggested production retraction ~0.8 mm @ 45 mm/s (mid-range margin; not measured). Session 2026-10-28
+    > Previously: flagged out of order with temp TBD (2026-10-28); corrected 2026-10-29 because the temp had been done but not recorded.
+  - **3D Fuel PCTG temp on X2D-3 0.6 HF: 265°C** (user, 2026-10-29: temp tower done earlier, not previously recorded; date and tower range unknown). Imported 2026-10-29
   - PA handling resolved (user, 2026-10-21): **firmware** for all X2D nozzles, per AGENT.md. The 0.4 PCTG's 0.06 is now a Previously note.
 - ASA calibration deferred — needs full sequence (temp tower → MVS → PA → retraction) when needed.
 - PCTG and ASA can share machine with separate profiles (different chamber/bed temps).
