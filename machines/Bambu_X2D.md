@@ -21,7 +21,7 @@
 
 | Filament | Temp | Chamber | Bed | MVS | Flow | Retraction | PA | Status | Date |
 |---|---|---|---|---|---|---|---|---|---|
-| Polymaker PETG HF | 250°C ✅ | N/A (PETG, no chamber) | 70°C ✅ | 0.6 HF: Normal 28 ✅ / Draft 36 ✅ (ceiling >45) | Firmware (auto flow cal) | ⚠ TBD | Firmware | ⚠ In progress (temp + MVS ✅; retraction TBD) | Session 2026-10-21 |
+| Polymaker PETG HF | 250°C ✅ | N/A (PETG, no chamber) | 70°C ✅ | 0.6 HF: Normal 28 ✅ / Draft 36 ✅ (ceiling >45) | Firmware (auto flow cal) | ⚠ 1.0 mm @ 45 mm/s (set in preset 2026-10-29, not tested) | Firmware | ⚠ In progress (temp + MVS ✅; retraction TBD) | Session 2026-10-21 |
 | 3D Fuel PCTG | 265°C | 40°C (assumed) | 70°C (assumed) | 0.6 HF: Normal 13 ✅ / Draft 15 ✅ (strength ceiling 16.5) | Firmware (auto flow cal) | ⚠ No stringing 0–1.6 mm (test 2026-10-28 at 265°C) | Firmware | ⚠ In progress (temp + MVS done; retraction value + real print TBD) | Imported 2026-10-29 / Session 2026-10-29 |
 > Previously: Draft ⚠ TBD / Quality ⚠ TBD (2026-10-29); Draft set to 36 and Quality tier dropped (two profiles only, user 2026-10-29).
 

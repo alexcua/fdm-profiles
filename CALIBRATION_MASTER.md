@@ -448,7 +448,7 @@ These settings resolved overhang curl on curved geometry (confirmed August 2026)
 | Elegoo Giga | PCTG + Polylite PETG | Functional part validation |
 | Bambu X2D | ASA | Full calibration sequence (deferred) |
 | Bambu X2D 0.6 HF | 3D Fuel PCTG | Temp 265°C (Imported 2026-10-29: done earlier, not recorded). Retraction test 0→1.6 at 265 clean throughout (2026-10-28). MVS 2026-10-29: glossy to 30, durable only to 6.5mm (easy to separate at 10), so ceiling 16.5. Tiers (user): Normal 13 / Draft 15. Shared with robotics. Next: set retraction (suggest 0.8 @ 45), real print. PA and flow firmware (auto cal). |
-| Bambu X2D-3 left 0.6 HF | Polymaker PETG HF | Temp 250 ✅, bed 70 ✅, MVS Normal 28 / Draft 36 ✅ (0.6 HF). PA and flow firmware. Next: retraction on a dried spool. |
+| Bambu X2D-3 left 0.6 HF | Polymaker PETG HF | Temp 250 ✅, bed 70 ✅, MVS Normal 28 / Draft 36 ✅ (0.6 HF). PA and flow firmware. Retraction set to 1.0 mm @ 45 mm/s in the preset (not tested). Next: retraction test on a dried spool to confirm. |
 | Bambu X2D-3 right 0.6 standard | Polymaker PETG HF | Starting values only: 250°C / Normal 12 / Draft 16 (untested). Next: MVS 10→30 on the right nozzle. |
 | Bambu A1 0.6 | — | First-run validation of start/end G-code blob mods (preset `Bambu Lab A1 0.6 (Nozzle Clear)`; see machines/Bambu_A1.md) |
 | Prusa MK3.5 0.4 E3D V6 brass (CM03) | 3D Fuel PCTG | Sequence complete: 260°C / MVS 9 / PA 0.03 / retraction 0.6 @ 45. Bed 80°C ✅. Remaining: flow ratio (0.98 working), fan, real-print validation. |
@@ -523,3 +523,4 @@ These settings resolved overhang curl on curved geometry (confirmed August 2026)
 | October 29, 2026 | Fleet nozzle setup + PETG HF X2D tiers | User: X2D-3 left 0.6 HF / right 0.6 standard; H2D both 0.6 HF; H2C left 0.6 HF, right Vortex 0.4 / 0.6 / 0.6 HF. New rule: every result names machine, side and nozzle type. X2D-3 PETG HF: Normal 28 (0.6 HF) moved into the table; Draft/Quality not set; no chamber for PETG. |
 | October 29, 2026 | Bambu X2D-3 0.6 HF — tier decision | Two profiles only: Normal = quality, Draft = speed. 3D Fuel PCTG (0.6 HF): Normal 13 / Draft 15 (user; 91% of the 16.5 strength ceiling). Polymaker PETG HF: Normal 28, Draft TBD (36 suggested). Profiles shared with the robotics team. |
 | October 29, 2026 | Bambu X2D-3 — PETG HF Draft + right-nozzle start values | Left 0.6 HF Draft 36 confirmed (user). Bed 70 is the standing value. Right 0.6 standard: conservative start Normal 12 / Draft 16, untested. |
+| October 29, 2026 | Bambu X2D-3 — PETG HF retraction set | User set retraction 1.0 mm @ 45 mm/s in the Normal/Draft presets (matches X1C/P1S 0.6 PETG HF; untested on X2D). |
