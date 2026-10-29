@@ -21,8 +21,8 @@
 
 | Filament | Temp | Chamber | Bed | MVS | Flow | Retraction | PA | Status | Date |
 |---|---|---|---|---|---|---|---|---|---|
-| Polymaker PETG HF | 250°C ✅ | ⚠ TBD | 70°C ✅ | 36 mm³/s ✅ (floor; glossy + strong to 45) | ⚠ TBD (start 0.952) | ⚠ TBD | Firmware | ⚠ In progress (temp + MVS ✅) | Session 2026-10-21 |
-| 3D Fuel PCTG | ⚠ TBD | ⚠ TBD | ⚠ TBD | ⚠ TBD | ⚠ TBD | ⚠ No stringing 0–1.6 mm (test 2026-10-28; temp not yet calibrated) | Firmware | ⚠ In progress (retraction only) | Session 2026-10-28 |
+| Polymaker PETG HF | 250°C ✅ | ⚠ TBD | 70°C ✅ | 36 mm³/s ✅ (floor; glossy + strong to 45) | Firmware (auto flow cal) | ⚠ TBD | Firmware | ⚠ In progress (temp + MVS ✅) | Session 2026-10-21 |
+| 3D Fuel PCTG | ⚠ TBD | ⚠ TBD | ⚠ TBD | ⚠ TBD | Firmware (auto flow cal) | ⚠ No stringing 0–1.6 mm (test 2026-10-28; temp not yet calibrated) | Firmware | ⚠ In progress (retraction only) | Session 2026-10-28 |
 
 ---
 
@@ -62,8 +62,10 @@
     - **Decision (user, 2026-10-26): modify the model** (e.g. a ≤45° chamfer or fillet under the center of the ledge) so it prints without support on the X2D. Profile unchanged: 250°C / bed 70 / Normal MVS 28; process keeps smoothing off and outer wall 80.
 - **0.6 main nozzle is HF (High Flow)** (user, 2026-10-20). Select High Flow in the X2D printer preset. Values from standard nozzles don't transfer.
 - **0.6 plan (user, 2026-10-20): full profiles for both Polymaker PETG HF and 3D Fuel PCTG.** Order: **Polymaker PETG HF first**, then PCTG. One filament at a time; label every test piece with the filament (after the 2026-10-20 mix-up); dry both spools first.
-  - PCTG: tower 280→240 (bed 70, chamber 40, MVS cap 10) → MVS 10→30 → retraction 0→2.0 (extend to 3.0) → flow → real print. PA: firmware.
-  - PETG HF: tower 270→230 (bed 70, fan 30–100%) → MVS 10→30 → Quality-tier check on curved parts → retraction → flow (start 0.952). PA: firmware.
+  - PCTG: tower 280→240 (bed 70, chamber 40, MVS cap 10) → MVS 10→30 → retraction 0→2.0 (extend to 3.0) → real print. PA and flow: firmware.
+  - PETG HF: tower 270→230 (bed 70, fan 30–100%) → MVS 10→30 → Quality-tier check on curved parts → retraction. PA and flow: firmware.
+  - **Flow ratio: Bambu auto flow calibration** (user, 2026-10-29), like PA. No manual flow test on the X2D 0.6. Applies to the X2D only; other machines unchanged unless the user says so.
+    > Previously: manual flow test planned, start 0.952 (2026-10-20); replaced because the X2D auto-calibrates flow.
   - **X2D-3 0.6 HF, 3D Fuel PCTG retraction test 0→1.6 mm step 0.1 @ 40 mm/s, 2026-10-28** (photo reviewed; white): **clean at every length, no strings** (user). The test can't pick a value: even 0 mm didn't string. ⚠ Out of order: run before the PCTG temp tower (rule 10), and nozzle temp ⚠ TBD (the recommended 250°C was for PETG HF). Suggested production retraction ~0.8 mm @ 45 mm/s (mid-range margin; not measured). Session 2026-10-28
   - PA handling resolved (user, 2026-10-21): **firmware** for all X2D nozzles, per AGENT.md. The 0.4 PCTG's 0.06 is now a Previously note.
 - ASA calibration deferred — needs full sequence (temp tower → MVS → PA → retraction) when needed.
