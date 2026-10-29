@@ -17,7 +17,7 @@
 
 > Previously: PA 0.06 (OrcaSlicer). Replaced 2026-10-21 by Firmware, per user and AGENT.md.
 > Source tag aligned 2026-10-21 to the X2D machine doc's `Session 2026-08-02`. This doc previously showed a bare date, 2026-07-19; the session log has X2D PCTG entries on both dates.
-| Bambu X2D (X2D-3) | 0.6mm HF (left) | 265°C | 70°C (assumed) | 0.6 HF: 13 mm³/s ✅ (strength ceiling 16.5) | Firmware (auto flow cal) | ⚠ No stringing 0–1.6 mm (test 2026-10-28 at 265°C) | Firmware | ⚠ In progress (temp + MVS done; retraction value + real print TBD) | Imported 2026-10-29 / Session 2026-10-29 |
+| Bambu X2D (X2D-3) | 0.6mm HF (left) | 265°C | 70°C (assumed) | 0.6 HF: Normal 13 ✅ / Draft 15 ✅ (strength ceiling 16.5) | Firmware (auto flow cal) | ⚠ No stringing 0–1.6 mm (test 2026-10-28 at 265°C) | Firmware | ⚠ In progress (temp + MVS done; retraction value + real print TBD) | Imported 2026-10-29 / Session 2026-10-29 |
 > Previously: machine/nozzle shown as 'Bambu X2D | 0.6mm HF main' and MVS without nozzle label; relabelled 2026-10-29 (X2D-3 left 0.6 HF). Values unchanged.
 | Bambu H2D | 0.6mm HF | ⚠ 255°C (chamber-45 tower; snap test pending) | 70°C | 12mm³/s | 0.98 | ⚠ TBD | Firmware | ⚠ | Session 2026-10-28 |
 | Bambu H2C | 0.6mm HF (left) | 265°C (⚠ retest w/ chamber) | 70°C | 12mm³/s | 0.98 | ⚠ TBD | Firmware | ⚠ | 2026-08-02 |
@@ -63,6 +63,8 @@
 - **3D Fuel PCTG temp on X2D-3 0.6 HF: 265°C** (user, 2026-10-29: temp tower done earlier, not previously recorded; date and tower range unknown). Imported 2026-10-29
 - **X2D-3 0.6 HF, 3D Fuel PCTG MVS 10→30 at 265°C, 2026-10-29** (photo reviewed; white; bed 70 / chamber 40, step 1 mm³/s per mm: recommended settings, assumed): glossy all the way up, no sheen change or ripples, but **easy to separate at 10mm** (user). Strength ceiling 10 + 10 = **20 mm³/s**, so **production 16 mm³/s** (80%). Strength, not sheen, sets the limit; the photo can't show layer adhesion. Above X2D 0.4 PCTG (12). Session 2026-10-29
 > Previously: ceiling 20 / production 16 (2026-10-29, from 'easy to separate at 10mm'); replaced the same day because the user found it **durable only to 6.5mm** (method: hand bend snapped the wall at 10mm; working down with a hard concentrated fingernail clamp, it broke at every height above 6.5 and could not be broken at 6.5): ceiling 10 + 6.5 = 16.5, production 13 mm³/s (80%, rounded down). Session 2026-10-29
+- **Tiers (X2D-3 left 0.6 HF, user 2026-10-29):** two profiles only, **Normal = quality 13**, **Draft = speed 15**. Draft 15 is the user's choice at 91% of the 16.5 strength ceiling (above the 80% rule): little margin, so use Normal for load-bearing parts. Profile is shared with the robotics team. PETG HF Draft ⚠ TBD (36 suggested).
+> Previously: single production MVS 13 (2026-10-29); split into Normal/Draft the same day.
 
 ### Bambu X2D — 0.4mm main nozzle
 - Higher MVS than P1S 0.4mm due to PMSM servo extruder.
