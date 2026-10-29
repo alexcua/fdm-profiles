@@ -11,9 +11,11 @@
 |---|---|---|---|---|---|---|---|---|---|
 | Bambu X1C | 0.6mm HS | 250°C / 250°C | 70°C | 20mm³/s | 0.952 | 1.0mm | Firmware | ✅ | Imported 2026-06-10 |
 | Bambu P1S | 0.6mm HS | 250°C / 250°C | 70°C | 20mm³/s | 0.952 | 1.0mm | Firmware | ✅ | Imported 2026-06-10 |
-| Bambu X2D (X2D-3) | 0.6mm HF (left) | 250°C ✅ | 70°C | 0.6 HF: Normal 28 ✅ / Draft ⚠ TBD / Quality ⚠ TBD (ceiling >45) | Firmware (auto flow cal) | ⚠ TBD | Firmware | ⚠ In progress (temp + MVS ✅) | Session 2026-10-21 |
+| Bambu X2D (X2D-3) | 0.6mm HF (left) | 250°C ✅ | 70°C | 0.6 HF: Normal 28 ✅ / Draft 36 ✅ (ceiling >45) | Firmware (auto flow cal) | ⚠ TBD | Firmware | ⚠ In progress (temp + MVS ✅) | Session 2026-10-21 |
+| Bambu X2D (X2D-3) | 0.6mm standard (right) | ⚠ 250°C (start, unverified) | 70°C | ⚠ 0.6 standard: Normal 12 / Draft 16 (conservative start, untested) | Firmware (auto flow cal) | ⚠ TBD | Firmware | ⚠ Starting values only | Imported 2026-10-29 |
 | Prusa MK3.5 (CM01) | 0.6mm CHT | 245°C ✅ | ⚠ TBD | ⚠ TBD | ⚠ TBD | ⚠ TBD | ⚠ TBD | ⚠ In progress | Session 2026-10-17 |
 | Prusa XL | 0.4mm OBX HF | 255°C / 255°C | 80°C | 16mm³/s | 1.0 | 0.8mm | 0.050 | ✅ | Imported 2026-06-10 |
+> Previously: Draft ⚠ TBD / Quality ⚠ TBD (2026-10-29); Draft set to 36 and Quality tier dropped (two profiles only, user 2026-10-29).
 
 ---
 
@@ -45,7 +47,7 @@
   > Previously: logged as PETG HF with 245°C proposed.
 - **X2D-3 tower 270→230 (2026-10-21):** 245–255 cleanest; strings at every temperature (retraction/moisture). **250°C ✅** (user). Dry before MVS. Session 2026-10-21
 - MVS 10→30 at 250°C: clean and strong to the top. Ceiling >30, production 24 mm³/s (floor). Next: 28→45 pass, curved-part Quality-tier check. Session 2026-10-21
-- **Tiers (X2D-3 left 0.6 HF, 2026-10-29):** Normal 28 (production value per the 2026-10-26 notes); Draft and Quality not set. 36 is the 80% floor of the >45 ceiling, not a tier.
+- **Tiers (X2D-3 left 0.6 HF, 2026-10-29):** Normal 28 (production value per the 2026-10-26 notes); **Draft 36** (user, 2026-10-29). Two profiles only (Normal = quality, Draft = speed). Bed 70 is the standing value (user). Right 0.6 standard: conservative start Normal 12 / Draft 16, untested. 36 is the 80% floor of the >45 ceiling, not a tier.
   > Previously: table showed 36 mm³/s (floor) as the single MVS.
 - Second pass 28→45: glossy and strong throughout. Ceiling >45, production 36 mm³/s (floor). Practical cap ~30 suggested; Quality tier from curved-part check pending. Session 2026-10-21
   > Previously: 24 mm³/s floor from the first pass.

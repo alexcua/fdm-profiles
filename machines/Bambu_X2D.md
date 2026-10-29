@@ -21,8 +21,9 @@
 
 | Filament | Temp | Chamber | Bed | MVS | Flow | Retraction | PA | Status | Date |
 |---|---|---|---|---|---|---|---|---|---|
-| Polymaker PETG HF | 250°C ✅ | N/A (PETG, no chamber) | 70°C ✅ | 0.6 HF: Normal 28 ✅ / Draft ⚠ TBD / Quality ⚠ TBD (ceiling >45, 80% floor 36) | Firmware (auto flow cal) | ⚠ TBD | Firmware | ⚠ In progress (temp + MVS ✅) | Session 2026-10-21 |
+| Polymaker PETG HF | 250°C ✅ | N/A (PETG, no chamber) | 70°C ✅ | 0.6 HF: Normal 28 ✅ / Draft 36 ✅ (ceiling >45) | Firmware (auto flow cal) | ⚠ TBD | Firmware | ⚠ In progress (temp + MVS ✅; retraction TBD) | Session 2026-10-21 |
 | 3D Fuel PCTG | 265°C | 40°C (assumed) | 70°C (assumed) | 0.6 HF: Normal 13 ✅ / Draft 15 ✅ (strength ceiling 16.5) | Firmware (auto flow cal) | ⚠ No stringing 0–1.6 mm (test 2026-10-28 at 265°C) | Firmware | ⚠ In progress (temp + MVS done; retraction value + real print TBD) | Imported 2026-10-29 / Session 2026-10-29 |
+> Previously: Draft ⚠ TBD / Quality ⚠ TBD (2026-10-29); Draft set to 36 and Quality tier dropped (two profiles only, user 2026-10-29).
 
 
 > Previously: PETG HF chamber ⚠ TBD (PETG has no chamber temp, user 2026-10-29); MVS shown as 36 only, while the 2026-10-26 notes give production Normal 28. 36 is the 80% floor of the >45 ceiling, not a set tier.
@@ -31,9 +32,11 @@
 
 | Filament | Temp | Chamber | Bed | MVS | Flow | Retraction | PA | Status | Date |
 |---|---|---|---|---|---|---|---|---|---|
-| ⚠ TBD | ⚠ TBD | ⚠ TBD | ⚠ TBD | ⚠ TBD (0.6 standard) | Firmware (auto flow cal) | ⚠ TBD | Firmware | ⚠ Not calibrated | — |
+| Polymaker PETG HF | ⚠ 250°C (start; may apply from left HF — unverified) | N/A (PETG, no chamber) | 70°C | ⚠ 0.6 standard: Normal 12 / Draft 16 (conservative start, untested) | Firmware (auto flow cal) | ⚠ TBD | Firmware | ⚠ Starting values only | Imported 2026-10-29 |
 
 Left 0.6 HF values don't transfer to this nozzle.
+
+- PETG HF starting values (2026-10-29): Normal 12 / Draft 16 on the right 0.6 standard. Basis: Polymaker's X2D preset MVS 12; X1C/P1S 0.6 HS (standard bore) Draft 20 with Quality 10 for curves. Standard bore melts less than HF, so start well below the left HF's 28/36. ⚠ Untested: run MVS 10→30 on the right nozzle to set real values.
 ---
 
 ## Notes
