@@ -440,7 +440,7 @@ These settings resolved overhang curl on curved geometry (confirmed August 2026)
 | Elegoo Giga | Atomic PLA | Full recalibration 190–230°C |
 | Elegoo Giga | PCTG + Polylite PETG | Functional part validation |
 | Bambu X2D | ASA | Full calibration sequence (deferred) |
-| Bambu X2D 0.6 HF | 3D Fuel PCTG | Temp 265°C (Imported 2026-10-29: done earlier, not recorded). Retraction test 0→1.6 at 265 clean throughout (2026-10-28). Next: MVS 10→30 at 265, then real print. PA and flow firmware (auto cal). |
+| Bambu X2D 0.6 HF | 3D Fuel PCTG | Temp 265°C (Imported 2026-10-29: done earlier, not recorded). Retraction test 0→1.6 at 265 clean throughout (2026-10-28). MVS 2026-10-29: glossy to 30 but easy to separate at 10mm, so ceiling 20 / production 16. Next: set retraction (suggest 0.8 @ 45), real print. PA and flow firmware (auto cal). |
 | Bambu X2D 0.6 HF | Polymaker PETG HF | Testing started 2026-10-19; first tower invalid (wrong filament). Temp 250°C ✅, bed 70°C ✅, MVS 36 ✅ (floor; glossy + strong to 45). Next: curved-part Quality-tier check (practical cap ~30 suggested), retraction. PA and flow firmware (auto cal, user 2026-10-29). Starting values from Polymaker's X2D preset (240°C / MVS 12, untested). Full sequence: temp tower 270→230, MVS 10→30, Quality-tier check. |
 | Bambu A1 0.6 | — | First-run validation of start/end G-code blob mods (preset `Bambu Lab A1 0.6 (Nozzle Clear)`; see machines/Bambu_A1.md) |
 | Prusa MK3.5 0.4 E3D V6 brass (CM03) | 3D Fuel PCTG | Sequence complete: 260°C / MVS 9 / PA 0.03 / retraction 0.6 @ 45. Bed 80°C ✅. Remaining: flow ratio (0.98 working), fan, real-print validation. |
@@ -511,3 +511,4 @@ These settings resolved overhang curl on curved geometry (confirmed August 2026)
 | October 28, 2026 | Bambu X2D-3 0.6 HF — 3D Fuel PCTG retraction test | 0→1.6 mm @ 40 mm/s, white: no strings at any length (user, photo). Can't pick a value; run before the temp tower and nozzle temp unconfirmed, so ⚠. Suggested ~0.8 mm @ 45 mm/s. Next: PCTG temp tower 280→240. |
 | October 29, 2026 | Bambu X2D — flow policy | User: the X2D auto-calibrates flow ratio. X2D 0.6 flow = Firmware (auto flow cal) for PETG HF and PCTG; manual flow tests dropped. X2D 0.4 PCTG 0.98 and other machines unchanged. |
 | October 29, 2026 | Bambu X2D-3 0.6 HF — 3D Fuel PCTG temp (imported) | User: PCTG temp was done earlier, 265°C; date/range unknown, so Imported. The 10-28 retraction test ran at 265, so it's no longer out of order. Next: MVS 10→30. |
+| October 29, 2026 | Bambu X2D-3 0.6 HF — 3D Fuel PCTG MVS | 10→30 at 265: glossy throughout, easy to separate at 10mm. Strength ceiling 20, production 16 mm³/s. Next: retraction value, real print. |

@@ -22,7 +22,7 @@
 | Filament | Temp | Chamber | Bed | MVS | Flow | Retraction | PA | Status | Date |
 |---|---|---|---|---|---|---|---|---|---|
 | Polymaker PETG HF | 250°C ✅ | ⚠ TBD | 70°C ✅ | 36 mm³/s ✅ (floor; glossy + strong to 45) | Firmware (auto flow cal) | ⚠ TBD | Firmware | ⚠ In progress (temp + MVS ✅) | Session 2026-10-21 |
-| 3D Fuel PCTG | 265°C | ⚠ TBD | ⚠ TBD | ⚠ TBD | Firmware (auto flow cal) | ⚠ No stringing 0–1.6 mm (test 2026-10-28 at 265°C) | Firmware | ⚠ In progress (temp + retraction run; MVS TBD) | Imported 2026-10-29 / Session 2026-10-28 |
+| 3D Fuel PCTG | 265°C | 40°C (assumed) | 70°C (assumed) | 16 mm³/s ✅ (strength ceiling 20) | Firmware (auto flow cal) | ⚠ No stringing 0–1.6 mm (test 2026-10-28 at 265°C) | Firmware | ⚠ In progress (temp + MVS done; retraction value + real print TBD) | Imported 2026-10-29 / Session 2026-10-29 |
 
 ---
 
@@ -69,6 +69,7 @@
   - **X2D-3 0.6 HF, 3D Fuel PCTG retraction test 0→1.6 mm step 0.1 @ 40 mm/s, 2026-10-28** (photo reviewed; white): **clean at every length, no strings** (user). The test can't pick a value: even 0 mm didn't string. Run at 265°C (assumed; the PCTG temp was already done, user). Suggested production retraction ~0.8 mm @ 45 mm/s (mid-range margin; not measured). Session 2026-10-28
     > Previously: flagged out of order with temp TBD (2026-10-28); corrected 2026-10-29 because the temp had been done but not recorded.
   - **3D Fuel PCTG temp on X2D-3 0.6 HF: 265°C** (user, 2026-10-29: temp tower done earlier, not previously recorded; date and tower range unknown). Imported 2026-10-29
+  - **X2D-3 0.6 HF, 3D Fuel PCTG MVS 10→30 at 265°C, 2026-10-29** (photo reviewed; white; bed 70 / chamber 40, step 1 mm³/s per mm: recommended settings, assumed): glossy all the way up, no sheen change or ripples, but **easy to separate at 10mm** (user). Strength ceiling 10 + 10 = **20 mm³/s**, so **production 16 mm³/s** (80%). Strength, not sheen, sets the limit; the photo can't show layer adhesion. Above X2D 0.4 PCTG (12). Session 2026-10-29
   - PA handling resolved (user, 2026-10-21): **firmware** for all X2D nozzles, per AGENT.md. The 0.4 PCTG's 0.06 is now a Previously note.
 - ASA calibration deferred — needs full sequence (temp tower → MVS → PA → retraction) when needed.
 - PCTG and ASA can share machine with separate profiles (different chamber/bed temps).
