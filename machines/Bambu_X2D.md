@@ -22,7 +22,7 @@
 | Filament | Temp | Chamber | Bed | MVS | Flow | Retraction | PA | Status | Date |
 |---|---|---|---|---|---|---|---|---|---|
 | Polymaker PETG HF | 250°C ✅ | ⚠ TBD | 70°C ✅ | 36 mm³/s ✅ (floor; glossy + strong to 45) | ⚠ TBD (start 0.952) | ⚠ TBD | Firmware | ⚠ In progress (temp + MVS ✅) | Session 2026-10-21 |
-| 3D Fuel PCTG | ⚠ TBD | ⚠ TBD | ⚠ TBD | ⚠ TBD | ⚠ TBD | ⚠ TBD | ⚠ TBD | ⚠ Not calibrated (planned) | — |
+| 3D Fuel PCTG | ⚠ TBD | ⚠ TBD | ⚠ TBD | ⚠ TBD | ⚠ TBD | ⚠ No stringing 0–1.6 mm (test 2026-10-28; temp not yet calibrated) | Firmware | ⚠ In progress (retraction only) | Session 2026-10-28 |
 
 ---
 
@@ -64,6 +64,7 @@
 - **0.6 plan (user, 2026-10-20): full profiles for both Polymaker PETG HF and 3D Fuel PCTG.** Order: **Polymaker PETG HF first**, then PCTG. One filament at a time; label every test piece with the filament (after the 2026-10-20 mix-up); dry both spools first.
   - PCTG: tower 280→240 (bed 70, chamber 40, MVS cap 10) → MVS 10→30 → retraction 0→2.0 (extend to 3.0) → flow → real print. PA: firmware.
   - PETG HF: tower 270→230 (bed 70, fan 30–100%) → MVS 10→30 → Quality-tier check on curved parts → retraction → flow (start 0.952). PA: firmware.
+  - **X2D-3 0.6 HF, 3D Fuel PCTG retraction test 0→1.6 mm step 0.1 @ 40 mm/s, 2026-10-28** (photo reviewed; white): **clean at every length, no strings** (user). The test can't pick a value: even 0 mm didn't string. ⚠ Out of order: run before the PCTG temp tower (rule 10), and nozzle temp ⚠ TBD (the recommended 250°C was for PETG HF). Suggested production retraction ~0.8 mm @ 45 mm/s (mid-range margin; not measured). Session 2026-10-28
   - PA handling resolved (user, 2026-10-21): **firmware** for all X2D nozzles, per AGENT.md. The 0.4 PCTG's 0.06 is now a Previously note.
 - ASA calibration deferred — needs full sequence (temp tower → MVS → PA → retraction) when needed.
 - PCTG and ASA can share machine with separate profiles (different chamber/bed temps).

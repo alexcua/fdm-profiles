@@ -17,7 +17,7 @@
 
 > Previously: PA 0.06 (OrcaSlicer). Replaced 2026-10-21 by Firmware, per user and AGENT.md.
 > Source tag aligned 2026-10-21 to the X2D machine doc's `Session 2026-08-02`. This doc previously showed a bare date, 2026-07-19; the session log has X2D PCTG entries on both dates.
-| Bambu X2D | 0.6mm HF main | ⚠ TBD | ⚠ TBD | ⚠ TBD | ⚠ TBD | ⚠ TBD | ⚠ TBD | ⚠ Not calibrated (planned) | — |
+| Bambu X2D | 0.6mm HF main | ⚠ TBD | ⚠ TBD | ⚠ TBD | ⚠ TBD | ⚠ No stringing 0–1.6 mm (test 2026-10-28; temp not yet calibrated) | Firmware | ⚠ In progress (retraction only) | Session 2026-10-28 |
 | Bambu H2D | 0.6mm HF | ⚠ 255°C (chamber-45 tower; snap test pending) | 70°C | 12mm³/s | 0.98 | ⚠ TBD | Firmware | ⚠ | Session 2026-10-28 |
 | Bambu H2C | 0.6mm HF (left) | 265°C (⚠ retest w/ chamber) | 70°C | 12mm³/s | 0.98 | ⚠ TBD | Firmware | ⚠ | 2026-08-02 |
 | Prusa XL | 0.4mm OBX HF | 265°C / 270°C | 80°C | 10mm³/s | 0.98 | 1.0mm | 0.062 | ✅ | 2026-07-18 |
@@ -55,6 +55,9 @@
 - Same hotend as 0.6mm but lower MVS ceiling due to bore size.
 - Retraction increased from stock 0.4mm to 0.6mm to address nozzle booger.
 - External nozzle carbonization (inter-print buildup): root cause is missing or degraded silicone sock. PCTG contacts bare heater block, bakes on, accumulates between prints, sheds onto next print. Inspect and replace sock first. If buildup persists with sock intact: re-seat nozzle at temp, then try temp 260°C → retraction 0.8mm → MVS 7mm³/s in that order. Session 2026-08-02
+
+### Bambu X2D-3 — 0.6mm HF main nozzle
+- **X2D-3 0.6 HF, 3D Fuel PCTG retraction test 0→1.6 mm step 0.1 @ 40 mm/s, 2026-10-28** (photo reviewed; white): **clean at every length, no strings** (user). The test can't pick a value: even 0 mm didn't string. ⚠ Out of order: run before the PCTG temp tower (rule 10), and nozzle temp ⚠ TBD (the recommended 250°C was for PETG HF). Suggested production retraction ~0.8 mm @ 45 mm/s (mid-range margin; not measured). Session 2026-10-28
 
 ### Bambu X2D — 0.4mm main nozzle
 - Higher MVS than P1S 0.4mm due to PMSM servo extruder.
