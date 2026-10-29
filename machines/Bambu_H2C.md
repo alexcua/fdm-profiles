@@ -1,8 +1,9 @@
 # Bambu H2C
 
-**Extruders:** Left 0.6mm HF (same as H2D) / Right Vortex inductive (machine-changeable)  
+**Extruders:** Left 0.6mm HF (same as H2D) / Right Vortex inductive: **0.4, 0.6 and 0.6 HF** (user, 2026-10-29)  
 **Slicer:** OrcaSlicer / Bambu Studio  
-**Notes:** Large format enclosed. Active chamber heating at 45°C. Left extruder profile identical to H2D. Right extruder Vortex nozzle sizes TBD — 0.25mm being considered for removal.
+**Notes:** Large format enclosed. Active chamber heating at 45°C. Left extruder profile identical to H2D. Right extruder Vortex nozzles: 0.4, 0.6, 0.6 HF.
+  > Previously: "Right extruder Vortex nozzle sizes TBD — 0.25mm being considered for removal" (resolved 2026-10-29).
 
 ---
 
@@ -48,14 +49,14 @@ Same profile as H2D. See Bambu_H2D.md.
 | 0.6mm | ⚠ TBD | ⚠ TBD | ⚠ TBD | ⚠ TBD | ⚠ TBD | ⚠ TBD | ⚠ Not calibrated |
 | 0.6mm HF | ⚠ TBD | ⚠ TBD | ⚠ TBD | ⚠ TBD | ⚠ TBD | ⚠ TBD | ⚠ Not calibrated |
 
-Note: 0.25mm being considered for removal. Larger sizes TBD.
+Vortex set (user, 2026-10-29): 0.4, 0.6, 0.6 HF. Each needs its own calibration; left 0.6 HF values don't transfer to the Vortex 0.6 HF.
+> Previously: "0.25mm being considered for removal. Larger sizes TBD."
 
 ---
 
 ## ⚠ Pending
 
 - Same as H2D: temp rerun with chamber heat-soaked.
-- Right extruder Vortex nozzle sizes to be decided before calibration.
 - All right extruder profiles starting fresh.
 - Polymaker ASA (left 0.6mm HF): black runs at chamber 60 (2026-10-28). Black temp 255 ✅ by tower (2026-10-28). Next: vise snap test 250/255/260, black MVS 10→30 at 255 (earlier tower not on hand), then retraction (PA firmware), then Stage F real prints. Follow `protocols/Polymaker_ASA_H2C_unified.md`.
   > Previously: "Isolate the black heat creep cause" (resolved 2026-10-28: mislabeled PolyLite ASA spool).

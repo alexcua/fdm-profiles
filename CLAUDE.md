@@ -25,6 +25,7 @@ Calibration reference for the Alexactly and Cherokee Makerspace 3D printer fleet
 9. **Values don't transfer.** Never port MVS, temp or retraction between nozzle sizes, nozzle types (CHT, Revo, HF, brass, Vortex), machine models or colorways. Write "may apply to X — unverified" instead.
 10. **Calibration order:** Temp → MVS → PA → Retraction. Don't record a later step as ✅ while an earlier one is ⚠.
 11. **Production MVS = 80% of the tested ceiling**, unless the user says otherwise. Record both the ceiling and the production value.
+12. **Name machine, extruder side and nozzle size + type on every result** (HF vs standard matters: X2D-3, H2D and H2C all mix them). MVS cells state the nozzle type. If the user doesn't say, ask. Nozzle setup: Fleet Overview in `CALIBRATION_MASTER.md`.
 
 ## Calibration depth
 

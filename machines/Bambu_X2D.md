@@ -1,6 +1,6 @@
 # Bambu X2D
 
-**Machines:** includes **X2D-3** (0.6 HF main).  
+**Machines:** includes **X2D-3**: **left 0.6 HF, right 0.6 standard** (user, 2026-10-29). All X2D-3 0.6 results so far are on the **left 0.6 HF**.  
 **Slicer:** OrcaSlicer / Bambu Studio  
 **Notes:** PMSM servo extruder — higher MVS than expected vs prior-gen toolheads. PA field not exposed in Bambu Studio; apply only in OrcaSlicer. Originally intended for ASA — currently running PCTG on 0.4mm and Polymaker PETG HF on 0.6mm.
 
@@ -17,13 +17,23 @@
 
 ---
 
-## Filament Profiles — 0.6mm main nozzle (High Flow)
+## Filament Profiles — X2D-3 left, 0.6mm HF (High Flow)
 
 | Filament | Temp | Chamber | Bed | MVS | Flow | Retraction | PA | Status | Date |
 |---|---|---|---|---|---|---|---|---|---|
-| Polymaker PETG HF | 250°C ✅ | ⚠ TBD | 70°C ✅ | 36 mm³/s ✅ (floor; glossy + strong to 45) | Firmware (auto flow cal) | ⚠ TBD | Firmware | ⚠ In progress (temp + MVS ✅) | Session 2026-10-21 |
-| 3D Fuel PCTG | 265°C | 40°C (assumed) | 70°C (assumed) | 13 mm³/s ✅ (strength ceiling 16.5) | Firmware (auto flow cal) | ⚠ No stringing 0–1.6 mm (test 2026-10-28 at 265°C) | Firmware | ⚠ In progress (temp + MVS done; retraction value + real print TBD) | Imported 2026-10-29 / Session 2026-10-29 |
+| Polymaker PETG HF | 250°C ✅ | N/A (PETG, no chamber) | 70°C ✅ | 0.6 HF: Normal 28 ✅ / Draft ⚠ TBD / Quality ⚠ TBD (ceiling >45, 80% floor 36) | Firmware (auto flow cal) | ⚠ TBD | Firmware | ⚠ In progress (temp + MVS ✅) | Session 2026-10-21 |
+| 3D Fuel PCTG | 265°C | 40°C (assumed) | 70°C (assumed) | 0.6 HF: 13 mm³/s ✅ (strength ceiling 16.5) | Firmware (auto flow cal) | ⚠ No stringing 0–1.6 mm (test 2026-10-28 at 265°C) | Firmware | ⚠ In progress (temp + MVS done; retraction value + real print TBD) | Imported 2026-10-29 / Session 2026-10-29 |
 
+
+> Previously: PETG HF chamber ⚠ TBD (PETG has no chamber temp, user 2026-10-29); MVS shown as 36 only, while the 2026-10-26 notes give production Normal 28. 36 is the 80% floor of the >45 ceiling, not a set tier.
+
+## Filament Profiles — X2D-3 right, 0.6mm standard (non-HF)
+
+| Filament | Temp | Chamber | Bed | MVS | Flow | Retraction | PA | Status | Date |
+|---|---|---|---|---|---|---|---|---|---|
+| ⚠ TBD | ⚠ TBD | ⚠ TBD | ⚠ TBD | ⚠ TBD (0.6 standard) | Firmware (auto flow cal) | ⚠ TBD | Firmware | ⚠ Not calibrated | — |
+
+Left 0.6 HF values don't transfer to this nozzle.
 ---
 
 ## Notes

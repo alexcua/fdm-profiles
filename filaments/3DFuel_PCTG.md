@@ -17,7 +17,8 @@
 
 > Previously: PA 0.06 (OrcaSlicer). Replaced 2026-10-21 by Firmware, per user and AGENT.md.
 > Source tag aligned 2026-10-21 to the X2D machine doc's `Session 2026-08-02`. This doc previously showed a bare date, 2026-07-19; the session log has X2D PCTG entries on both dates.
-| Bambu X2D | 0.6mm HF main | 265°C | 70°C (assumed) | 13 mm³/s ✅ (strength ceiling 16.5) | Firmware (auto flow cal) | ⚠ No stringing 0–1.6 mm (test 2026-10-28 at 265°C) | Firmware | ⚠ In progress (temp + MVS done; retraction value + real print TBD) | Imported 2026-10-29 / Session 2026-10-29 |
+| Bambu X2D (X2D-3) | 0.6mm HF (left) | 265°C | 70°C (assumed) | 0.6 HF: 13 mm³/s ✅ (strength ceiling 16.5) | Firmware (auto flow cal) | ⚠ No stringing 0–1.6 mm (test 2026-10-28 at 265°C) | Firmware | ⚠ In progress (temp + MVS done; retraction value + real print TBD) | Imported 2026-10-29 / Session 2026-10-29 |
+> Previously: machine/nozzle shown as 'Bambu X2D | 0.6mm HF main' and MVS without nozzle label; relabelled 2026-10-29 (X2D-3 left 0.6 HF). Values unchanged.
 | Bambu H2D | 0.6mm HF | ⚠ 255°C (chamber-45 tower; snap test pending) | 70°C | 12mm³/s | 0.98 | ⚠ TBD | Firmware | ⚠ | Session 2026-10-28 |
 | Bambu H2C | 0.6mm HF (left) | 265°C (⚠ retest w/ chamber) | 70°C | 12mm³/s | 0.98 | ⚠ TBD | Firmware | ⚠ | 2026-08-02 |
 | Prusa XL | 0.4mm OBX HF | 265°C / 270°C | 80°C | 10mm³/s | 0.98 | 1.0mm | 0.062 | ✅ | 2026-07-18 |

@@ -124,6 +124,7 @@ Set by the user 2026-10-18. Don't push extra tests on Makerspace machines. Still
 2. Update the relevant `machines/` doc — add a row or section for the new filament.
 3. Update `CALIBRATION_MASTER.md` — add to the session log and pending items.
 4. Do NOT update values in one place without updating the other. Both filament and machine docs must stay in sync.
+5. **Every result names the machine (ID if any), extruder side (left/right) and nozzle size + type** (HF, standard, Vortex, CHT, Revo…). MVS cells state the nozzle type, e.g. `28 mm³/s (0.6 HF)`. If a result arrives without them, ask before recording. Current nozzle setup per machine: see the Fleet Overview in `CALIBRATION_MASTER.md`.
 
 ### When correcting existing values
 - Mark the old value as ❌ with a note explaining why it was wrong.

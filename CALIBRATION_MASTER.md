@@ -15,8 +15,15 @@
 | Bambu X1C | 0.6mm hardened steel | Polymaker PETG HF | Alexactly |
 | Bambu P1S | 0.4mm & 0.6mm hardened steel | Polymaker PETG HF (0.6) / 3D Fuel PCTG (0.4) | Alexactly |
 | Bambu A1 | 0.6mm | Polylite PETG (standard) | Alexactly |
-| Bambu X2D | 0.4mm main nozzle | 3D Fuel PCTG | Alexactly |
-| Bambu H2D/H2C | 0.4mm & 0.6mm | 3D Fuel PCTG | Alexactly |
+| Bambu X2D (0.4 profile machine, ID ⚠ TBD) | 0.4mm main nozzle | 3D Fuel PCTG | Alexactly |
+| Bambu X2D-3 | Left 0.6 HF / Right 0.6 standard | Polymaker PETG HF / 3D Fuel PCTG (both on left 0.6 HF so far) | Alexactly |
+| Bambu H2D | Left 0.6 HF / Right 0.6 HF | 3D Fuel PCTG | Alexactly |
+| Bambu H2C | Left 0.6 HF / Right Vortex: 0.4, 0.6, 0.6 HF | Polymaker ASA (left) / 3D Fuel PCTG | Alexactly |
+
+> Nozzle setup per user, 2026-10-29. When logging a test, name the machine, side and nozzle type so results land in the right table (AGENT.md rule).
+
+| Machine | Nozzle | Primary Filament | Operation |
+|---|---|---|---|
 | Prusa XL | 0.4mm Obxidian HF | 3D Fuel PCTG | Alexactly |
 | Prusa MK3.5 (×2, Makerspace) | 0.6mm CHT | Polylite PETG / California Matte PETG | Cherokee |
 | Prusa MK3.5 (Alexactly) | 0.6mm CHT | 3D Fuel PCTG | Alexactly |
@@ -512,3 +519,4 @@ These settings resolved overhang curl on curved geometry (confirmed August 2026)
 | October 29, 2026 | Bambu X2D — flow policy | User: the X2D auto-calibrates flow ratio. X2D 0.6 flow = Firmware (auto flow cal) for PETG HF and PCTG; manual flow tests dropped. X2D 0.4 PCTG 0.98 and other machines unchanged. |
 | October 29, 2026 | Bambu X2D-3 0.6 HF — 3D Fuel PCTG temp (imported) | User: PCTG temp was done earlier, 265°C; date/range unknown, so Imported. The 10-28 retraction test ran at 265, so it's no longer out of order. Next: MVS 10→30. |
 | October 29, 2026 | Bambu X2D-3 0.6 HF — 3D Fuel PCTG MVS | 10→30 at 265: glossy throughout, easy to separate at 10mm, durable only to 6.5mm. Strength ceiling 16.5, production 13 mm³/s (first logged as 20/16, corrected same day). Next: retraction value, real print. |
+| October 29, 2026 | Fleet nozzle setup + PETG HF X2D tiers | User: X2D-3 left 0.6 HF / right 0.6 standard; H2D both 0.6 HF; H2C left 0.6 HF, right Vortex 0.4 / 0.6 / 0.6 HF. New rule: every result names machine, side and nozzle type. X2D-3 PETG HF: Normal 28 (0.6 HF) moved into the table; Draft/Quality not set; no chamber for PETG. |

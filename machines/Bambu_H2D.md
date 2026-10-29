@@ -1,6 +1,6 @@
 # Bambu H2D
 
-**Extruders:** Left 0.6mm HF / Right 0.6mm HF (both identical)  
+**Extruders:** Left 0.6mm HF / Right 0.6mm HF (both identical; confirmed by user 2026-10-29)  
 **Slicer:** OrcaSlicer / Bambu Studio  
 **Notes:** Large format enclosed. Active chamber heating at 45°C. Conservative fan settings intentional — chamber heat conflicts with aggressive cooling. PA handled by firmware.
 
