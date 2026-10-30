@@ -19,7 +19,7 @@ Same profile as H2D. See Bambu_H2D.md.
 
 | Filament | Temp | Chamber | Bed | MVS | Flow | Retraction | PA | Status | Source |
 |---|---|---|---|---|---|---|---|---|---|
-| Polymaker ASA | 255°C (stock 260°C) | 60°C | 100°C | ⚠ 0.6 standard 14 / 0.6 HF 20 (white; black unverified) | ⚠ TBD | ⚠ TBD | Firmware | ⚠ In progress (temp 255 white + black; black OK at chamber 60) | Session 2026-10-01 / 2026-10-28 |
+| Polymaker ASA | 255°C (stock 260°C) | 60°C | 100°C | ⚠ 0.6 standard 14 / 0.6 HF 20 (tested on white; applied to black by user decision 2026-10-30) | ⚠ TBD | ⚠ TBD | Firmware | ⚠ In progress (temp 255 white + black; black OK at chamber 60) | Session 2026-10-01 / 2026-10-28 |
 
 - Temp tower 230–270°C (white, chamber 60°C, Bambu Studio): 250–255 clean, 260+ surfaces degrade and stringing increases, ≤245 overhang curl. 255°C chosen. Session 2026-10-01
 - Snap test inconclusive: broke at 255, but at the max-leverage point (mid-tower). Other blocks unbreakable by hand. Controlled vise test pending. Black colorway not yet tower-tested. See filaments/Polymaker_ASA.md.
