@@ -10,7 +10,7 @@
 
 | Machine | Nozzle | Temp (1st/Other) | Chamber | Bed | MVS | Flow | Retraction | PA | Status | Source |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Bambu H2C | 0.6mm HF (left) | ⚠ TBD / 255°C | 60°C | 100°C | ⚠ 0.6 standard 14 / 0.6 HF 20 (tested on white; applied to black by user decision 2026-10-30) | ⚠ TBD | ⚠ TBD | Firmware | ⚠ In progress (temp 255 white + black; black OK at chamber 60) | Session 2026-10-01 / 2026-10-28 |
+| Bambu H2C | 0.6mm HF (left) | ⚠ TBD / 255°C | 60°C | 100°C | ⚠ 0.6 standard 14 / 0.6 HF 20 (all colours) | ⚠ TBD | ⚠ TBD | Firmware | ⚠ In progress (temp 255 white + black; black OK at chamber 60) | Session 2026-10-01 / 2026-10-28 |
 
 ---
 

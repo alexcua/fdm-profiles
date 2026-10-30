@@ -22,7 +22,7 @@ Calibration reference for the Alexactly and Cherokee Makerspace 3D printer fleet
    - **Polymaker PETG HF** (high flow) and **Polylite PETG** (standard) are different products. Always write "Polymaker PETG HF" in full.
    - **Polymaker ASA** and PolyLite ASA are different products (per Polymaker, 2026-10-28). All ASA stock is Polymaker ASA. Always write "Polymaker ASA".
    - For any other Polymaker line, record the exact product name from the spool. If it's unclear, ask before writing.
-9. **Values don't transfer.** Never port MVS, temp or retraction between nozzle sizes, nozzle types (CHT, Revo, HF, brass, Vortex), machine models or colorways. Write "may apply to X — unverified" instead.
+9. **Values don't transfer.** Never port MVS, temp or retraction between nozzle sizes, nozzle types (CHT, Revo, HF, brass, Vortex) or machine models. Write "may apply to X — unverified" instead. **Colour is not a calibration axis:** values are per filament and apply to every colour. Record a colour-specific adjustment only when prints show a problem (e.g. black Polylite PETG retraction).
 10. **Calibration order:** Temp → MVS → PA → Retraction. Don't record a later step as ✅ while an earlier one is ⚠.
 11. **Production MVS = 80% of the tested ceiling**, unless the user says otherwise. Record both the ceiling and the production value.
 12. **Name machine, extruder side and nozzle size + type on every result** (HF vs standard matters: X2D-3, H2D and H2C all mix them). MVS cells state the nozzle type. If the user doesn't say, ask. Nozzle setup: Fleet Overview in `CALIBRATION_MASTER.md`.

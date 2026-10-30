@@ -169,6 +169,7 @@ Set by the user 2026-10-18. Don't push extra tests on Makerspace machines. Still
 
 - Do not assume calibration values transfer between nozzle sizes.
 - Do not assume values transfer between CHT, Revo, HF, and standard brass nozzles even at the same diameter.
+- Calibrate per filament, not per colour: values apply to every colour of that filament. Record a colour-specific adjustment only when prints show a problem (user, 2026-10-30).
 - Do not use manufacturer MVS profiles as production values without testing — they are often too high.
 - Do not store values from mid-session summaries without verifying against the actual test results described in the conversation.
 - Do not conflate Polymaker PETG (HF) with Polylite PETG (standard).

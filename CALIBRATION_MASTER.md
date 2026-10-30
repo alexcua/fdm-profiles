@@ -371,7 +371,7 @@
 | Temperature (first layer / other layers) | ⚠ TBD / 255°C (stock 260°C) |
 | Chamber temperature | 60°C |
 | Bed temperature | 100°C |
-| MVS (Standard / High Flow) | ⚠ 14 / 20 (tested on white; applied to black by user decision 2026-10-30) |
+| MVS (Standard / High Flow) | ⚠ 14 / 20 (all colours) |
 | Flow ratio | ⚠ TBD |
 | Retraction | ⚠ TBD |
 | Pressure advance | Firmware |
@@ -525,4 +525,4 @@ These settings resolved overhang curl on curved geometry (confirmed August 2026)
 | October 29, 2026 | Bambu X2D-3 — PETG HF Draft + right-nozzle start values | Left 0.6 HF Draft 36 confirmed (user). Bed 70 is the standing value. Right 0.6 standard: conservative start Normal 12 / Draft 16, untested. |
 | October 29, 2026 | Bambu X2D-3 — PETG HF retraction set | User set retraction 1.0 mm @ 45 mm/s in the Normal/Draft presets (matches X1C/P1S 0.6 PETG HF; untested on X2D). |
 | October 30, 2026 | Bambu H2C left — Polymaker ASA preset MVS | User's current preset: MVS 14 (0.6 standard) / 20 (0.6 HF). Matches the white results (standard 2026-10-19, HF 2026-10-19). Black not yet MVS-tested on a good spool. |
-| October 30, 2026 | Bambu H2C left — Polymaker ASA MVS colour decision | User: keep 14 / 20 for black too; the black failures were a filament-type error (PolyLite ASA), not colour. Recorded as a user decision, an exception to the no-transfer-between-colourways rule; black not separately MVS-tested. |
+| October 30, 2026 | Calibration policy — colour | User: calibration is per filament, not per colour; colour-specific testing only happened because of the ASA failure (which was the wrong filament). Polymaker ASA H2C MVS 14 / 20 applies to all colours. CLAUDE.md rule 9 updated (colourways removed); AGENT.md line added. |
